@@ -1,10 +1,19 @@
-// Modules & Variables
-@import 'partials/base';
+// Third-party styles
+// ==========================================================================
+
+// Modules & variables
+// ==========================================================================
+
+@import '_modules/all';
 
 // Partials
+// ==========================================================================
+
+@import 'partials/reset';
+@import 'partials/typography';
 @import 'partials/grid';
 
-// Third-party
-
 // Shame file
+// ==========================================================================
+
 @import 'partials/shame';
