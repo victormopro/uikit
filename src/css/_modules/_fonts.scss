@@ -1,6 +1,7 @@
 @import 'mixins';
 
-// Import fonts
+// Import Fonts
+// ==========================================================================
 
 @include font-face(Lato, './_fonts/Lato/Lato-Hairline', 100, normal);
 @include font-face(Lato, './_fonts/Lato/Lato-HairlineItalic', 100, italic);

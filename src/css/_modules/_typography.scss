@@ -1,0 +1,71 @@
+// Font weights
+// ==========================================================================
+
+$fontweight-black: 500;
+$fontweight-bold: 400;
+$fontweight-regular: 300;
+$fontweight-light: 200;
+$fontweight-hairline: 100;
+
+// Headlines
+// ==========================================================================
+
+$h1-fontsize: 42px;
+$h1-lineheight: 44px;
+$h1-fontweight: 500;
+
+$h2-fontsize: 32px;
+$h2-lineheight: 38px;
+$h2-fontweight: $fontweight-bold;
+
+$h3-fontsize: 28px;
+$h3-lineheight: 34px;
+$h3-fontweight: $fontweight-bold;
+
+$h4-fontsize: 24px;
+$h4-lineheight: 30px;
+$h4-fontweight: $fontweight-bold;
+
+$h5-fontsize: 18px;
+$h5-lineheight: 22px;
+$h5-fontweight: $fontweight-bold;
+
+$h6-fontsize: 16px;
+$h6-lineheight: 36px;
+$h6-fontweight: $fontweight-regular;
+
+// Paragraphs
+// ==========================================================================
+
+$p-fontsize: 21px;
+$p-lineheight: 36px;
+$p-fontweight: $fontweight-light;
+
+// Small paragraphs
+// ==========================================================================
+
+$ps-fontsize: 16px;
+$ps-lineheight: 26px;
+$ps-fontweight: $fontweight-light;
+
+// Labels
+// ==========================================================================
+
+$label-fontsize: 16px;
+$label-lineheight: 19px;
+$label-fontweight: $fontweight-bold;
+
+// Captions
+// ==========================================================================
+
+$caption-fontsize: 12px;
+$caption-lineheight: 15px;
+$caption-fontweight: $fontweight-bold;
+$caption-letterspacing: 0.3;
+
+// Buttons
+// ==========================================================================
+
+$btn-fontsize: 13px;
+$btn-lineheight: 16px;
+$btn-letterspacing: 1.6;

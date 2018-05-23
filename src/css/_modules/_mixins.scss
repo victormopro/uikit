@@ -152,6 +152,16 @@
     flex-direction: $direction;
 }
 
+// Font styles
+// ==========================================================================
+
+@mixin font-style($fontsize, $fontweight, $lineheight, $letterspacing: normal) {
+  font-size: $fontsize;
+  font-weight: $fontweight;
+  line-height: $lineheight;
+  letter-spacing: $letterspacing;
+}
+
 
 // Linear Gradient
 // ==========================================================================
