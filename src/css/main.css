@@ -1,3 +1,107 @@
+@font-face {
+  font-family: Lato;
+  src: url("./_fonts/Lato/Lato-Hairline.eot");
+  src: url("./_fonts/Lato/Lato-Hairline.eot?#iefix") format("embedded-opentype"), url("./_fonts/Lato/Lato-Hairline.woff") format("woff"), url("./_fonts/Lato/Lato-Hairline.ttf") format("truetype"), url("./_fonts/Lato/Lato-Hairline.svg#Lato") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("./_fonts/Lato/Lato-HairlineItalic.eot");
+  src: url("./_fonts/Lato/Lato-HairlineItalic.eot?#iefix") format("embedded-opentype"), url("./_fonts/Lato/Lato-HairlineItalic.woff") format("woff"), url("./_fonts/Lato/Lato-HairlineItalic.ttf") format("truetype"), url("./_fonts/Lato/Lato-HairlineItalic.svg#Lato") format("svg");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("./_fonts/Lato/Lato-Light.eot");
+  src: url("./_fonts/Lato/Lato-Light.eot?#iefix") format("embedded-opentype"), url("./_fonts/Lato/Lato-Light.woff") format("woff"), url("./_fonts/Lato/Lato-Light.ttf") format("truetype"), url("./_fonts/Lato/Lato-Light.svg#Lato") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("./_fonts/Lato/Lato-LightItalic.eot");
+  src: url("./_fonts/Lato/Lato-LightItalic.eot?#iefix") format("embedded-opentype"), url("./_fonts/Lato/Lato-LightItalic.woff") format("woff"), url("./_fonts/Lato/Lato-LightItalic.ttf") format("truetype"), url("./_fonts/Lato/Lato-LightItalic.svg#Lato") format("svg");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("./_fonts/Lato/Lato-Regular.eot");
+  src: url("./_fonts/Lato/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("./_fonts/Lato/Lato-Regular.woff") format("woff"), url("./_fonts/Lato/Lato-Regular.ttf") format("truetype"), url("./_fonts/Lato/Lato-Regular.svg#Lato") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("./_fonts/Lato/Lato-Italic.eot");
+  src: url("./_fonts/Lato/Lato-Italic.eot?#iefix") format("embedded-opentype"), url("./_fonts/Lato/Lato-Italic.woff") format("woff"), url("./_fonts/Lato/Lato-Italic.ttf") format("truetype"), url("./_fonts/Lato/Lato-Italic.svg#Lato") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("./_fonts/Lato/Lato-Bold.eot");
+  src: url("./_fonts/Lato/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("./_fonts/Lato/Lato-Bold.woff") format("woff"), url("./_fonts/Lato/Lato-Bold.ttf") format("truetype"), url("./_fonts/Lato/Lato-Bold.svg#Lato") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("./_fonts/Lato/Lato-BoldItalic.eot");
+  src: url("./_fonts/Lato/Lato-BoldItalic.eot?#iefix") format("embedded-opentype"), url("./_fonts/Lato/Lato-BoldItalic.woff") format("woff"), url("./_fonts/Lato/Lato-BoldItalic.ttf") format("truetype"), url("./_fonts/Lato/Lato-BoldItalic.svg#Lato") format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("./_fonts/Lato/Lato-Black.eot");
+  src: url("./_fonts/Lato/Lato-Black.eot?#iefix") format("embedded-opentype"), url("./_fonts/Lato/Lato-Black.woff") format("woff"), url("./_fonts/Lato/Lato-Black.ttf") format("truetype"), url("./_fonts/Lato/Lato-Black.svg#Lato") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("./_fonts/Lato/Lato-BlackItalic.eot");
+  src: url("./_fonts/Lato/Lato-BlackItalic.eot?#iefix") format("embedded-opentype"), url("./_fonts/Lato/Lato-BlackItalic.woff") format("woff"), url("./_fonts/Lato/Lato-BlackItalic.ttf") format("truetype"), url("./_fonts/Lato/Lato-BlackItalic.svg#Lato") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;

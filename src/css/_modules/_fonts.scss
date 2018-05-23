@@ -1,0 +1,14 @@
+@import 'mixins';
+
+// Import fonts
+
+@include font-face(Lato, './_fonts/Lato/Lato-Hairline', 100, normal);
+@include font-face(Lato, './_fonts/Lato/Lato-HairlineItalic', 100, italic);
+@include font-face(Lato, './_fonts/Lato/Lato-Light', 200, normal);
+@include font-face(Lato, './_fonts/Lato/Lato-LightItalic', 200, italic);
+@include font-face(Lato, './_fonts/Lato/Lato-Regular', 300, normal);
+@include font-face(Lato, './_fonts/Lato/Lato-Italic', 300, italic);
+@include font-face(Lato, './_fonts/Lato/Lato-Bold', 400, normal);
+@include font-face(Lato, './_fonts/Lato/Lato-BoldItalic', 400, italic);
+@include font-face(Lato, './_fonts/Lato/Lato-Black', 500, normal);
+@include font-face(Lato, './_fonts/Lato/Lato-BlackItalic', 500, italic);

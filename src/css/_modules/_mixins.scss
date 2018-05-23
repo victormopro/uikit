@@ -1,0 +1,209 @@
+// Import Font
+// ==========================================================================
+
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+           url('#{$file-path}.woff') format('woff'),
+           url('#{$file-path}.ttf') format('truetype'),
+           url('#{$file-path}.svg##{$font-family}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+
+// Transition
+// ==========================================================================
+
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+        -ms-transition: $transition;
+            transition: $transition;
+}
+
+
+// Transition Delay
+// ==========================================================================
+
+@mixin transition-delay($transition-delay...) {
+    -webkit-transition-delay: $transition-delay;
+        -ms-transition-delay: $transition-delay;
+            transition-delay: $transition-delay;
+}
+
+
+// Transform
+// ==========================================================================
+
+@mixin transform($transforms) {
+    -webkit-transform: $transforms;
+        -ms-transform: $transforms;
+            transform: $transforms;
+}
+
+
+// Transform Origin
+// ==========================================================================
+
+@mixin transform-origin($transform-origin) {
+    -webkit-transform-origin: $transform-origin;
+        -ms-transform-origin: $transform-origin;
+            transform-origin: $transform-origin;
+}
+
+
+// Keyframes
+// ==========================================================================
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+
+// Animation
+// ==========================================================================
+
+@mixin animation($str...) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  animation: #{$str};
+}
+
+
+// Animation Delay
+// ==========================================================================
+
+@mixin animation-delay($str...) {
+  -webkit-animation-delay: #{$str};
+  -moz-animation-delay: #{$str};
+  -ms-animation-delay: #{$str};
+  animation-delay: #{$str};
+}
+
+
+// Animation Direction
+// ==========================================================================
+
+@mixin animation-direction($str...) {
+  -webkit-animation-direction: #{$str};
+  -moz-animation-direction: #{$str};
+  -ms-animation-direction: #{$str};
+  animation-direction: #{$str};
+}
+
+
+// Animation Duration
+// ==========================================================================
+
+@mixin animation-duration($str...) {
+  -webkit-animation-duration: #{$str};
+  -moz-animation-duration: #{$str};
+  -ms-animation-duration: #{$str};
+  animation-duration: #{$str};
+}
+
+
+// Placeholder
+// ==========================================================================
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+
+// Flex
+// ==========================================================================
+
+@mixin flex {
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+@mixin inline-flex {
+	display: -moz-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+@mixin align-items($align) {
+    -ms-flex-pack: $align;
+    align-items: $align;
+}
+@mixin justify-content($justify) {
+    -ms-flex-align: $justify;
+    justify-content: $justify;
+}
+@mixin flex-direction($direction) {
+    /*-ms-flex-direction: $direction;*/
+    flex-direction: $direction;
+}
+
+
+// Linear Gradient
+// ==========================================================================
+
+@function convert-angle($value, $unit) {
+  $convertable-units: deg grad turn rad;
+  $conversion-factors: 1 (10grad/9deg) (1turn/360deg) (3.1415926rad/180deg);
+  @if index($convertable-units, unit($value)) and index($convertable-units, $unit) {
+    @return $value
+             / nth($conversion-factors, index($convertable-units, unit($value)))
+             * nth($conversion-factors, index($convertable-units, $unit));
+  }
+
+  @warn "Cannot convert `#{unit($value)}` to `#{$unit}`.";
+}
+@function is-direction($value) {
+  $is-direction: index((to top, to top right, to right top, to right, to bottom right, to right bottom, to bottom, to bottom left, to left bottom, to left, to left top, to top left), $value);
+  $is-angle: type-of($value) == 'number' and index('deg' 'grad' 'turn' 'rad', unit($value));
+
+  @return $is-direction or $is-angle;
+}
+@mixin linear-gradient($direction, $color-stops...) {
+  @if is-direction($direction) == false {
+    $color-stops: ($direction, $color-stops);
+    $direction: 180deg;
+  }
+  background: nth(nth($color-stops, 1), 1);
+  background: linear-gradient($direction, $color-stops);
+
+}
+
+
+// Custom Gradients
+// Note: opacity1 & opacity2 are 1 by default
+// Example usage: @include blue-gradient(to bottom right);
+// ==========================================================================
+
+@mixin orange-gradient($direction:to top right, $opacity1:1, $opacity2:1) {
+  @include linear-gradient($direction, rgba(#f83600, $opacity1), rgba(#fed400, $opacity2));
+}
+@mixin green-gradient($direction:to top right, $opacity1:1, $opacity2:1) {
+  @include linear-gradient($direction, rgba(#ffff1c, $opacity1), rgba(#2bff00, $opacity2));
+}
+@mixin red-gradient($direction:to top right, $opacity1:1, $opacity2:1) {
+  @include linear-gradient($direction, rgba(#ee0979, $opacity1), rgba(#ff6a00, $opacity2));
+}
+@mixin darkpurple-gradient($direction:to top right, $opacity1:1, $opacity2:1) {
+  @include linear-gradient($direction, rgba(#3023ae, $opacity1), rgba(#c96dd8, $opacity2));
+}
+@mixin purple-gradient($direction:to top right, $opacity1:1, $opacity2:1) {
+  @include linear-gradient($direction, rgba(#fc00ff, $opacity1), rgba(#7e00cd, $opacity2));
+}
+@mixin blue-gradient($direction:to top right, $opacity1:1, $opacity2:1) {
+  @include linear-gradient($direction, rgba(#0100f7, $opacity1), rgba(#00e4ff, $opacity2));
+}
