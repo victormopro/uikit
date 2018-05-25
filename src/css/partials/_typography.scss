@@ -1,10 +1,82 @@
 // Typography
 // ==========================================================================
 
+$headlines: h1 h2 h3 h4 h5 h6;
+$text-elements: h1 h2 h3 h4 h5 h6 p a blockquote;
+
 body {
   font-family: "Lato", sans-serif;
+  color: map-get($text-colors, "dark");
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: inherit;
-  color: $color-secondary;
+
+@each $el in $text-elements {
+  #{$el} {
+    font-family: inherit;
+    color: inherit;
+  }
+}
+
+// Headlines
+// ==========================================================================
+
+h1 {
+  @include font-style($h1-fontsize, $h1-fontweight, $h1-lineheight);
+}
+h2 {
+  @include font-style($h2-fontsize, $h2-fontweight, $h2-lineheight);
+}
+h3 {
+  @include font-style($h3-fontsize, $h3-fontweight, $h3-lineheight);
+}
+h4 {
+  @include font-style($h4-fontsize, $h4-fontweight, $h4-lineheight);
+}
+h5 {
+  @include font-style($h5-fontsize, $h5-fontweight, $h5-lineheight);
+}
+h6 {
+  @include font-style($h6-fontsize, $h6-fontweight, $h6-lineheight);
+}
+
+// Text elements
+// ==========================================================================
+
+p {
+  @include font-style($p-fontsize, $p-fontweight, $p-lineheight);
+}
+label, .label {
+  @include font-style($label-fontsize, $label-fontweight, $label-lineheight);
+}
+figcaption, .caption {
+  @include font-style($caption-fontsize, $caption-fontweight, $caption-lineheight, $caption-letterspacing);
+}
+.text-small {
+  @include font-style($ps-fontsize, $ps-fontweight, $ps-lineheight);
+}
+.text-sub {
+  @include font-style($sub-fontsize, $sub-fontweight, $sub-lineheight, $sub-letterspacing);
+  color: map-get($text-colors, "medium");
+  text-transform: uppercase;
+}
+button, .text-btn {
+  @include font-style($btn-fontsize, $btn-fontweight, $btn-lineheight);
+}
+
+// Font weights
+// ==========================================================================
+
+.fw-hairline {
+  font-weight: $fontweight-hairline;
+}
+.fw-light {
+  font-weight: $fontweight-light;
+}
+.fw-medium {
+  font-weight: $fontweight-regular;
+}
+.fw-bold {
+  font-weight: $fontweight-bold;
+}
+.fw-heavy {
+  font-weight: $fontweight-black;
 }

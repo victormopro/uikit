@@ -1,0 +1,22 @@
+// Color classes
+// ==========================================================================
+
+.color-primary {
+  color: map-get($mopro-colors, "primary");
+}
+.color-secondary {
+  color: map-get($mopro-colors, "secondary");
+}
+.gradient-text {
+  @include main-gradient;
+  @include transparent-text;
+}
+.color-dark {
+  color: map-get($text-colors, "dark");
+}
+.color-medium {
+  color: map-get($text-colors, "medium");
+}
+.color-light {
+  color: map-get($text-colors, "light");
+}

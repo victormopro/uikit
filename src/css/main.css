@@ -94,13 +94,187 @@ ul {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Lato", sans-serif;
+.color-primary {
+  color: #C253DD;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: inherit;
+.color-secondary {
   color: #3023AE;
+}
+
+.gradient-text {
+  background: #c253dd;
+  background: linear-gradient(to top right, #c253dd, #3023ae);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-dark {
+  color: #2B2829;
+}
+
+.color-medium {
+  color: #A7A8A8;
+}
+
+.color-light {
+  color: #DDD;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #2B2829;
+}
+
+h1 {
+  font-family: inherit;
+  color: inherit;
+}
+
+h2 {
+  font-family: inherit;
+  color: inherit;
+}
+
+h3 {
+  font-family: inherit;
+  color: inherit;
+}
+
+h4 {
+  font-family: inherit;
+  color: inherit;
+}
+
+h5 {
+  font-family: inherit;
+  color: inherit;
+}
+
+h6 {
+  font-family: inherit;
+  color: inherit;
+}
+
+p {
+  font-family: inherit;
+  color: inherit;
+}
+
+a {
+  font-family: inherit;
+  color: inherit;
+}
+
+blockquote {
+  font-family: inherit;
+  color: inherit;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: normal;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: normal;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: normal;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: normal;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: normal;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: normal;
+}
+
+p {
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 36px;
+  letter-spacing: normal;
+}
+
+label, .label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: normal;
+}
+
+figcaption, .caption {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.3px;
+}
+
+.text-small {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 26px;
+  letter-spacing: normal;
+}
+
+.text-sub {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1.63px;
+  color: #A7A8A8;
+  text-transform: uppercase;
+}
+
+button, .text-btn {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: normal;
+}
+
+.fw-hairline {
+  font-weight: 100;
+}
+
+.fw-light {
+  font-weight: 200;
+}
+
+.fw-medium {
+  font-weight: 300;
+}
+
+.fw-bold {
+  font-weight: 400;
+}
+
+.fw-heavy {
+  font-weight: 500;
 }
 
 .container {
@@ -849,4 +1023,588 @@ h1, h2, h3, h4, h5, h6 {
 .container-fluid:after,
 .row:after {
   clear: both;
+}
+
+.m-5 {
+  margin: 5px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.m-15 {
+  margin: 15px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.m-25 {
+  margin: 25px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.m-30 {
+  margin: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.m-35 {
+  margin: 35px;
+}
+
+.mt-35 {
+  margin-top: 35px;
+}
+
+.m-40 {
+  margin: 40px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.m-45 {
+  margin: 45px;
+}
+
+.mt-45 {
+  margin-top: 45px;
+}
+
+.m-50 {
+  margin: 50px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.m-55 {
+  margin: 55px;
+}
+
+.mt-55 {
+  margin-top: 55px;
+}
+
+.m-60 {
+  margin: 60px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.m-65 {
+  margin: 65px;
+}
+
+.mt-65 {
+  margin-top: 65px;
+}
+
+.m-70 {
+  margin: 70px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.m-75 {
+  margin: 75px;
+}
+
+.mt-75 {
+  margin-top: 75px;
+}
+
+.m-80 {
+  margin: 80px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.m-85 {
+  margin: 85px;
+}
+
+.mt-85 {
+  margin-top: 85px;
+}
+
+.m-90 {
+  margin: 90px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.m-95 {
+  margin: 95px;
+}
+
+.mt-95 {
+  margin-top: 95px;
+}
+
+.m-100 {
+  margin: 100px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.m-105 {
+  margin: 105px;
+}
+
+.mt-105 {
+  margin-top: 105px;
+}
+
+.m-110 {
+  margin: 110px;
+}
+
+.mt-110 {
+  margin-top: 110px;
+}
+
+.m-115 {
+  margin: 115px;
+}
+
+.mt-115 {
+  margin-top: 115px;
+}
+
+.m-120 {
+  margin: 120px;
+}
+
+.mt-120 {
+  margin-top: 120px;
+}
+
+.m-125 {
+  margin: 125px;
+}
+
+.mt-125 {
+  margin-top: 125px;
+}
+
+.m-130 {
+  margin: 130px;
+}
+
+.mt-130 {
+  margin-top: 130px;
+}
+
+.m-135 {
+  margin: 135px;
+}
+
+.mt-135 {
+  margin-top: 135px;
+}
+
+.m-140 {
+  margin: 140px;
+}
+
+.mt-140 {
+  margin-top: 140px;
+}
+
+.m-145 {
+  margin: 145px;
+}
+
+.mt-145 {
+  margin-top: 145px;
+}
+
+.m-150 {
+  margin: 150px;
+}
+
+.mt-150 {
+  margin-top: 150px;
+}
+
+.p-5 {
+  margin: 5px;
+}
+
+.pt-5 {
+  margin-top: 5px;
+}
+
+.p-10 {
+  margin: 10px;
+}
+
+.pt-10 {
+  margin-top: 10px;
+}
+
+.p-15 {
+  margin: 15px;
+}
+
+.pt-15 {
+  margin-top: 15px;
+}
+
+.p-20 {
+  margin: 20px;
+}
+
+.pt-20 {
+  margin-top: 20px;
+}
+
+.p-25 {
+  margin: 25px;
+}
+
+.pt-25 {
+  margin-top: 25px;
+}
+
+.p-30 {
+  margin: 30px;
+}
+
+.pt-30 {
+  margin-top: 30px;
+}
+
+.p-35 {
+  margin: 35px;
+}
+
+.pt-35 {
+  margin-top: 35px;
+}
+
+.p-40 {
+  margin: 40px;
+}
+
+.pt-40 {
+  margin-top: 40px;
+}
+
+.p-45 {
+  margin: 45px;
+}
+
+.pt-45 {
+  margin-top: 45px;
+}
+
+.p-50 {
+  margin: 50px;
+}
+
+.pt-50 {
+  margin-top: 50px;
+}
+
+.p-55 {
+  margin: 55px;
+}
+
+.pt-55 {
+  margin-top: 55px;
+}
+
+.p-60 {
+  margin: 60px;
+}
+
+.pt-60 {
+  margin-top: 60px;
+}
+
+.p-65 {
+  margin: 65px;
+}
+
+.pt-65 {
+  margin-top: 65px;
+}
+
+.p-70 {
+  margin: 70px;
+}
+
+.pt-70 {
+  margin-top: 70px;
+}
+
+.p-75 {
+  margin: 75px;
+}
+
+.pt-75 {
+  margin-top: 75px;
+}
+
+.p-80 {
+  margin: 80px;
+}
+
+.pt-80 {
+  margin-top: 80px;
+}
+
+.p-85 {
+  margin: 85px;
+}
+
+.pt-85 {
+  margin-top: 85px;
+}
+
+.p-90 {
+  margin: 90px;
+}
+
+.pt-90 {
+  margin-top: 90px;
+}
+
+.p-95 {
+  margin: 95px;
+}
+
+.pt-95 {
+  margin-top: 95px;
+}
+
+.p-100 {
+  margin: 100px;
+}
+
+.pt-100 {
+  margin-top: 100px;
+}
+
+.p-105 {
+  margin: 105px;
+}
+
+.pt-105 {
+  margin-top: 105px;
+}
+
+.p-110 {
+  margin: 110px;
+}
+
+.pt-110 {
+  margin-top: 110px;
+}
+
+.p-115 {
+  margin: 115px;
+}
+
+.pt-115 {
+  margin-top: 115px;
+}
+
+.p-120 {
+  margin: 120px;
+}
+
+.pt-120 {
+  margin-top: 120px;
+}
+
+.p-125 {
+  margin: 125px;
+}
+
+.pt-125 {
+  margin-top: 125px;
+}
+
+.p-130 {
+  margin: 130px;
+}
+
+.pt-130 {
+  margin-top: 130px;
+}
+
+.p-135 {
+  margin: 135px;
+}
+
+.pt-135 {
+  margin-top: 135px;
+}
+
+.p-140 {
+  margin: 140px;
+}
+
+.pt-140 {
+  margin-top: 140px;
+}
+
+.p-145 {
+  margin: 145px;
+}
+
+.pt-145 {
+  margin-top: 145px;
+}
+
+.p-150 {
+  margin: 150px;
+}
+
+.pt-150 {
+  margin-top: 150px;
+}
+
+.card__header, .card__body {
+  padding: 25px 30px;
+}
+
+.main {
+  display: flex;
+  background: #FFF;
+}
+
+.navbar {
+  background: #3929ce;
+  background: linear-gradient(to bottom right, #3929ce, #271d8e);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.navbar__nav {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.navbar__item {
+  text-align: left;
+}
+
+.navbar__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+  padding: 20px;
+  border-bottom: 2px solid transparent;
+  transition: 0.25s;
+}
+
+.navbar__link:hover {
+  border-color: #FFF;
+}
+
+.sidebar {
+  width: 15%;
+  min-width: 125px;
+  max-width: 250px;
+  padding: 10px;
+  background: #F1F2F6;
+  min-height: 100vh;
+}
+
+.swatch__color {
+  height: 190px;
+  border-radius: 10px 10px 0 0;
+}
+
+.swatch__body {
+  padding: 25px 30px;
+  background: #FFF;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 35px 50px 0 rgba(255, 119, 121, 0.15), 0 35px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.swatch--gradient .swatch__color {
+  background: #c253dd;
+  background: linear-gradient(to top right, #c253dd, #3023ae);
+}
+
+.swatch--primary .swatch__color {
+  background: #C253DD;
+}
+
+.swatch--secondary .swatch__color {
+  background: #3023AE;
+}
+
+.swatch--dark .swatch__color {
+  background: #2B2829;
+}
+
+.swatch--medium .swatch__color {
+  background: #A7A8A8;
+}
+
+.swatch--light .swatch__color {
+  background: #DDD;
+}
+
+.page {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.has-superscript {
+  position: relative;
+}
+
+.superscript {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-20px, -20px);
+  font-size: 18px;
+  font-weight: 400;
 }
