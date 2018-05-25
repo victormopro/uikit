@@ -1,0 +1,8 @@
+.sidebar {
+  width: 15%;
+  min-width: 125px;
+  max-width: 250px;
+  padding: 10px;
+  background: map-get($bg-colors, "light");
+  min-height: 100vh;
+}

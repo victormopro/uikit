@@ -1,0 +1,42 @@
+.swatch {
+  &__color {
+    height: 190px;
+    border-radius: $border-radius $border-radius 0 0;
+  }
+  &__body {
+    padding: 25px 30px;
+    background: map-get($static-colors, "white");
+    border-radius: 0 0 $border-radius $border-radius;
+    box-shadow: $shadow-card;
+  }
+}
+.swatch--gradient {
+  .swatch__color {
+    @include main-gradient;
+  }
+}
+.swatch--primary {
+  .swatch__color {
+    background: map-get($mopro-colors, "primary");
+  }
+}
+.swatch--secondary {
+  .swatch__color {
+    background: map-get($mopro-colors, "secondary");
+  }
+}
+.swatch--dark {
+  .swatch__color {
+    background: map-get($text-colors, "dark");
+  }
+}
+.swatch--medium {
+  .swatch__color {
+    background: map-get($text-colors, "medium");
+  }
+}
+.swatch--light {
+  .swatch__color {
+    background: map-get($text-colors, "light");
+  }
+}

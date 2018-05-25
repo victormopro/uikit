@@ -1,0 +1,25 @@
+.navbar {
+  @include linear-gradient(to bottom right, lighten(map-get($mopro-colors, "secondary"), 7.5%), darken(map-get($mopro-colors, "secondary"), 7.5%));
+  box-shadow: $shadow-z-1;
+  position: relative;
+  &__nav {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+  }
+  &__item {
+    text-align: left;
+  }
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: map-get($static-colors, "white");
+    display: block;
+    padding: 20px;
+    border-bottom: 2px solid transparent;
+    transition: $transition-speed;
+    &:hover {
+      border-color: map-get($static-colors, "white");
+    }
+  }
+}
