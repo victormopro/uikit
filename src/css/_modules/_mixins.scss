@@ -199,21 +199,14 @@
 // Example usage: @include blue-gradient(to bottom right);
 // ==========================================================================
 
-@mixin orange-gradient($direction:to top right, $opacity1:1, $opacity2:1) {
-  @include linear-gradient($direction, rgba(#f83600, $opacity1), rgba(#fed400, $opacity2));
+@mixin main-gradient($direction: to top right, $opacity1: 1, $opacity2: 2) {
+  @include linear-gradient($direction, rgba(map-get($mopro-colors, "primary"), $opacity1), rgba(map-get($mopro-colors, "secondary"), $opacity2));
 }
-@mixin green-gradient($direction:to top right, $opacity1:1, $opacity2:1) {
-  @include linear-gradient($direction, rgba(#ffff1c, $opacity1), rgba(#2bff00, $opacity2));
-}
-@mixin red-gradient($direction:to top right, $opacity1:1, $opacity2:1) {
-  @include linear-gradient($direction, rgba(#ee0979, $opacity1), rgba(#ff6a00, $opacity2));
-}
-@mixin darkpurple-gradient($direction:to top right, $opacity1:1, $opacity2:1) {
-  @include linear-gradient($direction, rgba(#3023ae, $opacity1), rgba(#c96dd8, $opacity2));
-}
-@mixin purple-gradient($direction:to top right, $opacity1:1, $opacity2:1) {
-  @include linear-gradient($direction, rgba(#fc00ff, $opacity1), rgba(#7e00cd, $opacity2));
-}
-@mixin blue-gradient($direction:to top right, $opacity1:1, $opacity2:1) {
-  @include linear-gradient($direction, rgba(#0100f7, $opacity1), rgba(#00e4ff, $opacity2));
+
+// Transparent Text
+// ==========================================================================
+
+@mixin transparent-text {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
