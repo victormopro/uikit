@@ -58,6 +58,9 @@ figcaption, .caption {
   color: map-get($text-colors, "medium");
   text-transform: uppercase;
 }
+.text-meta {
+  @include font-style($meta-fontsize, $meta-fontweight, $meta-lineheight, $meta-letterspacing);
+}
 button, .text-btn {
   @include font-style($btn-fontsize, $btn-fontweight, $btn-lineheight);
 }

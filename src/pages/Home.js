@@ -118,6 +118,14 @@ const Home = () => (
                   <p className="text-sub mt-5">Lato Regular, 16px, 22px LH</p>
                 </div>
                 <div className="mt-25">
+                  <p>Body Copy Large / Lato</p>
+                  <p className="text-sub mt-5">Lato Light, 21px, 36px LH</p>
+                </div>
+                <div className="mt-25">
+                  <p className="text-small">Body Copy Small / Lato</p>
+                  <p className="text-sub mt-5">Lato Light, 16px, 26px LH</p>
+                </div>
+                <div className="mt-25">
                   <label className="mt-25">Label / Lato</label>
                   <p className="text-sub mt-5">Lato Bold, 16px, 19px LH</p>
                 </div>
@@ -145,10 +153,40 @@ const Home = () => (
                   <h5>Headline 5</h5>
                   <h6>Headline 6</h6>
                 </div>
+                <div className="mt-25">
+                  <p><span className="fw-bold">Large Description: </span>Select up to 5 that best represent your customer base. The more we know about your audience, the better we can build a site that helps drive conversion.</p>
+                </div>
+                <div className="mt-25">
+                  <p className="text-small"><span className="fw-bold">Small Description: </span>Select up to 5 that best represent your customer base. The more we know about your audience, the better we can build a site that helps drive conversion.</p>
+                </div>
+                <div className="mt-25">
+                  <p className="text-meta">Meta Description: Select up to 5 that best represent your customer base. The more we know about your audience, the better we can build a site that helps drive conversion.</p>
+                </div>
+                <div className="mt-25">
+                  <p className="text-meta color-medium">Meta Description: Select up to 5 that best represent your customer base. The more we know about your audience, the better we can build a site that helps drive conversion.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div className="section section--styling mt-150">
+      <div className="row">
+        <div className="col-xs-12">
+          <SectionTitle text='Cards / Popups' superscript={'03'} />
+        </div>
+      </div>
+      <div className="row mt-100">
+        <div className="col-xs-4">
+          <p className="text-center fw-bold">Standard Card</p>
+          <div className="card mt-30"></div>
+        </div>
+        <div className="col-xs-4">
+          <p className="text-center fw-bold">Popup</p>
+          <div className="popup mt-30"></div>
+        </div>
+        <div className="col-xs-4"></div>
       </div>
     </div>
   </div>
