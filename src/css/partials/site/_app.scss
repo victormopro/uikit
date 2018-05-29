@@ -3,13 +3,15 @@
 @import 'sidebar';
 @import 'section';
 @import 'swatch';
+@import 'card';
+@import 'popup';
 
 
 // Site-specific styles
 // ==========================================================================
 
 .app {
-  //display: flex;
+  margin-top: 60px;
 }
 
 .page {

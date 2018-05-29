@@ -3,7 +3,6 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import Main from './Main';
 import Navbar from './Navbar';
-import Sidebar from './Sidebar';
 import Home from '../pages/Home';
 import AIEditor from '../pages/AIEditor';
 import Blueprint from '../pages/Blueprint';

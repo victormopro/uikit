@@ -1,7 +1,11 @@
 .navbar {
   @include linear-gradient(to bottom right, lighten(map-get($mopro-colors, "secondary"), 7.5%), darken(map-get($mopro-colors, "secondary"), 7.5%));
   box-shadow: $shadow-z-1;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
   &__nav {
     display: flex;
     list-style: none;
