@@ -2,6 +2,7 @@
 // ==========================================================================
 
 .popup {
+  border-radius: $border-radius;
   box-shadow: $shadow-popup;
   &__header,
   &__body {

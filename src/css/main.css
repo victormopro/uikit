@@ -1513,6 +1513,7 @@ button, .text-btn {
 }
 
 .card {
+  border-radius: 10px;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
@@ -1521,6 +1522,7 @@ button, .text-btn {
 }
 
 .popup {
+  border-radius: 10px;
   box-shadow: 0 35px 50px 0 rgba(255, 119, 121, 0.15), 0 35px 50px 0 rgba(0, 0, 0, 0.1);
 }
 

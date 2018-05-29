@@ -2,6 +2,7 @@
 // ==========================================================================
 
 .card {
+  border-radius: $border-radius;
   box-shadow: $shadow-card;
   &__header,
   &__body {
