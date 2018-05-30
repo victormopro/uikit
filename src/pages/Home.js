@@ -1,9 +1,13 @@
 import React from 'react';
 
 import SectionTitle from '../components/SectionTitle';
+import CodePreview from '../components/CodePreview';
 
 const Home = () => (
   <div className="page page--home">
+
+    { /***** Colors *****/ }
+
     <div className="section section--colors">
       <div className="row">
         <div className="col-xs-12">
@@ -20,7 +24,7 @@ const Home = () => (
                   <div className="swatch__color"></div>
                   <div className="swatch__body">
                     <h5>CTA</h5>
-                    <p className="color-medium">#C253DD - #3023AE</p>
+                    <p className="color-medium fw-medium">#C253DD - #3023AE</p>
                   </div>
                 </div>
               </div>
@@ -30,7 +34,7 @@ const Home = () => (
                   <div className="swatch__color"></div>
                   <div className="swatch__body">
                     <h5>Primary Color</h5>
-                    <p className="color-medium">#C253DD</p>
+                    <p className="color-medium fw-medium">#C253DD</p>
                   </div>
                 </div>
               </div>
@@ -40,7 +44,7 @@ const Home = () => (
                   <div className="swatch__color"></div>
                   <div className="swatch__body">
                     <h5>Secondary Color</h5>
-                    <p className="color-medium">#3023AE</p>
+                    <p className="color-medium fw-medium">#3023AE</p>
                   </div>
                 </div>
               </div>
@@ -54,7 +58,7 @@ const Home = () => (
                   <div className="swatch__color"></div>
                   <div className="swatch__body">
                     <h5>Paving Black</h5>
-                    <p className="color-medium">#2B2829</p>
+                    <p className="color-medium fw-medium">#2B2829</p>
                   </div>
                 </div>
               </div>
@@ -63,7 +67,7 @@ const Home = () => (
                   <div className="swatch__color"></div>
                   <div className="swatch__body">
                     <h5>Cyanish Grey</h5>
-                    <p className="color-medium">#A7A8A8</p>
+                    <p className="color-medium fw-medium">#A7A8A8</p>
                   </div>
                 </div>
               </div>
@@ -72,7 +76,7 @@ const Home = () => (
                   <div className="swatch__color"></div>
                   <div className="swatch__body">
                     <h5>Gainsboro Grey</h5>
-                    <p className="color-medium">#DDD</p>
+                    <p className="color-medium fw-medium">#DDD</p>
                   </div>
                 </div>
               </div>
@@ -81,6 +85,9 @@ const Home = () => (
         </div>
       </div>
     </div>
+
+    { /***** Text *****/ }
+
     <div className="section section--text mt-150">
       <div className="row">
         <div className="col-xs-12">
@@ -171,6 +178,9 @@ const Home = () => (
         </div>
       </div>
     </div>
+
+    { /***** Cards/Popups *****/ }
+
     <div className="section section--styling mt-150">
       <div className="row">
         <div className="col-xs-12">
@@ -181,12 +191,48 @@ const Home = () => (
         <div className="col-xs-4">
           <p className="text-center fw-bold">Standard Card</p>
           <div className="card mt-30"></div>
+            <CodePreview>
+{`
+<div class="card">
+  <div class="card__header"></div>
+  <div class="card__content"></div>
+</div>
+`}
+            </CodePreview>
         </div>
         <div className="col-xs-4">
           <p className="text-center fw-bold">Popup</p>
           <div className="popup mt-30"></div>
+            <CodePreview>
+{`
+<div class="popup">
+  <div class="popup__header"></div>
+  <div class="popup__content"></div>
+</div>
+`}
+            </CodePreview>
         </div>
         <div className="col-xs-4"></div>
+      </div>
+    </div>
+
+    { /***** Charts *****/ }
+
+    <div className="section section--charts mt-150">
+      <div className="row">
+        <div className="col-xs-12">
+          <SectionTitle text='Charts' superscript={'04'} />
+        </div>
+      </div>
+    </div>
+
+    { /***** Modals *****/ }
+
+    <div className="section section--modals mt-150">
+      <div className="row">
+        <div className="col-xs-12">
+          <SectionTitle text='Modals' superscript={'05'} />
+        </div>
       </div>
     </div>
   </div>
