@@ -202,6 +202,9 @@
 @mixin main-gradient($direction: to top right, $opacity1: 1, $opacity2: 2) {
   @include linear-gradient($direction, rgba(map-get($mopro-colors, "primary"), $opacity1), rgba(map-get($mopro-colors, "secondary"), $opacity2));
 }
+@mixin secondary-gradient($direction: to top right, $opacity1: 1, $opacity2: 2) {
+  @include linear-gradient($direction, rgba(map-get($mopro-colors, "accent-primary"), $opacity1), rgba(map-get($mopro-colors, "accent-secondary"), $opacity2));
+}
 
 // Transparent Text
 // ==========================================================================

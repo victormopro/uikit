@@ -19,12 +19,22 @@ const Home = () => (
           <div className="section__content">
             <div className="row">
               <div className="col-xs-4">
-                <h4 className="gradient-text">Call-to-Action Color</h4>
-                <div className="swatch swatch--gradient mt-20">
-                  <div className="swatch__color"></div>
+                <h4 className="gradient-text">Primary Gradient / CTA Color</h4>
+                <div className="swatch mt-20">
+                  <div className="swatch__color bg-grad-primary"></div>
                   <div className="swatch__body">
                     <h5>CTA</h5>
                     <p className="color-medium fw-medium">#C253DD - #3023AE</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xs-4">
+                <h4 className="gradient-text-secondary">Secondary Gradient</h4>
+                <div className="swatch mt-20">
+                  <div className="swatch__color bg-grad-secondary"></div>
+                  <div className="swatch__body">
+                    <h5>Secondary Gradient</h5>
+                    <p className="color-medium fw-medium">#FF6A88 - #FF925A</p>
                   </div>
                 </div>
               </div>
@@ -38,7 +48,7 @@ const Home = () => (
                   </div>
                 </div>
               </div>
-              <div className="col-xs-4">
+              <div className="col-xs-4 mt-50">
                 <h4 className="color-secondary">Secondary Color</h4>
                 <div className="swatch swatch--secondary mt-20">
                   <div className="swatch__color"></div>
@@ -179,12 +189,12 @@ const Home = () => (
       </div>
     </div>
 
-    { /***** Cards/Popups *****/ }
+    { /***** Popups, Tooltips, Loaders & Cards *****/ }
 
     <div className="section section--styling mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle text='Cards / Popups' superscript={'03'} />
+          <SectionTitle text='Popups, Tooltips, Loaders & Cards' superscript={'03'} />
         </div>
       </div>
       <div className="row mt-100">
@@ -232,6 +242,66 @@ const Home = () => (
       <div className="row">
         <div className="col-xs-12">
           <SectionTitle text='Modals' superscript={'05'} />
+        </div>
+      </div>
+    </div>
+
+    { /***** Tables *****/ }
+
+    <div className="section section--modals mt-150">
+      <div className="row">
+        <div className="col-xs-12">
+          <SectionTitle text='Tables' superscript={'06'} />
+        </div>
+      </div>
+    </div>
+
+    { /***** Forms / Menus *****/ }
+
+    <div className="section section--modals mt-150">
+      <div className="row">
+        <div className="col-xs-12">
+          <SectionTitle text='Forms / Menus' superscript={'07'} />
+        </div>
+      </div>
+    </div>
+
+    { /***** Icons *****/ }
+
+    <div className="section section--modals mt-150">
+      <div className="row">
+        <div className="col-xs-12">
+          <SectionTitle text='Product Icons' superscript={'08'} />
+        </div>
+      </div>
+    </div>
+
+    { /***** Buttons / Switches *****/ }
+
+    <div className="section section--modals mt-150">
+      <div className="row">
+        <div className="col-xs-12">
+          <SectionTitle text='Buttons / Switches' superscript={'09'} />
+        </div>
+      </div>
+    </div>
+
+    { /***** File Uploader *****/ }
+
+    <div className="section section--modals mt-150">
+      <div className="row">
+        <div className="col-xs-12">
+          <SectionTitle text='File Uploader' superscript={'10'} />
+        </div>
+      </div>
+    </div>
+
+    { /***** Accordions *****/ }
+
+    <div className="section section--modals mt-150">
+      <div className="row">
+        <div className="col-xs-12">
+          <SectionTitle text='Accordions' superscript={'11'} />
         </div>
       </div>
     </div>

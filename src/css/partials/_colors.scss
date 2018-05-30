@@ -11,6 +11,10 @@
   @include main-gradient;
   @include transparent-text;
 }
+.gradient-text-secondary {
+  @include secondary-gradient;
+  @include transparent-text;
+}
 .color-dark {
   color: map-get($text-colors, "dark");
 }
@@ -19,4 +23,10 @@
 }
 .color-light {
   color: map-get($text-colors, "light");
+}
+.bg-grad-primary {
+  @include main-gradient;
+}
+.bg-grad-secondary {
+  @include secondary-gradient;
 }

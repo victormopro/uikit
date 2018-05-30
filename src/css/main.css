@@ -109,6 +109,13 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 
+.gradient-text-secondary {
+  background: #ff6a88;
+  background: linear-gradient(to top right, #ff6a88, #ff925a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .color-dark {
   color: #2B2829;
 }
@@ -119,6 +126,16 @@ ul {
 
 .color-light {
   color: #DDD;
+}
+
+.bg-grad-primary {
+  background: #c253dd;
+  background: linear-gradient(to top right, #c253dd, #3023ae);
+}
+
+.bg-grad-secondary {
+  background: #ff6a88;
+  background: linear-gradient(to top right, #ff6a88, #ff925a);
 }
 
 body {
