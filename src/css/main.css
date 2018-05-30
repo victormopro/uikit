@@ -1637,6 +1637,14 @@ button, .text-btn {
   min-height: 360px;
 }
 
+.code-preview {
+  margin-top: 25px;
+}
+
+pre {
+  border-radius: 10px;
+}
+
 .app {
   margin-top: 60px;
 }
