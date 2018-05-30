@@ -1,7 +1,9 @@
 import React from 'react';
 
-import SectionTitle from '../components/SectionTitle';
+import Card from '../components/Card';
 import CodePreview from '../components/CodePreview';
+import SectionTitle from '../components/SectionTitle';
+import Swatch from '../components/Swatch';
 
 const Home = () => (
   <div className="page page--home">
@@ -19,44 +21,40 @@ const Home = () => (
           <div className="section__content">
             <div className="row">
               <div className="col-xs-4">
-                <h4 className="gradient-text">Primary Gradient / CTA Color</h4>
-                <div className="swatch mt-20">
-                  <div className="swatch__color bg-grad-primary"></div>
-                  <div className="swatch__body">
-                    <h5>CTA</h5>
-                    <p className="color-medium fw-medium">#C253DD - #3023AE</p>
-                  </div>
-                </div>
+                <h4 className="gradient-text">Primary Gradient</h4>
+                <Swatch
+                  marginTop={20}
+                  colorClass='bg-grad-primary'
+                  headerText='Primary Gradient / CTA'
+                  colors={['#C253DD', '#3023AE']}
+                />
               </div>
               <div className="col-xs-4">
                 <h4 className="gradient-text-secondary">Secondary Gradient</h4>
-                <div className="swatch mt-20">
-                  <div className="swatch__color bg-grad-secondary"></div>
-                  <div className="swatch__body">
-                    <h5>Secondary Gradient</h5>
-                    <p className="color-medium fw-medium">#FF6A88 - #FF925A</p>
-                  </div>
-                </div>
+                <Swatch
+                  marginTop={20}
+                  colorClass='bg-grad-secondary'
+                  headerText='Secondary Gradient'
+                  colors={['#FF6A88', '#FF925A']}
+                />
               </div>
               <div className="col-xs-4">
                 <h4 className="color-primary">Primary Color</h4>
-                <div className="swatch swatch--primary mt-20">
-                  <div className="swatch__color"></div>
-                  <div className="swatch__body">
-                    <h5>Primary Color</h5>
-                    <p className="color-medium fw-medium">#C253DD</p>
-                  </div>
-                </div>
+                <Swatch
+                  marginTop={20}
+                  colorClass='bg-primary'
+                  headerText='Primary Color'
+                  colors={['#C253DD']}
+                />
               </div>
               <div className="col-xs-4 mt-50">
                 <h4 className="color-secondary">Secondary Color</h4>
-                <div className="swatch swatch--secondary mt-20">
-                  <div className="swatch__color"></div>
-                  <div className="swatch__body">
-                    <h5>Secondary Color</h5>
-                    <p className="color-medium fw-medium">#3023AE</p>
-                  </div>
-                </div>
+                <Swatch
+                  marginTop={20}
+                  colorClass='bg-secondary'
+                  headerText='Secondary Color'
+                  colors={['#3023AE']}
+                />
               </div>
             </div>
             <div className="row mt-100">
@@ -64,31 +62,28 @@ const Home = () => (
                 <h4>Text Color</h4>
               </div>
               <div className="col-xs-4">
-                <div className="swatch swatch--dark mt-20">
-                  <div className="swatch__color"></div>
-                  <div className="swatch__body">
-                    <h5>Paving Black</h5>
-                    <p className="color-medium fw-medium">#2B2829</p>
-                  </div>
-                </div>
+                <Swatch
+                  marginTop={20}
+                  colorClass='bg-dark'
+                  headerText='Paving Black'
+                  colors={['#2B2829']}
+                />
               </div>
               <div className="col-xs-4">
-                <div className="swatch swatch--medium mt-20">
-                  <div className="swatch__color"></div>
-                  <div className="swatch__body">
-                    <h5>Cyanish Grey</h5>
-                    <p className="color-medium fw-medium">#A7A8A8</p>
-                  </div>
-                </div>
+                <Swatch
+                  marginTop={20}
+                  colorClass='bg-medium'
+                  headerText='Cyanish Grey'
+                  colors={['#A7A8A8']}
+                />
               </div>
               <div className="col-xs-4">
-                <div className="swatch swatch--light mt-20">
-                  <div className="swatch__color"></div>
-                  <div className="swatch__body">
-                    <h5>Gainsboro Grey</h5>
-                    <p className="color-medium fw-medium">#DDD</p>
-                  </div>
-                </div>
+                <Swatch
+                  marginTop={20}
+                  colorClass='bg-light'
+                  headerText='Gainsboro Grey'
+                  colors={['#DDD']}
+                />
               </div>
             </div>
           </div>

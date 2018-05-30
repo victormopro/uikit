@@ -138,6 +138,26 @@ ul {
   background: linear-gradient(to top right, #ff6a88, #ff925a);
 }
 
+.bg-primary {
+  background-color: #C253DD;
+}
+
+.bg-secondary {
+  background-color: #3023AE;
+}
+
+.bg-dark {
+  background-color: #2B2829;
+}
+
+.bg-medium {
+  background-color: #A7A8A8;
+}
+
+.bg-light {
+  background-color: #DDD;
+}
+
 body {
   font-family: "Lato", sans-serif;
   color: #2B2829;

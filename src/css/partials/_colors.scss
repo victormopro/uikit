@@ -30,3 +30,18 @@
 .bg-grad-secondary {
   @include secondary-gradient;
 }
+.bg-primary {
+  background-color: map-get($mopro-colors, "primary");
+}
+.bg-secondary {
+  background-color: map-get($mopro-colors, "secondary");
+}
+.bg-dark {
+  background-color: map-get($text-colors, "dark");
+}
+.bg-medium {
+  background-color: map-get($text-colors, "medium");
+}
+.bg-light {
+  background-color: map-get($text-colors, "light");
+}
