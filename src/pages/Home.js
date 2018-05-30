@@ -47,7 +47,9 @@ const Home = () => (
                   colors={['#C253DD']}
                 />
               </div>
-              <div className="col-xs-4 mt-50">
+            </div>
+            <div className="row mt-50">
+              <div className="col-xs-4">
                 <h4 className="color-secondary">Secondary Color</h4>
                 <Swatch
                   marginTop={20}
