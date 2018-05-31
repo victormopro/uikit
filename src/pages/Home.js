@@ -194,6 +194,92 @@ const Home = () => (
           <SectionTitle text='Buttons / Switches' superscript={'03'} />
         </div>
       </div>
+      <div className="row mt-65">
+        <div className="col-xs-12">
+          <h4>Small Buttons</h4>
+          <div className="mt-15">
+            <button className="btn btn-sm btn--primary">Primary Button</button>{' '}
+            <button className="btn btn-sm btn--secondary">Secondary Button</button>{' '}
+            <button className="btn btn-sm btn--outline">Outline Button</button>{' '}
+            <button className="btn btn-sm btn--disabled">Disabled Button</button>{' '}
+          </div>
+        </div>
+      </div>
+      <div className="row mt-65">
+        <div className="col-xs-12">
+          <h4>Medium Buttons</h4>
+          <div className="mt-15">
+            <button className="btn btn--primary">Primary Button</button>{' '}
+            <button className="btn btn--secondary">Secondary Button</button>{' '}
+            <button className="btn btn--outline">Outline Button</button>{' '}
+            <button className="btn btn--disabled">Disabled Button</button>{' '}
+          </div>
+        </div>
+      </div>
+      <div className="row mt-65">
+        <div className="col-xs-12">
+          <h4>Large Buttons</h4>
+          <div className="mt-15">
+            <button className="btn btn-lg btn--primary">Primary Button</button>{' '}
+            <button className="btn btn-lg btn--secondary">Secondary Button</button>{' '}
+            <button className="btn btn-lg btn--outline">Outline Button</button>{' '}
+            <button className="btn btn-lg btn--disabled">Disabled Button</button>{' '}
+          </div>
+        </div>
+      </div>
+      <div className="row mt-25">
+        <div className="col-xs-12">
+          <CodePreview>
+{`
+<button class="btn btn-sm btn--primary">Primary Button</button>
+<button class="btn btn-sm btn--secondary">Secondary Button</button>
+<button class="btn btn-sm btn--outline">Outline Button</button>
+<button class="btn btn-sm btn--disabled">Disabled Button</button>
+
+<button class="btn btn--primary">Primary Button</button>
+<button class="btn btn--secondary">Secondary Button</button>
+<button class="btn btn--outline">Outline Button</button>
+<button class="btn btn--disabled">Disabled Button</button>
+
+<button class="btn btn-lg btn--primary">Primary Button</button>
+<button class="btn btn-lg btn--secondary">Secondary Button</button>
+<button class="btn btn-lg btn--outline">Outline Button</button>
+<button class="btn btn-lg btn--disabled">Disabled Button</button>
+`}
+          </CodePreview>
+        </div>
+      </div>
+      <div className="row mt-65">
+        <div className="col-xs-12">
+          <h4>Block Level Buttons</h4>
+          <div className="mt-15">
+            <button className="btn btn-sm btn-block btn--primary">Small Block Level Button</button>
+            <button className="btn btn-block btn--secondary">Medium Block Level Button</button>
+            <button className="btn btn-lg btn-block btn--outline">Large Block Level Button</button>
+            <button className="btn btn-block btn--disabled">Disabled Block Level Button</button>
+          </div>
+        </div>
+      </div>
+      <div className="row mt-25">
+        <div className="col-xs-12">
+          <CodePreview>
+{`
+<button class="btn btn-sm btn-block btn--primary">Small Block Level Button</button>
+<button class="btn btn-block btn--secondary">Medium Block Level Button</button>
+<button class="btn btn-lg btn-block btn--outline">Large Block Level Button</button>
+<button class="btn btn-block btn--disabled">Disabled Block Level Button</button>
+`}
+          </CodePreview>
+        </div>
+      </div>
+      <div className="row mt-65">
+        <div className="col-xs-8">
+          <h4>Action Buttons</h4>
+        </div>
+        <div className="col-xs-4">
+          <h4>Switches</h4>
+        </div>
+      </div>
     </div>
 
     { /***** Popups, Tooltips, Loaders & Cards *****/ }

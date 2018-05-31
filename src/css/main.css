@@ -94,6 +94,65 @@ ul {
   box-sizing: border-box;
 }
 
+.btn {
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn:focus, .btn:hover {
+  outline: none;
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.btn--primary {
+  background: #c253dd;
+  background: linear-gradient(to top right, #c253dd, #3023ae);
+  background-repeat: no-repeat;
+}
+
+.btn--secondary {
+  background: #C253DD;
+}
+
+.btn--outline {
+  background: none;
+  color: #C253DD;
+  border: 1px solid #C253DD;
+}
+
+.btn--disabled {
+  background: #DDD;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.btn-sm {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.btn-lg {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-block + .btn-block {
+  margin-top: 10px;
+}
+
 .color-primary {
   color: #C253DD;
 }
@@ -208,6 +267,11 @@ blockquote {
   color: inherit;
 }
 
+button {
+  font-family: inherit;
+  color: inherit;
+}
+
 h1 {
   font-size: 42px;
   font-weight: 500;
@@ -301,11 +365,11 @@ figcaption, .caption {
   letter-spacing: 0.4px;
 }
 
-button, .text-btn {
+button, .text-btn, .btn {
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 16px;
-  letter-spacing: normal;
+  letter-spacing: 1.6px;
 }
 
 .fw-hairline {

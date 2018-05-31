@@ -2,7 +2,7 @@
 // ==========================================================================
 
 $headlines: h1 h2 h3 h4 h5 h6;
-$text-elements: h1 h2 h3 h4 h5 h6 p a blockquote;
+$text-elements: h1 h2 h3 h4 h5 h6 p a blockquote button;
 
 body {
   font-family: "Lato", sans-serif;
@@ -64,8 +64,8 @@ figcaption, .caption {
 .text-modal {
   @include font-style($modal-fontsize, $modal-fontweight, $modal-lineheight, $modal-letterspacing);
 }
-button, .text-btn {
-  @include font-style($btn-fontsize, $btn-fontweight, $btn-lineheight);
+button, .text-btn, .btn {
+  @include font-style($btn-fontsize, $btn-fontweight, $btn-lineheight, $btn-letterspacing);
 }
 
 // Font weights

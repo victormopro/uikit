@@ -1,0 +1,52 @@
+// Button styles
+// ==========================================================================
+
+.btn {
+  border: none;
+  border-radius: $border-radius-btn;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  color: map-get($static-colors, "white");
+  font-weight: $fontweight-bold;
+  cursor: pointer;
+  transition: $transition-speed;
+  &:focus,
+  &:hover {
+    outline: none;
+    box-shadow: $shadow-btn;
+  }
+  &--primary {
+    @include main-gradient;
+    background-repeat: no-repeat;
+  }
+  &--secondary {
+    background: map-get($mopro-colors, "primary");
+  }
+  &--outline {
+    background: none;
+    color: map-get($mopro-colors, "primary");
+    border: 1px solid map-get($mopro-colors, "primary");
+  }
+  &--disabled {
+    background: map-get($text-colors, "light");
+    cursor: auto;
+    pointer-events: none;
+  }
+  &-sm {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  &-lg {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  &-block {
+    display: block;
+    width: 100%;
+    & + .btn-block {
+      margin-top: 10px;
+    }
+  }
+}
