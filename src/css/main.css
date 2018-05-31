@@ -1615,7 +1615,7 @@ button, .text-btn {
   transition: 0.25s;
 }
 
-.navbar__link:hover {
+.navbar__link:hover, .navbar__link:focus, .navbar__link.active {
   border-color: #FFF;
 }
 

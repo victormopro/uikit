@@ -22,7 +22,9 @@
     padding: 20px;
     border-bottom: 2px solid transparent;
     transition: $transition-speed;
-    &:hover {
+    &:hover,
+    &:focus,
+    &.active {
       border-color: map-get($static-colors, "white");
     }
   }
