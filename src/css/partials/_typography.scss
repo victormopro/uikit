@@ -4,6 +4,16 @@
 $headlines: h1 h2 h3 h4 h5 h6;
 $text-elements: h1 h2 h3 h4 h5 h6 p a blockquote button;
 
+html {
+  line-height: 1.15;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -moz-osx-fontsmoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
   font-family: "Lato", sans-serif;
   color: map-get($text-colors, "dark");

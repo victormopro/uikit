@@ -217,6 +217,16 @@ ul {
   background-color: #DDD;
 }
 
+html {
+  line-height: 1.15;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -moz-osx-fontsmoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
   font-family: "Lato", sans-serif;
   color: #2B2829;
