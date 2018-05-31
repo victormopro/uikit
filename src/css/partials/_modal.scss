@@ -1,0 +1,24 @@
+// Card styles
+// ==========================================================================
+
+.modal {
+  &__content-wrap {
+    box-shadow: $shadow-card;
+  }
+  &__header {
+    padding: 45px 50px 30px;
+  }
+  &__content {
+    padding: 0 50px 30px;
+    p {
+      @include font-style($modal-fontsize, $modal-fontweight, $modal-lineheight, $modal-letterspacing);
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
+  }
+  &__footer {
+    padding: 0 50px 45px;
+    text-align: right;
+  }
+}

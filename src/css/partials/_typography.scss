@@ -61,6 +61,9 @@ figcaption, .caption {
 .text-meta {
   @include font-style($meta-fontsize, $meta-fontweight, $meta-lineheight, $meta-letterspacing);
 }
+.text-modal {
+  @include font-style($modal-fontsize, $modal-fontweight, $modal-lineheight, $modal-letterspacing);
+}
 button, .text-btn {
   @include font-style($btn-fontsize, $btn-fontweight, $btn-lineheight);
 }

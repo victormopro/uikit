@@ -186,12 +186,22 @@ const Home = () => (
       </div>
     </div>
 
+    { /***** Buttons / Switches *****/ }
+
+    <div className="section section--modals mt-150">
+      <div className="row">
+        <div className="col-xs-12">
+          <SectionTitle text='Buttons / Switches' superscript={'03'} />
+        </div>
+      </div>
+    </div>
+
     { /***** Popups, Tooltips, Loaders & Cards *****/ }
 
     <div className="section section--styling mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle text='Popups, Tooltips, Loaders & Cards' superscript={'03'} />
+          <SectionTitle text='Popups, Tooltips, Loaders & Cards' superscript={'04'} />
         </div>
       </div>
       <div className="row mt-100">
@@ -228,7 +238,7 @@ const Home = () => (
     <div className="section section--charts mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle text='Charts' superscript={'04'} />
+          <SectionTitle text='Charts' superscript={'05'} />
         </div>
       </div>
     </div>
@@ -238,8 +248,27 @@ const Home = () => (
     <div className="section section--modals mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle text='Modals' superscript={'05'} />
+          <SectionTitle text='Modals' superscript={'06'} />
         </div>
+      </div>
+      <div className="row mt-100">
+        <div className="col-xs-5">
+          <div className="modal">
+            <div className="modal__content-wrap">
+              <div className="modal__header">
+                <h3>Modal Title</h3>
+              </div>
+              <div className="modal__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div className="modal__footer">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-xs-7"></div>
       </div>
     </div>
 
@@ -248,7 +277,7 @@ const Home = () => (
     <div className="section section--modals mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle text='Tables' superscript={'06'} />
+          <SectionTitle text='Tables' superscript={'07'} />
         </div>
       </div>
     </div>
@@ -258,7 +287,7 @@ const Home = () => (
     <div className="section section--modals mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle text='Forms / Menus' superscript={'07'} />
+          <SectionTitle text='Forms / Menus' superscript={'08'} />
         </div>
       </div>
     </div>
@@ -268,17 +297,7 @@ const Home = () => (
     <div className="section section--modals mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle text='Product Icons' superscript={'08'} />
-        </div>
-      </div>
-    </div>
-
-    { /***** Buttons / Switches *****/ }
-
-    <div className="section section--modals mt-150">
-      <div className="row">
-        <div className="col-xs-12">
-          <SectionTitle text='Buttons / Switches' superscript={'09'} />
+          <SectionTitle text='Product Icons' superscript={'09'} />
         </div>
       </div>
     </div>

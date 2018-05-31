@@ -294,6 +294,13 @@ figcaption, .caption {
   letter-spacing: 0.4px;
 }
 
+.text-modal {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+}
+
 button, .text-btn {
   font-size: 13px;
   font-weight: 500;
@@ -1565,6 +1572,34 @@ button, .text-btn {
 
 .popup__header, .popup__body {
   padding: 25px 30px;
+}
+
+.modal__content-wrap {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.modal__header {
+  padding: 45px 50px 30px;
+}
+
+.modal__content {
+  padding: 0 50px 30px;
+}
+
+.modal__content p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+}
+
+.modal__content p:not(:first-child) {
+  margin-top: 30px;
+}
+
+.modal__footer {
+  padding: 0 50px 45px;
+  text-align: right;
 }
 
 .text-left {
