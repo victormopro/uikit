@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from '../components/Button';
 import Card from '../components/Card';
 import CodePreview from '../components/CodePreview';
 import SectionTitle from '../components/SectionTitle';
@@ -201,10 +202,10 @@ const Home = () => (
         <div className="col-xs-12">
           <h4>Small Buttons</h4>
           <div className="mt-15">
-            <button className="btn btn-sm btn--primary">Primary Button</button>{' '}
-            <button className="btn btn-sm btn--secondary">Secondary Button</button>{' '}
-            <button className="btn btn-sm btn--outline">Outline Button</button>{' '}
-            <button className="btn btn-sm btn--disabled">Disabled Button</button>{' '}
+            <Button size='small' type='primary'>Primary Button</Button>{' '}
+            <Button size='small' type='secondary'>Secondary Button</Button>{' '}
+            <Button size='small' type='outline'>Outline Button</Button>{' '}
+            <Button size='small' type='disabled'>Disabled Button</Button>{' '}
           </div>
         </div>
       </div>
@@ -212,10 +213,10 @@ const Home = () => (
         <div className="col-xs-12">
           <h4>Medium Buttons</h4>
           <div className="mt-15">
-            <button className="btn btn--primary">Primary Button</button>{' '}
-            <button className="btn btn--secondary">Secondary Button</button>{' '}
-            <button className="btn btn--outline">Outline Button</button>{' '}
-            <button className="btn btn--disabled">Disabled Button</button>{' '}
+            <Button type='primary'>Primary Button</Button>{' '}
+            <Button type='secondary'>Secondary Button</Button>{' '}
+            <Button type='outline'>Outline Button</Button>{' '}
+            <Button type='disabled'>Disabled Button</Button>{' '}
           </div>
         </div>
       </div>
@@ -223,10 +224,10 @@ const Home = () => (
         <div className="col-xs-12">
           <h4>Large Buttons</h4>
           <div className="mt-15">
-            <button className="btn btn-lg btn--primary">Primary Button</button>{' '}
-            <button className="btn btn-lg btn--secondary">Secondary Button</button>{' '}
-            <button className="btn btn-lg btn--outline">Outline Button</button>{' '}
-            <button className="btn btn-lg btn--disabled">Disabled Button</button>{' '}
+            <Button size='large' type='primary'>Primary Button</Button>{' '}
+            <Button size='large' type='secondary'>Secondary Button</Button>{' '}
+            <Button size='large' type='outline'>Outline Button</Button>{' '}
+            <Button size='large' type='disabled'>Disabled Button</Button>{' '}
           </div>
         </div>
       </div>
@@ -256,10 +257,10 @@ const Home = () => (
         <div className="col-xs-12">
           <h4>Block Level Buttons</h4>
           <div className="mt-15">
-            <button className="btn btn-sm btn-block btn--primary">Small Block Level Button</button>
-            <button className="btn btn-block btn--secondary">Medium Block Level Button</button>
-            <button className="btn btn-lg btn-block btn--outline">Large Block Level Button</button>
-            <button className="btn btn-block btn--disabled">Disabled Block Level Button</button>
+            <Button size='small' type='primary' block>Primary Button</Button>{' '}
+            <Button size='small' type='secondary' block>Secondary Button</Button>{' '}
+            <Button size='small' type='outline' block>Outline Button</Button>{' '}
+            <Button size='small' type='disabled' block>Disabled Button</Button>{' '}
           </div>
         </div>
       </div>
