@@ -213,3 +213,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+// Absolute Fill
+// ==========================================================================
+
+@mixin absolute-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
