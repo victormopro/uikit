@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Radio = () => (
+const Radio = ({ name, label }) => (
   <div className="radio">
-    <input type="radio" />
+    <input type="radio" name="name" />
     <span></span>
-    <label></label>
+    <label>{label}</label>
   </div>
 );
 

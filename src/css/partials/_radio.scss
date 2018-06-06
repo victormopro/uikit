@@ -1,0 +1,63 @@
+// Radio button styles
+// ==========================================================================
+
+.radio {
+  position: relative;
+  display: inline-block;
+  input {
+      opacity: 0;
+      @include absolute-fill;
+      cursor: pointer;
+      margin: 0;
+      z-index: 1;
+      &:checked ~ span:after {
+        transform: scale(1);
+      }
+  }
+  span,
+  label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    pointer-events: none;
+    transition: $transition-speed;
+    &:before,
+    &:after {
+      content: '';
+      border-radius: 50%;
+      transition: inherit;
+    }
+    &:before {
+      @include absolute-fill;
+      background-color: map-get($static-colors, "white");
+      text-align: center;
+      border: 1px solid map-get($static-colors, "light-grey");
+    }
+    &:after {
+      display: block;
+      position: relative;
+      margin: 2px;
+      height: 12px;
+      width: 12px;
+      background-color: map-get($mopro-colors, "primary");
+      transform: scale(0);
+    }
+  }
+  span + label,
+  label + span {
+    margin-left: 10px;
+  }
+  &:hover {
+    span {
+      transform: scale(1.25);
+      &:before {
+        box-shadow: $shadow-z-1;
+      }
+    }
+  }
+}

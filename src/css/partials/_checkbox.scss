@@ -1,0 +1,72 @@
+// Checkbox styles
+// ==========================================================================
+
+.checkbox {
+  position: relative;
+  display: inline-block;
+  input {
+    opacity: 0;
+    @include absolute-fill;
+    cursor: pointer;
+    margin: 0;
+    z-index: 1;
+    &:checked ~ span {
+      &:before {
+        background-color: map-get($mopro-colors, "primary");
+      }
+      &:after {
+        transform: rotate(45deg) scale(1);
+      }
+    }
+  }
+  span,
+  label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    pointer-events: none;
+    transition: $transition-speed;
+    border-radius: 2px;
+    &:before,
+    &:after {
+      content: '';
+      transition: inherit;
+    }
+    &:before {
+      @include absolute-fill;
+      background-color: map-get($static-colors, "white");
+      text-align: center;
+      border: 1px solid map-get($static-colors, "light-grey");
+      border-radius: 2px;
+    }
+    &:after {
+      position: relative;
+      display: block;
+      top: 3px;
+      margin: 0 auto;
+      width: 4px;
+      height: 8px;
+      border: solid map-get($static-colors, "white");
+      border-width: 0 1px 1px 0;
+      transform: rotate(0deg) scale(0);
+      transition-delay: .1s;
+    }
+  }
+  span + label,
+  label + span {
+    margin-left: 10px;
+  }
+  &:hover {
+    span {
+      transform: scale(1.25);
+      &:before {
+        box-shadow: $shadow-z-1;
+      }
+    }
+  }
+}
