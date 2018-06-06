@@ -1688,6 +1688,46 @@ button, .text-btn, .btn {
   text-align: right;
 }
 
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.v-align-top {
+  align-items: flex-start;
+}
+
+.v-align-center {
+  align-items: center;
+}
+
+.v-align-bottom {
+  align-items: flex-end;
+}
+
 .main {
   display: flex;
   background: #FFF;
