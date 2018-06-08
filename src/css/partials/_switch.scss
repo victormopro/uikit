@@ -1,0 +1,101 @@
+// Swtich styles
+// ==========================================================================
+
+.switch {
+  position: relative;
+  display: inline-block;
+  label {
+    cursor: pointer;
+    @include absolute-fill;
+  }
+  input {
+    display: none;
+    &:checked + .lever {
+      transition: $transition-speed;
+      &:before {
+        left: 75%;
+      }
+    }
+    &:not(:disabled) + .lever:active:before {
+      transform: scale(1.25);
+    }
+  }
+  .lever {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 20px;
+    border-radius: $border-radius;
+    transition: $transition-speed;
+    @include main-gradient;
+    &:before {
+      content: '';
+      display: block;
+      position: relative;
+      transition: inherit;
+      height: 8px;
+      width: 8px;
+      background: map-get($static-colors, "white");
+      border-radius: 50%;
+      top: 6px;
+      left: 6px;
+      box-shadow: $shadow-z-1;
+      transition: $transition-speed;
+    }
+  }
+  &__text {
+    display: none;
+  }
+
+  // Switch types
+
+  &--success {
+    .lever {
+      background: map-get($static-colors, "error");
+    }
+    input:checked + .lever {
+      background: map-get($static-colors, "success");
+    }
+  }
+  &--text {
+    .lever {
+      background: map-get($static-colors, "light-grey");
+    }
+    input:checked + .lever {
+      @include main-gradient;
+      .switch__text {
+        &:before {
+          opacity: 0;
+        }
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+    .switch__text {
+      display: block;
+      @include absolute-fill;
+      &:before,
+      &:after {
+        position: absolute;
+        top: 50%;
+        font-family: 'Lato', sans-serif;
+        font-size: 12px;
+        line-height: 1;
+        color: map-get($static-colors, "white");
+        text-transform: uppercase;
+        transform: translateY(-50%);
+        transition: $transition-speed;
+      }
+      &:before {
+        content: 'OFF';
+        right: 6px;
+      }
+      &:after {
+        content: 'ON';
+        left: 6px;
+        opacity: 0;
+      }
+    }
+  }
+}

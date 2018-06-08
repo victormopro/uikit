@@ -10,33 +10,3 @@
     box-shadow: $shadow-swatch;
   }
 }
-.swatch--gradient {
-  .swatch__color {
-    @include main-gradient;
-  }
-}
-.swatch--primary {
-  .swatch__color {
-    background: map-get($mopro-colors, "primary");
-  }
-}
-.swatch--secondary {
-  .swatch__color {
-    background: map-get($mopro-colors, "secondary");
-  }
-}
-.swatch--dark {
-  .swatch__color {
-    background: map-get($text-colors, "dark");
-  }
-}
-.swatch--medium {
-  .swatch__color {
-    background: map-get($text-colors, "medium");
-  }
-}
-.swatch--light {
-  .swatch__color {
-    background: map-get($text-colors, "light");
-  }
-}

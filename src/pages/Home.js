@@ -1,13 +1,14 @@
 import React from 'react';
 
+import ActionButton from '../components/ActionButton';
 import Button from '../components/Button';
 import Card from '../components/Card';
+import Checkbox from '../components/Checkbox';
 import CodePreview from '../components/CodePreview';
+import Radio from '../components/Radio';
 import SectionTitle from '../components/SectionTitle';
 import Swatch from '../components/Swatch';
-import Checkbox from '../components/Checkbox';
-import Radio from '../components/Radio';
-import ActionButton from '../components/ActionButton';
+import Switch from '../components/Switch';
 
 const Home = () => (
   <div className="page page--home">
@@ -62,10 +63,28 @@ const Home = () => (
                   colors={['#3023AE']}
                 />
               </div>
+              <div className="col-xs-4">
+                <h4 className="color-success">Success Color</h4>
+                <Swatch
+                  marginTop={20}
+                  colorClass='bg-success'
+                  headerText='Success Color'
+                  colors={['#64C38E']}
+                />
+              </div>
+              <div className="col-xs-4">
+                <h4 className="color-error">Error Color</h4>
+                <Swatch
+                  marginTop={20}
+                  colorClass='bg-error'
+                  headerText='Error Color'
+                  colors={['#F94D46']}
+                />
+              </div>
             </div>
             <div className="row mt-100">
               <div className="col-xs-12">
-                <h4>Text Color</h4>
+                <h4>Text Colors</h4>
               </div>
               <div className="col-xs-4">
                 <Swatch
@@ -279,35 +298,67 @@ const Home = () => (
       <div className="row mt-65">
         <div className="col-xs-8">
           <h4>Action Buttons</h4>
-          <div className="flex mt-20">
-            <Radio />
-            <Checkbox />
-            <ActionButton type='plus'>
-              <svg x="0" y="0" viewBox="0 0 485 485" height="15" width="15">
-                <polygon points="485,227.5 257.5,227.5 257.5,0 227.5,0 227.5,227.5 0,227.5 0,257.5 227.5,257.5 227.5,485 257.5,485 257.5,257.5
-              	485,257.5 "/>
-              </svg>
-            </ActionButton>
-            <ActionButton type='minus'>
-              <svg x="0" y="0" viewBox="0 0 485 485" height="15" width="15">
-                <rect y="227.5" width="485" height="30"/>
-              </svg>
-            </ActionButton>
-            <ActionButton type='check'>
-              <svg x="0" y="0" viewBox="0 0 485 485" height="15" width="15">
-                <polygon points="412.895,67.303 155.815,324.378 21.213,189.777 0,210.99 155.815,366.804 434.107,88.516 "/>
-              </svg>
-            </ActionButton>
-            <ActionButton type='close'>
-              <svg x="0" y="0" viewBox="0 0 485 485" height="15" width="15">
-                <polygon points="371.23,21.213 350.018,0 185.615,164.402 21.213,0 0,21.213 164.402,185.615 0,350.018 21.213,371.23   185.615,206.828 350.018,371.23 371.23,350.018 206.828,185.615 "/>
-              </svg>
-            </ActionButton>
+          <div className="flex justify-between v-align-center mt-20">
+            <Radio name="test" label="Radio label" />
+            <Checkbox label="Checkbox label" />
+            <ActionButton type='plus' />
+            <ActionButton type='minus' />
+            <ActionButton type='check' />
+            <ActionButton type='close' />
           </div>
         </div>
         <div className="col-xs-4">
           <h4>Switches</h4>
+          <div className="flex justify-between v-align-center mt-20">
+            <Switch type="success" />
+            <Switch />
+            <Switch type="text" />
+          </div>
         </div>
+      </div>
+      <div className="row mt-25">
+        <CodePreview>
+{`
+<!-- Radio button -->
+<div class="radio">
+  <input type="radio" name="name">
+  <span></span>
+  <label>Radio label</label>
+</div>
+
+<!-- Checkbox -->
+<div class="checkbox">
+  <input type="checkbox">
+  <span></span>
+  <label>Checkbox label</label>
+</div>
+
+<!-- Action buttons -->
+...
+
+<!-- Switches -->
+<div class="switch switch--success">
+  <label>
+    <input type="checkbox">
+    <span class="lever"></span>
+  </label>
+</div>
+<div class="switch">
+  <label>
+    <input type="checkbox">
+    <span class="lever"></span>
+  </label>
+</div>
+<div class="switch switch--text">
+  <label>
+    <input type="checkbox">
+    <span class="lever">
+      <span class="switch__text"></span>
+    </span>
+  </label>
+</div>
+`}
+        </CodePreview>
       </div>
     </div>
 

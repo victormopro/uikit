@@ -24,6 +24,12 @@
 .color-light {
   color: map-get($text-colors, "light");
 }
+.color-success {
+  color: map-get($static-colors, "success");
+}
+.color-error {
+  color: map-get($static-colors, "error");
+}
 .bg-grad-primary {
   @include main-gradient;
 }
@@ -35,6 +41,12 @@
 }
 .bg-secondary {
   background-color: map-get($mopro-colors, "secondary");
+}
+.bg-success {
+  background-color: map-get($static-colors, "success");
+}
+.bg-error {
+  background-color: map-get($static-colors, "error");
 }
 .bg-dark {
   background-color: map-get($text-colors, "dark");

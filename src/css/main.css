@@ -300,6 +300,14 @@ ul {
   color: #DDD;
 }
 
+.color-success {
+  color: #64C38E;
+}
+
+.color-error {
+  color: #F94D46;
+}
+
 .bg-grad-primary {
   background: #c253dd;
   background: linear-gradient(to top right, #c253dd, #3023ae);
@@ -316,6 +324,14 @@ ul {
 
 .bg-secondary {
   background-color: #3023AE;
+}
+
+.bg-success {
+  background-color: #64C38E;
+}
+
+.bg-error {
+  background-color: #F94D46;
 }
 
 .bg-dark {
@@ -1865,6 +1881,123 @@ button, .text-btn, .btn {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+}
+
+.switch label {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch input:checked + .lever {
+  transition: 0.25s;
+}
+
+.switch input:checked + .lever:before {
+  left: 75%;
+}
+
+.switch input:not(:disabled) + .lever:active:before {
+  transform: scale(1.25);
+}
+
+.switch .lever {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+  transition: 0.25s;
+  background: #c253dd;
+  background: linear-gradient(to top right, #c253dd, #3023ae);
+}
+
+.switch .lever:before {
+  content: '';
+  display: block;
+  position: relative;
+  transition: inherit;
+  height: 8px;
+  width: 8px;
+  background: #FFF;
+  border-radius: 50%;
+  top: 6px;
+  left: 6px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.25s;
+}
+
+.switch__text {
+  display: none;
+}
+
+.switch--success .lever {
+  background: #F94D46;
+}
+
+.switch--success input:checked + .lever {
+  background: #64C38E;
+}
+
+.switch--text .lever {
+  background: #DDD;
+}
+
+.switch--text input:checked + .lever {
+  background: #c253dd;
+  background: linear-gradient(to top right, #c253dd, #3023ae);
+}
+
+.switch--text input:checked + .lever .switch__text:before {
+  opacity: 0;
+}
+
+.switch--text input:checked + .lever .switch__text:after {
+  opacity: 1;
+}
+
+.switch--text .switch__text {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.switch--text .switch__text:before, .switch--text .switch__text:after {
+  position: absolute;
+  top: 50%;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  color: #FFF;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+  transition: 0.25s;
+}
+
+.switch--text .switch__text:before {
+  content: 'OFF';
+  right: 6px;
+}
+
+.switch--text .switch__text:after {
+  content: 'ON';
+  left: 6px;
+  opacity: 0;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1977,31 +2110,6 @@ button, .text-btn, .btn {
   background: #FFF;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 35px 50px 0 rgba(255, 119, 121, 0.15), 0 35px 50px 0 rgba(0, 0, 0, 0.1);
-}
-
-.swatch--gradient .swatch__color {
-  background: #c253dd;
-  background: linear-gradient(to top right, #c253dd, #3023ae);
-}
-
-.swatch--primary .swatch__color {
-  background: #C253DD;
-}
-
-.swatch--secondary .swatch__color {
-  background: #3023AE;
-}
-
-.swatch--dark .swatch__color {
-  background: #2B2829;
-}
-
-.swatch--medium .swatch__color {
-  background: #A7A8A8;
-}
-
-.swatch--light .swatch__color {
-  background: #DDD;
 }
 
 .card {

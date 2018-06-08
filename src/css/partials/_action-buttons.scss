@@ -1,0 +1,27 @@
+// Action button styles
+// ==========================================================================
+
+.action-btn {
+  height: 15px;
+  width: 15px;
+  border: 1px solid map-get($static-colors, "light-grey");
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  background: map-get($static-colors, "white");
+  position: relative;
+  transition: $transition-speed;
+  &--plus {
+    background: blue;
+  }
+  &--minus {
+    background: steelblue;
+  }
+  &--check {
+    background: teal;
+  }
+  &--close {
+    background: green;
+  }
+}
