@@ -6,4 +6,15 @@
   padding: 10px;
   background: map-get($bg-colors, "light");
   height: calc(100vh - 60px);
+  &__items {
+    margin-left: 10px;
+    list-style: none;
+  }
+  &__item {
+    margin: 15px 0;
+  }
+  &__link {
+    text-decoration: none;
+    color: map-get($mopro-colors, "secondary");
+  }
 }

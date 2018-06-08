@@ -2100,6 +2100,20 @@ button, .text-btn, .btn {
   height: calc(100vh - 60px);
 }
 
+.sidebar__items {
+  margin-left: 10px;
+  list-style: none;
+}
+
+.sidebar__item {
+  margin: 15px 0;
+}
+
+.sidebar__link {
+  text-decoration: none;
+  color: #3023AE;
+}
+
 .swatch__color {
   height: 190px;
   border-radius: 10px 10px 0 0;
