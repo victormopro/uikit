@@ -2093,7 +2093,7 @@ button, .text-btn, .btn {
 .sidebar {
   position: fixed;
   width: 15%;
-  min-width: 125px;
+  min-width: 230px;
   max-width: 250px;
   padding: 10px;
   background: #F1F2F6;
@@ -2106,12 +2106,22 @@ button, .text-btn, .btn {
 }
 
 .sidebar__item {
-  margin: 15px 0;
+  margin: 5px 0;
 }
 
 .sidebar__link {
   text-decoration: none;
-  color: #3023AE;
+  color: #A7A8A8;
+  font-size: 12px;
+  font-weight: 300;
+  display: block;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.sidebar__link:hover, .sidebar__link .active {
+  background: #DDD;
+  color: #2B2829;
 }
 
 .swatch__color {
@@ -2149,6 +2159,7 @@ pre {
 .page {
   margin-top: 100px;
   margin-bottom: 100px;
+  padding-left: 120px;
 }
 
 .has-superscript {
