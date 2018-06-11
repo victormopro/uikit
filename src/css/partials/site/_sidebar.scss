@@ -1,8 +1,7 @@
 .sidebar {
   position: fixed;
   width: 15%;
-  min-width: 125px;
-  max-width: 250px;
+  width: 250px;
   padding: 10px;
   background: map-get($bg-colors, "light");
   height: calc(100vh - 60px);
