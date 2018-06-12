@@ -1884,6 +1884,8 @@ button, .text-btn, .btn {
 .switch {
   position: relative;
   display: inline-block;
+  width: 50px;
+  height: 20px;
 }
 
 .switch label {
@@ -1914,8 +1916,8 @@ button, .text-btn, .btn {
 .switch .lever {
   display: inline-block;
   position: relative;
-  width: 50px;
-  height: 20px;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
   transition: 0.25s;
   background: #c253dd;
@@ -2055,6 +2057,11 @@ button, .text-btn, .btn {
   background: #FFF;
 }
 
+.main__content {
+  flex: 1;
+  padding-left: 250px;
+}
+
 .navbar {
   background: #3929ce;
   background: linear-gradient(to bottom right, #3929ce, #271d8e);
@@ -2093,8 +2100,7 @@ button, .text-btn, .btn {
 .sidebar {
   position: fixed;
   width: 15%;
-  min-width: 230px;
-  max-width: 250px;
+  width: 250px;
   padding: 10px;
   background: #F1F2F6;
   height: calc(100vh - 60px);

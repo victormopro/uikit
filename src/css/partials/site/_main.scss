@@ -1,4 +1,8 @@
 .main {
   display: flex;
   background: map-get($static-colors, "white");
+  &__content {
+    flex: 1;
+    padding-left: 250px;
+  }
 }
