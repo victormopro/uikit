@@ -317,7 +317,8 @@ const Home = () => (
         </div>
       </div>
       <div className="row mt-25">
-        <CodePreview>
+        <div className="col-xs-12">
+          <CodePreview>
 {`
 <!-- Radio button -->
 <div class="radio">
@@ -358,7 +359,8 @@ const Home = () => (
   </label>
 </div>
 `}
-        </CodePreview>
+          </CodePreview>
+        </div>
       </div>
     </div>
 
