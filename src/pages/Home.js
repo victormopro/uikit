@@ -22,7 +22,7 @@ const Home = () => (
         </div>
       </div>
       <div className="row mt-100">
-        <div className="col-xs-offset-1 col-xs-11">
+        <div className="col-xs-12">
           <div className="section__content">
             <div className="row">
               <div className="col-xs-4">
