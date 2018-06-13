@@ -375,7 +375,7 @@ const Home = () => (
       </div>
       <div className="row mt-100">
         <div className="col-xs-4">
-          <ProfileCard img="https://placeimg.com/150/150/people" name="Bessie Lindsey" />
+          <ProfileCard img="https://placeimg.com/150/150/people" name="Bessie Lindsey" profile="UI Developer"/>
         </div>
         <div className="col-xs-4">
           <ProfileCard img="https://placeimg.com/150/150/tech" name="Virginia Reyes" />
