@@ -22,19 +22,24 @@ import Button from './Button';
 // export default ProfileCard;
 
 export class ProfileCard extends React.Component{
-    render() {
+    constructor(props) {
+        super();
+        this.name = props.name;
+        this.img = props.img;
+    }
 
+    render() {
         let profile = 'Graphic eater, hamburger designer, not necessarily in that order',
             cardText = "I'm a 26-year-old art director and graphic designer based in London who loves to think and to create. I'm a calligraphy addict and an art lover. I'm a soldier and I would die for beauty. Why? Remember that the egg has a perfect shape despite coming out of an ass."
         return(
             <div className="card text-center mb-30">
                 
                 <div className="card__header">
-                    <img className="card__img round" src={this.props.img} alt="profile" />
+                    <img className="card__img round" src={this.img} alt="profile" />
                 </div>
                 
                 <div className="card__content">
-                    <h4 className="card__title">{this.props.name}</h4>
+                    <h4 className="card__title">{this.name}</h4>
                     <small className="card__subtitle">{profile}</small>
                     <p className="card__text">{cardText}</p>
                     <Button type="default">
