@@ -17,6 +17,9 @@
     outline: none;
     box-shadow: $shadow-btn;
   }
+  &--default{
+    color:#CCC;
+  }
   &--primary {
     @include main-gradient;
     background-repeat: no-repeat;

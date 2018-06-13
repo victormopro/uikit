@@ -9,6 +9,7 @@ import Radio from '../components/Radio';
 import SectionTitle from '../components/SectionTitle';
 import Swatch from '../components/Swatch';
 import Switch from '../components/Switch';
+import ProfileCard from '../components/ProfileCard';
 
 const Home = () => (
   <div className="page page--home">
@@ -374,13 +375,62 @@ const Home = () => (
       </div>
       <div className="row mt-100">
         <div className="col-xs-4">
+          <ProfileCard img="https://placeimg.com/150/150/people" name="Bessie Lindsey" />
+        </div>
+        <div className="col-xs-4">
+          <ProfileCard img="https://placeimg.com/150/150/tech" name="Virginia Reyes" />
+        </div>
+        <div className="col-xs-4">
+          <ProfileCard img="https://placeimg.com/150/150/nature" name="Donald Carroll" />
+        </div>
+        <div className="col-xs-4">
           <p className="text-center fw-bold">Standard Card</p>
           <div className="card mt-30"></div>
             <CodePreview>
-{`
+            {`
 <div class="card">
   <div class="card__header"></div>
   <div class="card__content"></div>
+  <div class="card__footer"></div>
+</div>
+`}
+            </CodePreview>
+        </div>
+        <div className="col-xs-4">
+          <p className="text-center fw-bold">Button on bottom</p>
+          <div className="card mt-30">
+            <div className="card__footer">
+              <Button size="large" type="primary" block children="Button on bottom" />
+            </div>
+          </div>
+            <CodePreview>
+            {`
+<div class="card">
+  <div class="card__header"></div>
+  <div class="card__content"></div>
+  <div class="card__footer">
+    <button class="btn btn-lg btn--primary btn-block">Button on bottom</button>
+  </div>
+</div>
+`}
+            </CodePreview>
+        </div>
+        <div className="col-xs-4">
+          <p className="text-center fw-bold">Button with text under</p>
+          <div className="card mt-30">
+            <div className="card__footer text-center">
+              <Button size="large" type="primary" children="Button with text under" />
+              <p className="card__text">Meta Description: Select up to 5 personas that best represent your customer base.</p>
+            </div>
+          </div>
+            <CodePreview>
+            {`
+<div class="card">
+  <div class="card__header"></div>
+  <div class="card__content"></div>
+  <div class="card__footer">
+    <button class="btn btn-lg btn--primary btn-block">Button with text under</button>
+  </div>
 </div>
 `}
             </CodePreview>
@@ -397,7 +447,7 @@ const Home = () => (
 `}
             </CodePreview>
         </div>
-        <div className="col-xs-4"></div>
+        
       </div>
     </div>
 

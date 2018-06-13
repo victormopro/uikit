@@ -224,3 +224,40 @@
   height: 100%;
   width: 100%;
 }
+
+// ==========================================================================
+// Prefix browsers for all the property start
+// ==========================================================================
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  } 
+  #{$property}: $value;
+}
+
+//Example Input
+//===============
+// .class-name{
+//   @include prefix (transition, .3s ease-in-out, ms moz webkit o); // all the browsers
+//   @include prefix (transform, rotate(90deg), ms webkit); // ms and webkit only
+//   @include prefix (transform-origin, left); //non-prefixed declaration
+// }
+
+//Output
+//=========
+// .class-name {
+//   -ms-transition: 0.3s ease-in-out; // all the browsers
+//   -moz-transition: 0.3s ease-in-out;
+//   -webkit-transition: 0.3s ease-in-out;
+//   -o-transition: 0.3s ease-in-out;
+//   transition: 0.3s ease-in-out;
+
+//   -ms-transform: rotate(90deg); // ms and webkit only
+//   -webkit-transform: rotate(90deg);
+//   transform: rotate(90deg);
+
+//   transform-origin: left; //non-prefixed declaration
+// }
+// ==========================================================================
+// Prefix browsers for all the property end
+// ==========================================================================
