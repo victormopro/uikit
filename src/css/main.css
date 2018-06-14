@@ -2270,11 +2270,10 @@ button, .text-btn, .btn {
   min-height: 360px;
   position: relative;
   width: 337px;
-  padding: 30px;
   overflow: hidden;
 }
 
-.card__content {
+.card__body {
   margin-bottom: 20px;
 }
 
@@ -2282,7 +2281,6 @@ button, .text-btn, .btn {
   position: absolute;
   width: 100%;
   bottom: 0;
-  left: 0;
   min-height: 50px;
 }
 
@@ -2314,6 +2312,31 @@ button, .text-btn, .btn {
   font-size: 14px;
   line-height: 22px;
   margin: 15px 0;
+}
+
+.card .social-icon {
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+
+.card .social-icon__list {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 10px;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .social-icon__list:hover {
+  background: #F1F1F1;
 }
 
 .popup {

@@ -4,16 +4,14 @@
   min-height: 360px;
   position: relative;
   width: 337px;
-  padding: 30px;
   overflow: hidden;
-  &__content {
+  &__body {
     margin-bottom: 20px;
   }
   &__footer {
     position: absolute;
     width: 100%;
     bottom: 0;
-    left: 0;
     min-height: 50px;
   }
   &__img {
@@ -43,5 +41,22 @@
     font-size: 14px;
     line-height: 22px;
     margin: 15px 0;
+  }
+
+  .social-icon{
+    @include prefix (display, flex, moz ms);
+    @include prefix (justify-content, center, moz ms);
+
+    &__list{
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      margin: 10px;
+      @include prefix (transition,all .3s ease-in-out, moz ms webkit);
+      &:hover{
+        background: #F1F1F1;
+      }
+    }
   }
 }

@@ -375,16 +375,37 @@ const Home = () => (
       </div>
       <div className="row mt-100">
         <div className="col-xs-4">
-          <ProfileCard img="https://placeimg.com/150/150/people" name="Bessie Lindsey" profile="UI Developer"/>
+          <ProfileCard 
+                img="https://placeimg.com/150/150/people" 
+                name="Bessie Lindsey" 
+                profile="UI Developer"
+                about="I'm a 26-year-old art director and graphic designer based in London who loves to think and to create. I'm a calligraphy addict and an art lover. I'm a soldier and I would die for beauty. Why? Remember that the egg has a perfect shape despite coming out of an ass."
+                children= 'Read more'
+                facebook="https://www.facebook.com/"
+          />
         </div>
         <div className="col-xs-4">
-          <ProfileCard img="https://placeimg.com/150/150/tech" name="Virginia Reyes" />
+          <ProfileCard 
+                img="https://placeimg.com/150/150/tech" 
+                name="Virginia Reyes"
+                profile="Graphic Designer" 
+                children= 'View more'
+                facebook="http://facebook.com"
+                twitter="https://twitter.com/"
+          />
         </div>
         <div className="col-xs-4">
-          <ProfileCard img="https://placeimg.com/150/150/nature" name="Donald Carroll" />
+          <ProfileCard 
+                img="https://placeimg.com/150/150/nature" 
+                name="Donald Carroll"
+                profile="Angular, React, JAVA developer"
+                facebook="http://facebook.com"
+                twitter="https://twitter.com/"
+                instagram="https://www.instagram.com"
+          />
         </div>
         <div className="col-xs-4">
-          <p className="text-center fw-bold">Standard Card</p>
+          {/* <p className="text-center fw-bold">Standard Card</p> */}
           <div className="card mt-30"></div>
             <CodePreview>
             {`
@@ -397,7 +418,7 @@ const Home = () => (
             </CodePreview>
         </div>
         <div className="col-xs-4">
-          <p className="text-center fw-bold">Button on bottom</p>
+          {/* <p className="text-center fw-bold">Button on bottom</p> */}
           <div className="card mt-30">
             <div className="card__footer">
               <Button size="large" type="primary" block children="Button on bottom" />
@@ -416,7 +437,7 @@ const Home = () => (
             </CodePreview>
         </div>
         <div className="col-xs-4">
-          <p className="text-center fw-bold">Button with text under</p>
+          {/* <p className="text-center fw-bold">Button with text under</p> */}
           <div className="card mt-30">
             <div className="card__footer text-center">
               <Button size="large" type="primary" children="Button with text under" />
