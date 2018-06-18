@@ -10,6 +10,7 @@ import SectionTitle from '../components/SectionTitle';
 import Swatch from '../components/Swatch';
 import Switch from '../components/Switch';
 import ProfileCard from '../components/ProfileCard';
+import Accordions from '../components/Accordions';
 
 const Home = () => (
   <div className="page page--home">
@@ -405,7 +406,7 @@ const Home = () => (
           />
         </div>
         <div className="col-xs-4">
-          {/* <p className="text-center fw-bold">Standard Card</p> */}
+          <p className="text-center fw-bold">Standard Card</p>
           <div className="card mt-30"></div>
             <CodePreview>
             {`
