@@ -27,6 +27,10 @@
   &--secondary {
     background: map-get($mopro-colors, "primary");
   }
+  &--profile {
+    color: map-get($static-colors, "grey");
+    text-transform: capitalize;
+  }
   &--outline {
     background: none;
     color: map-get($mopro-colors, "primary");

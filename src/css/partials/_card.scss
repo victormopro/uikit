@@ -2,10 +2,86 @@
 // ==========================================================================
 
 .card {
+  min-height: 420px;
+  position: relative;
   border-radius: $border-radius;
   box-shadow: $shadow-card;
-  &__header,
+  padding: 30px;
+  &__header {
+
+  }
   &__body {
-    padding: 25px 30px;
+    margin-top: 20px;
+  }
+  &__footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    min-height: 50px;
+    .btn {
+      box-shadow: $shadow-z-3;
+      &:hover {
+        box-shadow: $shadow-z-5;
+      }
+    }
+    .card__text {
+      padding: 25px 30px 50px;
+    }
+  }
+  .footer-btn {
+    .btn {
+      border-radius: 0 0 $border-radius $border-radius;
+    }
+  }
+  &__img {
+    margin-bottom: 30px;
+    &.round {
+      height: 138px;
+      width: 138px;
+      border-radius: 50%;
+      border: 4px solid rgba(192, 0, 255, .2);
+    }
+  }
+  &__title {
+    color: #0F1110;
+    font-size: 18px;
+    font-weight: $fontweight-bold;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    width: 237px;
+    color: #959DA7;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 10px;
+  }
+  &__text {
+    color: #4A4A4A;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    font-weight: $fontweight-regular;
+  }
+  &__icons {
+    display: flex;
+    justify-content: center;
+  }
+  // Profile card
+  &--profile {
+    padding: 50px;
+  }
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px;
+    transition: $transition-speed;
+    border-radius: 2px;
+    &:hover{
+      box-shadow: $shadow-z-3;
+    }
   }
 }
