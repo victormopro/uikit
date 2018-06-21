@@ -570,6 +570,14 @@ const Home = () => (
       <div className="row">
         <div className="col-xs-12">
           <SectionTitle id='accordions' text='Accordions' superscript={'11'} />
+          <Accordion 
+              title = "Accordion 1"
+              description ="Ut consectetur id purus a gravida. Praesent urna risus, pellentesque id ornare ac, bibendum vel lectus. Nunc eget sagittis diam, scelerisque lacinia risus."
+          />
+          <Accordion
+              title ="Accordion 1"
+              description="Ut consectetur id purus a gravida. Praesent urna risus, pellentesque id ornare ac, bibendum vel lectus. Nunc eget sagittis diam, scelerisque lacinia risus."
+          />
         </div>
       </div>
     </div>
