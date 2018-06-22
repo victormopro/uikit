@@ -12,6 +12,7 @@ import Switch from '../components/Switch';
 import ProfileCard from '../components/ProfileCard';
 import Accordion from '../components/Accordion';
 import Logo from '../components/Logo';
+import moproLogo from '../img/mopro.png';
 
 const Home = () => (
   <div className="page page--home">
@@ -26,9 +27,9 @@ const Home = () => (
               <div className="col-xs-3">
                 <div className="brand">
                   <div className="brand__light bg-light text-center">
-                    <Logo 
-                        img = "./img/mopro.png"
-                        name = "Mopro Logo"
+                    <Logo
+                        img={moproLogo}
+                        name="Mopro Logo"
                       />
                   </div>
                 </div>
@@ -36,14 +37,14 @@ const Home = () => (
               <div className="col-xs-3">
                 <div className="brand">
                   <div className="brand__dark bg-grad-primary text-center">
-                    <Logo 
-                        img = "./img/mopro.png"
-                        name = "Mopro Logo"
+                    <Logo
+                        img={moproLogo}
+                        name="Mopro Logo"
                       />
                   </div>
                 </div>
               </div>
-            </div>            
+            </div>
           </div>
         </div>
       </div>
@@ -603,7 +604,7 @@ const Home = () => (
       <div className="row">
         <div className="col-xs-12">
           <SectionTitle id='accordions' text='Accordions' superscript={'11'} />
-          <Accordion 
+          <Accordion
               title = "Accordion behavior"
               description ="Ut consectetur id purus a gravida. Praesent urna risus, pellentesque id ornare ac, bibendum vel lectus. Nunc eget sagittis diam, scelerisque lacinia risus."
           />
