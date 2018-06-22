@@ -18,7 +18,7 @@ const ProfileCard = ({ img, name, profile, about, buttonText, socialIcons }) => 
                 {
                   socialIcons.length && socialIcons.map(icon => {
                     return (
-                      <a href={icon.link} className="social-icon" target="_blank">
+                      <a key={icon.link} href={icon.link} className="social-icon" target="_blank">
                         <i className={`fab fa-${icon.iconName}`}></i>
                       </a>
                     )
