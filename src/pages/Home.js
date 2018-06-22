@@ -18,7 +18,7 @@ const Home = () => (
 
   { /***** Logo *****/ }
 
-      <div className="section section--modals mt-150">
+      <div className="section section--modals mt-100">
         <div className="row">
           <div className="col-xs-12">
             <SectionTitle id='brand' text='Logo' superscript={'00'} />
@@ -36,7 +36,7 @@ const Home = () => (
                 <div className="brand">
                   <div className="brand__dark">
                     <Logo 
-                        img = "/img/mopro.png"
+                        img = "../img/mopro.png"
                       />
                   </div>
                 </div>
@@ -48,7 +48,7 @@ const Home = () => (
 
     { /***** Colors *****/ }
 
-    <div className="section section--colors">
+    <div className="section section--colors  mt-100">
       <div className="row">
         <div className="col-xs-12">
           <SectionTitle id='colors' text='Colors' superscript={'01'} />
