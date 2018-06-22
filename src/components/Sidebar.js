@@ -4,6 +4,9 @@ const Sidebar = () => (
   <div className="sidebar">
     <h4>Components</h4>
     <ul className="sidebar__items mt-20">
+    <li className="sidebar__item">
+        <a className="sidebar__link" href='#brand'>Logo</a>
+      </li>
       <li className="sidebar__item">
         <a className="sidebar__link" href='#colors'>Colors</a>
       </li>

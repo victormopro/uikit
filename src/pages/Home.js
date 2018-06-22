@@ -11,9 +11,40 @@ import Swatch from '../components/Swatch';
 import Switch from '../components/Switch';
 import ProfileCard from '../components/ProfileCard';
 import Accordion from '../components/Accordion';
+import Logo from '../components/Logo';
 
 const Home = () => (
   <div className="page page--home">
+
+  { /***** Logo *****/ }
+
+      <div className="section section--modals mt-150">
+        <div className="row">
+          <div className="col-xs-12">
+            <SectionTitle id='brand' text='Logo' superscript={'00'} />
+            <div className="row">
+              <div className="col-xs-3">
+                <div className="brand">
+                  <div className="brand__light">
+                    <Logo 
+                        img = "../img/mopro.png"
+                      />
+                  </div>
+                </div>
+              </div>
+              <div className="col-xs-3">
+                <div className="brand">
+                  <div className="brand__dark">
+                    <Logo 
+                        img = "/img/mopro.png"
+                      />
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
 
     { /***** Colors *****/ }
 
@@ -571,11 +602,11 @@ const Home = () => (
         <div className="col-xs-12">
           <SectionTitle id='accordions' text='Accordions' superscript={'11'} />
           <Accordion 
-              title = "Accordion 1"
+              title = "Accordion behavior"
               description ="Ut consectetur id purus a gravida. Praesent urna risus, pellentesque id ornare ac, bibendum vel lectus. Nunc eget sagittis diam, scelerisque lacinia risus."
           />
           <Accordion
-              title ="Accordion 1"
+              title ="Accordion behavior"
               description="Ut consectetur id purus a gravida. Praesent urna risus, pellentesque id ornare ac, bibendum vel lectus. Nunc eget sagittis diam, scelerisque lacinia risus."
           />
         </div>
