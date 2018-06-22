@@ -22,10 +22,10 @@ const Home = () => (
         <div className="row">
           <div className="col-xs-12">
             <SectionTitle id='brand' text='Logo' superscript={'00'} />
-            <div className="row">
+            <div className="row mt-50">
               <div className="col-xs-3">
                 <div className="brand">
-                  <div className="brand__light bg-light">
+                  <div className="brand__light bg-light text-center">
                     <Logo 
                         img = "./img/mopro.png"
                         name = "Mopro Logo"
@@ -35,7 +35,7 @@ const Home = () => (
               </div>
               <div className="col-xs-3">
                 <div className="brand">
-                  <div className="brand__dark bg-grad-primary">
+                  <div className="brand__dark bg-grad-primary text-center">
                     <Logo 
                         img = "./img/mopro.png"
                         name = "Mopro Logo"
