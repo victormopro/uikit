@@ -25,7 +25,7 @@ const Home = () => (
             <div className="row">
               <div className="col-xs-3">
                 <div className="brand">
-                  <div className="brand__light">
+                  <div className="brand__light bg-light">
                     <Logo 
                         img = "./img/mopro.png"
                         name = "Mopro Logo"
@@ -35,7 +35,7 @@ const Home = () => (
               </div>
               <div className="col-xs-3">
                 <div className="brand">
-                  <div className="brand__dark">
+                  <div className="brand__dark bg-grad-primary">
                     <Logo 
                         img = "./img/mopro.png"
                         name = "Mopro Logo"

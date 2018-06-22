@@ -94,6 +94,10 @@ ul {
   box-sizing: border-box;
 }
 
+.brand {
+  padding: 20px;
+}
+
 .action-btn {
   height: 15px;
   width: 15px;
