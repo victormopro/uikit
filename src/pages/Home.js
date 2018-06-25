@@ -606,11 +606,11 @@ const Home = () => (
           <SectionTitle id='accordions' text='Accordions' superscript={'11'} />
           <Accordion
               title = "Accordion behavior"
-              description ="Ut consectetur id purus a gravida. Praesent urna risus, pellentesque id ornare ac, bibendum vel lectus. Nunc eget sagittis diam, scelerisque lacinia risus."
+              description ="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum."
           />
           <Accordion
               title ="Accordion behavior"
-              description="Ut consectetur id purus a gravida. Praesent urna risus, pellentesque id ornare ac, bibendum vel lectus. Nunc eget sagittis diam, scelerisque lacinia risus."
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum."
           />
         </div>
       </div>
