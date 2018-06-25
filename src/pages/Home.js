@@ -12,7 +12,6 @@ import Switch from '../components/Switch';
 import ProfileCard from '../components/ProfileCard';
 import Accordion from '../components/Accordion';
 import Logo from '../components/Logo';
-import moproLogo from '../img/mopro.png';
 
 const Home = () => (
   <div className="page page--home">
@@ -27,9 +26,9 @@ const Home = () => (
               <div className="col-xs-3">
                 <div className="brand">
                   <div className="brand__light bg-light text-center">
-                    <Logo
-                        img={moproLogo}
-                        name="Mopro Logo"
+                    <Logo 
+                        img = "./img/mopro.png"
+                        name = "Mopro Logo"
                       />
                   </div>
                 </div>
@@ -37,9 +36,9 @@ const Home = () => (
               <div className="col-xs-3">
                 <div className="brand">
                   <div className="brand__dark bg-grad-primary text-center">
-                    <Logo
-                        img={moproLogo}
-                        name="Mopro Logo"
+                    <Logo 
+                        img = "./img/mopro.png"
+                        name = "Mopro Logo"
                       />
                   </div>
                 </div>
