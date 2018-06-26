@@ -4,7 +4,9 @@ class Accordion extends Component{
     constructor(props){
         super();
         this.state = {
-            visiblity : true
+            visiblity : true,
+            title : props.title,
+            description: props.description
         }
 
         this.visiblityToggle = this.visiblityToggle.bind(this);
@@ -21,7 +23,7 @@ class Accordion extends Component{
         return(
             <div className="accordion">
                 <div className="accordion__title">
-                    <h4 className="">{this.props.title}</h4>
+                    <h4 className="">{this.state.title}</h4>
                     <button className="accordion__close" onClick={this.visiblityToggle} >
                         {this.state.visiblity ? <i className="fas fa-minus"></i> : <i className="fas fa-plus"></i>}
                     </button>
@@ -29,7 +31,7 @@ class Accordion extends Component{
                 {
                     this.state.visiblity &&
                     <div className="accordion__description">
-                        <p>{this.props.description}</p>
+                        <p>{this.state.description}</p>
                     </div>
                 }
             </div>

@@ -12,6 +12,9 @@ import Switch from '../components/Switch';
 import ProfileCard from '../components/ProfileCard';
 import Accordion from '../components/Accordion';
 import Logo from '../components/Logo';
+import Table from '../components/Table';
+// assets
+import brand from '../img/mopro.png';
 
 const Home = () => (
   <div className="page page--home">
@@ -27,7 +30,7 @@ const Home = () => (
                 <div className="brand">
                   <div className="brand__light bg-light text-center">
                     <Logo 
-                        img = "./img/mopro.png"
+                        img = {brand}
                         name = "Mopro Logo"
                       />
                   </div>
@@ -37,7 +40,7 @@ const Home = () => (
                 <div className="brand">
                   <div className="brand__dark bg-grad-primary text-center">
                     <Logo 
-                        img = "./img/mopro.png"
+                        img = {brand}
                         name = "Mopro Logo"
                       />
                   </div>
@@ -564,6 +567,9 @@ const Home = () => (
         <div className="col-xs-12">
           <SectionTitle id='tables' text='Tables' superscript={'07'} />
         </div>
+      </div>
+      <div className="row mt-100">
+          <Table />
       </div>
     </div>
 
