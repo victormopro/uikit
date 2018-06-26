@@ -13,8 +13,10 @@ import ProfileCard from '../components/ProfileCard';
 import Accordion from '../components/Accordion';
 import Logo from '../components/Logo';
 import Table from '../components/Table';
-// assets
+
+// Assets & icons
 import brand from '../img/mopro.png';
+import icons from '../config/icons.json';
 
 const Home = () => (
   <div className="page page--home">
@@ -29,20 +31,20 @@ const Home = () => (
               <div className="col-xs-3">
                 <div className="brand">
                   <div className="brand__light bg-light text-center">
-                    <Logo 
-                        img = {brand}
-                        name = "Mopro Logo"
-                      />
+                    <Logo
+                      img={brand}
+                      name="Mopro Logo"
+                    />
                   </div>
                 </div>
               </div>
               <div className="col-xs-3">
                 <div className="brand">
                   <div className="brand__dark bg-grad-primary text-center">
-                    <Logo 
-                        img = {brand}
-                        name = "Mopro Logo"
-                      />
+                    <Logo
+                      img={brand}
+                      name="Mopro Logo"
+                    />
                   </div>
                 </div>
               </div>
@@ -589,6 +591,18 @@ const Home = () => (
       <div className="row">
         <div className="col-xs-12">
           <SectionTitle id='icons' text='Product Icons' superscript={'09'} />
+        </div>
+      </div>
+      <div className="row mt-100">
+        <div className="col-xs-12 mopro-icons">
+          { icons.map(icon => {
+            return (
+              <div className="icon__wrap">
+                <i className={icon.name} />
+                <p className="icon__text">{icon.name}</p>
+              </div>
+            );
+          }) }
         </div>
       </div>
     </div>

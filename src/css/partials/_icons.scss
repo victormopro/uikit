@@ -1,0 +1,1180 @@
+// Mopro icons
+// ==========================================================================
+
+@include font-face(Mopro-Icons, "_fonts/Mopro-Icons/Mopro-Icons", normal, normal);
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'Mopro-Icons';
+  @include font-style($icon-fontsize, $icon-fontweight, $icon-lineheight);
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: none;
+}
+
+
+// SVG Icon - Custom
+// ==========================================================================
+
+.icon-SVG {
+    span {
+        position: relative;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        color: inherit;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+        }
+        &:before {
+            border-top: 1em solid currentColor;
+            border-right: 1em solid transparent;
+            opacity: 0.8;
+        }
+        &:after {
+            border-bottom: 1em solid currentColor;
+            border-left: 1em solid transparent;
+        }
+    }
+}
+
+.icon-Discovery {
+  &:before {
+    content: $icon-Discovery;
+  }
+}
+.icon-Syndicate {
+  &:before {
+    content: $icon-Syndicate;
+  }
+}
+.icon-Microsite {
+  &:before {
+    content: $icon-Microsite;
+  }
+}
+.icon-SneakPeek {
+  &:before {
+    content: $icon-SneakPeek;
+  }
+}
+.icon-HalfStar {
+  &:before {
+    content: $icon-HalfStar;
+  }
+}
+.icon-Stop {
+  &:before {
+    content: $icon-Stop;
+  }
+}
+.icon-Pause {
+  &:before {
+    content: $icon-Pause;
+  }
+}
+.icon-LinkOut {
+  &:before {
+    content: $icon-LinkOut;
+  }
+}
+.icon-StarOutline {
+  &:before {
+    content: $icon-StarOutline;
+  }
+}
+.icon-Web-KO {
+  &:before {
+    content: $icon-Web-KO;
+  }
+}
+.icon-www {
+  &:before {
+    content: $icon-www;
+  }
+}
+.icon-Browser {
+  &:before {
+    content: $icon-Browser;
+  }
+}
+.icon-SMS {
+  &:before {
+      content: $icon-SMS;
+  }
+}
+.icon-Timeline {
+  &:before {
+    content: $icon-Timeline;
+  }
+}
+.icon-Icons {
+  &:before {
+    content: $icon-Icons;
+  }
+}
+.icon-Preview {
+  &:before {
+    content: $icon-Preview;
+  }
+}
+.icon-Video {
+  &:before {
+    content: $icon-Video;
+  }
+}
+.icon-Whitepages {
+  &:before {
+    content: $icon-Whitepages;
+  }
+}
+.icon-YellowPages {
+  &:before {
+    content: $icon-YellowPages;
+  }
+}
+.icon-Bing {
+  &:before {
+    content: $icon-Bing;
+  }
+}
+.icon-Citysearch {
+  &:before {
+    content: $icon-Citysearch;
+  }
+}
+.icon-Email {
+  &:before {
+    content: $icon-Email;
+  }
+}
+.icon-Mapquest {
+  &:before {
+    content: $icon-Mapquest;
+  }
+}
+.icon-Superpages {
+  &:before {
+    content: $icon-Superpages;
+  }
+}
+.icon-Friend {
+  &:before {
+    content: $icon-Friend;
+  }
+}
+.icon-AddNew {
+  &:before {
+    content: $icon-AddNew;
+  }
+}
+.icon-Alarm {
+  &:before {
+    content: $icon-Alarm;
+  }
+}
+.icon-Analyze {
+  &:before {
+    content: $icon-Analyze;
+  }
+}
+.icon-Anchor {
+  &:before {
+    content: $icon-Anchor;
+  }
+}
+.icon-Appointment {
+  &:before {
+    content: $icon-Appointment;
+  }
+}
+.icon-Arrange {
+  &:before {
+    content: $icon-Arrange;
+  }
+}
+.icon-ArrowDown {
+  &:before {
+    content: $icon-ArrowDown;
+  }
+}
+.icon-ArrowLeft {
+  &:before {
+    content: $icon-ArrowLeft;
+  }
+}
+.icon-ArrowRight {
+  &:before {
+    content: $icon-ArrowRight;
+  }
+}
+.icon-ArrowUp {
+  &:before {
+    content: $icon-ArrowUp;
+  }
+}
+.icon-Attach {
+  &:before {
+    content: $icon-Attach;
+  }
+}
+.icon-AudioFile {
+  &:before {
+    content: $icon-AudioFile;
+  }
+}
+.icon-AudioUpload {
+  &:before {
+    content: $icon-AudioUpload;
+  }
+}
+.icon-Award {
+  &:before {
+    content: $icon-Award;
+  }
+}
+.icon-Blog {
+  &:before {
+    content: $icon-Blog;
+  }
+}
+.icon-Blueprint {
+  &:before {
+    content: $icon-Blueprint;
+  }
+}
+.icon-BrokenHeart {
+  &:before {
+    content: $icon-BrokenHeart;
+  }
+}
+.icon-BrokenLink {
+  &:before {
+    content: $icon-BrokenLink;
+  }
+}
+.icon-Builder {
+  &:before {
+    content: $icon-Builder;
+  }
+}
+.icon-Calendar {
+  &:before {
+    content: $icon-Calendar;
+  }
+}
+.icon-Camera {
+  &:before {
+    content: $icon-Camera;
+  }
+}
+.icon-Cart {
+  &:before {
+    content: $icon-Cart;
+  }
+}
+.icon-Caution {
+  &:before {
+    content: $icon-Caution;
+  }
+}
+.icon-Chat {
+  &:before {
+    content: $icon-Chat;
+  }
+}
+.icon-Check {
+  &:before {
+    content: $icon-Check;
+  }
+}
+.icon-CheckCircle {
+  &:before {
+    content: $icon-CheckCircle;
+  }
+}
+.icon-Checked {
+  &:before {
+    content: $icon-Checked;
+  }
+}
+.icon-CheckError {
+  &:before {
+    content: $icon-CheckError;
+  }
+}
+.icon-Checklist {
+  &:before {
+    content: $icon-Checklist;
+  }
+}
+.icon-Click {
+  &:before {
+    content: $icon-Click;
+  }
+}
+.icon-Clock {
+  &:before {
+    content: $icon-Clock;
+  }
+}
+.icon-Close {
+  &:before {
+    content: $icon-Close;
+  }
+}
+.icon-Comment {
+  &:before {
+    content: $icon-Comment;
+  }
+}
+.icon-Copy {
+  &:before {
+    content: $icon-Copy;
+  }
+}
+.icon-Crop {
+  &:before {
+    content: $icon-Crop;
+  }
+}
+.icon-Customers {
+  &:before {
+    content: $icon-Customers;
+  }
+}
+.icon-Desktop {
+  &:before {
+    content: $icon-Desktop;
+  }
+}
+.icon-Document {
+  &:before {
+    content: $icon-Document;
+  }
+}
+.icon-Down {
+  &:before {
+    content: $icon-Down;
+  }
+}
+.icon-Download {
+  &:before {
+    content: $icon-Download;
+  }
+}
+.icon-Edit {
+  &:before {
+    content: $icon-Edit;
+  }
+}
+.icon-EditPage {
+  &:before {
+    content: $icon-EditPage;
+  }
+}
+.icon-Education {
+  &:before {
+    content: $icon-Education;
+  }
+}
+.icon-ExcelFile {
+  &:before {
+    content: $icon-ExcelFile;
+  }
+}
+.icon-Exclamation {
+  &:before {
+    content: $icon-Exclamation;
+  }
+}
+.icon-Expand {
+  &:before {
+    content: $icon-Expand;
+  }
+}
+.icon-Export {
+  &:before {
+    content: $icon-Export;
+  }
+}
+.icon-Facebook {
+  &:before {
+    content: $icon-Facebook;
+  }
+}
+.icon-Facebook-KO {
+  &:before {
+    content: $icon-Facebook-KO;
+  }
+}
+.icon-FileUpload {
+  &:before {
+    content: $icon-FileUpload;
+  }
+}
+.icon-Fill {
+  &:before {
+    content: $icon-Fill;
+  }
+}
+.icon-Flickr {
+  &:before {
+    content: $icon-Flickr;
+  }
+}
+.icon-Flickr-KO {
+  &:before {
+    content: $icon-Flickr-KO;
+  }
+}
+.icon-Foursquare {
+  &:before {
+    content: $icon-Foursquare;
+  }
+}
+.icon-Foursquare-KO {
+  &:before {
+    content: $icon-Foursquare-KO;
+  }
+}
+.icon-Funnel {
+  &:before {
+    content: $icon-Funnel;
+  }
+}
+.icon-Google {
+  &:before {
+    content: $icon-Google;
+  }
+}
+.icon-GoogleAlerts {
+  &:before {
+    content: $icon-GoogleAlerts;
+  }
+}
+.icon-GoogleAlerts-KO {
+  &:before {
+    content: $icon-GoogleAlerts-KO;
+  }
+}
+.icon-GooglePlus {
+  &:before {
+    content: $icon-GooglePlus;
+  }
+}
+.icon-GooglePlus-KO {
+  &:before {
+    content: $icon-GooglePlus-KO;
+  }
+}
+.icon-Graph {
+  &:before {
+    content: $icon-Graph;
+  }
+}
+.icon-Happy {
+  &:before {
+    content: $icon-Happy;
+  }
+}
+.icon-Heart {
+  &:before {
+    content: $icon-Heart;
+  }
+}
+.icon-Help {
+  &:before {
+    content: $icon-Help;
+  }
+}
+.icon-Hide {
+  &:before {
+    content: $icon-Hide;
+  }
+}
+.icon-Idea {
+  &:before {
+    content: $icon-Idea;
+  }
+}
+.icon-IDX {
+  &:before {
+    content: $icon-IDX;
+  }
+}
+.icon-ImageUpload {
+  &:before {
+    content: $icon-ImageUpload;
+  }
+}
+.icon-Import {
+  &:before {
+    content: $icon-Import;
+  }
+}
+.icon-IndexFile {
+  &:before {
+    content: $icon-IndexFile;
+  }
+}
+.icon-Info {
+  &:before {
+    content: $icon-Info;
+  }
+}
+.icon-Instagram {
+  &:before {
+    content: $icon-Instagram;
+  }
+}
+.icon-Instagram-KO {
+  &:before {
+    content: $icon-Instagram-KO;
+  }
+}
+.icon-Library {
+  &:before {
+    content: $icon-Library;
+  }
+}
+.icon-Like {
+  &:before {
+    content: $icon-Like;
+  }
+}
+.icon-Link {
+  &:before {
+    content: $icon-Link;
+  }
+}
+.icon-LinkedIn {
+  &:before {
+    content: $icon-LinkedIn;
+  }
+}
+.icon-LinkedIn-KO {
+  &:before {
+    content: $icon-LinkedIn-KO;
+  }
+}
+.icon-List {
+  &:before {
+    content: $icon-List;
+  }
+}
+.icon-Location {
+  &:before {
+    content: $icon-Location;
+  }
+}
+.icon-Locked {
+  &:before {
+    content: $icon-Locked;
+  }
+}
+.icon-Logout {
+  &:before {
+    content: $icon-Logout;
+  }
+}
+.icon-Mail {
+  &:before {
+    content: $icon-Mail;
+  }
+}
+.icon-MaritalStatus {
+  &:before {
+    content: $icon-MaritalStatus;
+  }
+}
+.icon-Microphone {
+  &:before {
+    content: $icon-Microphone;
+  }
+}
+.icon-Microphone2 {
+  &:before {
+    content: $icon-Microphone2;
+  }
+}
+.icon-Minimize {
+  &:before {
+    content: $icon-Minimize;
+  }
+}
+.icon-Mobile {
+  &:before {
+    content: $icon-Mobile;
+  }
+}
+.icon-Money {
+  &:before {
+    content: $icon-Money;
+  }
+}
+.icon-Money-KO {
+  &:before {
+    content: $icon-Money-KO;
+  }
+}
+.icon-Monitor {
+  &:before {
+    content: $icon-Monitor;
+  }
+}
+.icon-Move {
+  &:before {
+    content: $icon-Move;
+  }
+}
+.icon-MoveTool {
+  &:before {
+    content: $icon-MoveTool;
+  }
+}
+.icon-Neutral {
+  &:before {
+    content: $icon-Neutral;
+  }
+}
+.icon-Paragraph {
+  &:before {
+    content: $icon-Paragraph;
+  }
+}
+.icon-PDFFile {
+  &:before {
+    content: $icon-PDFFile;
+  }
+}
+.icon-Phone {
+  &:before {
+    content: $icon-Phone;
+  }
+}
+.icon-Picture {
+  &:before {
+    content: $icon-Picture;
+  }
+}
+.icon-Pin {
+  &:before {
+    content: $icon-Pin;
+  }
+}
+.icon-Pinterest {
+  &:before {
+    content: $icon-Pinterest;
+  }
+}
+.icon-Pinterest-KO {
+  &:before {
+    content: $icon-Pinterest-KO;
+  }
+}
+.icon-Plane {
+  &:before {
+    content: $icon-Plane;
+  }
+}
+.icon-Play {
+  &:before {
+    content: $icon-Play;
+  }
+}
+.icon-Plus {
+  &:before {
+    content: $icon-Plus;
+  }
+}
+.icon-PlusOne {
+  &:before {
+    content: $icon-PlusOne;
+  }
+}
+.icon-Print {
+  &:before {
+    content: $icon-Print;
+  }
+}
+.icon-Profile {
+  &:before {
+    content: $icon-Profile;
+  }
+}
+.icon-Repeat {
+  &:before {
+    content: $icon-Repeat;
+  }
+}
+.icon-Responsive {
+  &:before {
+    content: $icon-Responsive;
+  }
+}
+.icon-RSS {
+  &:before {
+    content: $icon-RSS;
+  }
+}
+.icon-RSS-KO {
+  &:before {
+    content: $icon-RSS-KO;
+  }
+}
+.icon-Sad {
+  &:before {
+    content: $icon-Sad;
+  }
+}
+.icon-Schedule {
+  &:before {
+    content: $icon-Schedule;
+  }
+}
+.icon-Search {
+  &:before {
+    content: $icon-Search;
+  }
+}
+.icon-Sections {
+  &:before {
+    content: $icon-Sections;
+  }
+}
+.icon-Send {
+  &:before {
+    content: $icon-Send;
+  }
+}
+.icon-Settings {
+  &:before {
+    content: $icon-Settings;
+  }
+}
+.icon-Share {
+  &:before {
+    content: $icon-Share;
+  }
+}
+.icon-Shuffle {
+  &:before {
+    content: $icon-Shuffle;
+  }
+}
+.icon-Sitemap {
+  &:before {
+    content: $icon-Sitemap;
+  }
+}
+.icon-Speed {
+  &:before {
+    content: $icon-Speed;
+  }
+}
+.icon-Star {
+  &:before {
+    content: $icon-Star;
+  }
+}
+.icon-Store {
+  &:before {
+    content: $icon-Store;
+  }
+}
+.icon-Support {
+  &:before {
+    content: $icon-Support;
+  }
+}
+.icon-SVG .path1 {
+  &:before {
+    content: $icon-SVG-path1;
+    color: rgb(0, 0, 0);
+  }
+}
+.icon-SVG .path2 {
+  &:before {
+    content: $icon-SVG-path2;
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+  }
+}
+.icon-Swap {
+  &:before {
+    content: $icon-Swap;
+  }
+}
+.icon-Tablet {
+  &:before {
+    content: $icon-Tablet;
+  }
+}
+.icon-TextFile {
+  &:before {
+    content: $icon-TextFile;
+  }
+}
+.icon-ThumbsUp {
+  &:before {
+    content: $icon-ThumbsUp;
+  }
+}
+.icon-ThumbsUpFilled {
+  &:before {
+    content: $icon-ThumbsUpFilled;
+  }
+}
+.icon-Trash {
+  &:before {
+    content: $icon-Trash;
+  }
+}
+.icon-Tumblr {
+  &:before {
+    content: $icon-Tumblr;
+  }
+}
+.icon-Tumblr-KO {
+  &:before {
+    content: $icon-Tumblr-KO;
+  }
+}
+.icon-Twitter {
+  &:before {
+    content: $icon-Twitter;
+  }
+}
+.icon-Twitter-KO {
+  &:before {
+    content: $icon-Twitter-KO;
+  }
+}
+.icon-Undo {
+  &:before {
+    content: $icon-Undo;
+  }
+}
+.icon-Unlink {
+  &:before {
+    content: $icon-Unlink;
+  }
+}
+.icon-Unlocked {
+  &:before {
+    content: $icon-Unlocked;
+  }
+}
+.icon-Up {
+  &:before {
+    content: $icon-Up;
+  }
+}
+.icon-Users {
+  &:before {
+    content: $icon-Users;
+  }
+}
+.icon-VideoFile {
+  &:before {
+    content: $icon-VideoFile;
+  }
+}
+.icon-VideoUpload {
+  &:before {
+    content: $icon-VideoUpload;
+  }
+}
+.icon-View {
+  &:before {
+    content: $icon-View;
+  }
+}
+.icon-Views {
+  &:before {
+    content: $icon-Views;
+  }
+}
+.icon-Web {
+  &:before {
+    content: $icon-Web;
+  }
+}
+.icon-WordFile {
+  &:before {
+    content: $icon-WordFile;
+  }
+}
+.icon-Yelp {
+  &:before {
+    content: $icon-Yelp;
+  }
+}
+.icon-Yelp-KO {
+  &:before {
+    content: $icon-Yelp-KO;
+  }
+}
+.icon-Youtube {
+  &:before {
+    content: $icon-Youtube;
+  }
+}
+.icon-Youtube-KO {
+  &:before {
+    content: $icon-Youtube-KO;
+  }
+}
+.icon-AppIcons {
+  &:before {
+    content: $icon-AppIcons;
+  }
+}
+.icon-Transform {
+  &:before {
+    content: $icon-Transform;
+  }
+}
+.icon-Text {
+  &:before {
+    content: $icon-Text;
+  }
+}
+.icon-Spacer {
+  &:before {
+    content: $icon-Spacer;
+  }
+}
+.icon-Seperator {
+  &:before {
+    content: $icon-Seperator;
+  }
+}
+.icon-CTA {
+  &:before {
+    content: $icon-CTA;
+  }
+}
+.icon-Weibo-KO {
+  &:before {
+    content: $icon-Weibo-KO;
+  }
+}
+.icon-Weibo {
+  &:before {
+    content: $icon-Weibo;
+  }
+}
+.icon-TripAdvisor-KO {
+  &:before {
+    content: $icon-TripAdvisor-KO;
+  }
+}
+.icon-TripAdvisor {
+  &:before {
+    content: $icon-TripAdvisor;
+  }
+}
+.icon-Myspace-KO {
+  &:before {
+    content: $icon-Myspace-KO;
+  }
+}
+.icon-Myspace {
+  &:before {
+    content: $icon-Myspace;
+  }
+}
+.icon-Houzz-KO {
+  &:before {
+    content: $icon-Houzz-KO;
+  }
+}
+.icon-Houzz {
+  &:before {
+    content: $icon-Houzz;
+  }
+}
+.icon-GooglePlaces-KO {
+  &:before {
+    content: $icon-GooglePlaces-KO;
+  }
+}
+.icon-GooglePlaces {
+  &:before {
+    content: $icon-GooglePlaces;
+  }
+}
+.icon-Frame {
+  &:before {
+    content: $icon-Frame;
+  }
+}
+.icon-Controls {
+  &:before {
+    content: $icon-Controls;
+  }
+}
+.icon-Bold {
+  &:before {
+    content: $icon-Bold;
+  }
+}
+.icon-Italic {
+  &:before {
+    content: $icon-Italic;
+  }
+}
+.icon-Underline {
+  &:before {
+    content: $icon-Underline;
+  }
+}
+.icon-NumberList {
+  &:before {
+    content: $icon-NumberList;
+  }
+}
+.icon-BulletList {
+  &:before {
+    content: $icon-BulletList;
+  }
+}
+.icon-Centered {
+  &:before {
+    content: $icon-Centered;
+  }
+}
+.icon-Justified {
+  &:before {
+    content: $icon-Justified;
+  }
+}
+.icon-LeftAlign {
+  &:before {
+    content: $icon-LeftAlign;
+  }
+}
+.icon-RightAlign {
+  &:before {
+    content: $icon-RightAlign;
+  }
+}
+.icon-None {
+  &:before {
+    content: $icon-None;
+  }
+}
+.icon-CautionFilled {
+  &:before {
+      content: $icon-CautionFilled;
+  }
+}
+.icon-Completed {
+  &:before {
+      content: $icon-Completed;
+  }
+}
+.icon-CopyPage {
+  &:before {
+      content: $icon-CopyPage;
+  }
+}
+.icon-Testimonial {
+  &:before {
+      content: $icon-Testimonial;
+  }
+}
+.icon-AlignLeft {
+  &:before {
+      content: $icon-AlignLeft;
+  }
+}
+.icon-AlignCenter {
+  &:before {
+      content: $icon-AlignCenter;
+  }
+}
+.icon-AlignRight {
+  &:before {
+      content: $icon-AlignRight;
+  }
+}
+.icon-UnmappedImage {
+  &:before {
+      content: $icon-UnmappedImage;
+  }
+}
+.icon-Notes {
+  &:before {
+      content: $icon-Notes;
+  }
+}
+.icon-Dashboard {
+  &:before {
+      content: $icon-Dashboard;
+  }
+}
+.icon-Square {
+  &:before {
+      content: $icon-Square;
+  }
+}
+.icon-Rectangle {
+  &:before {
+      content: $icon-Rectangle;
+  }
+}
+.icon-Linkout {
+  &:before {
+      content: $icon-Linkout;
+  }
+}
+.icon-Circle {
+  &:before {
+      content: $icon-Circle;
+  }
+}
+.icon-Mapping {
+  &:before {
+      content: $icon-Mapping;
+  }
+}
+.icon-Sort {
+  &:before {
+      content: $icon-Sort;
+  }
+}
+.icon-Configurations {
+  &:before {
+      content: $icon-Configurations;
+  }
+}
+.icon-VAlignTop {
+  &:before {
+      content: $icon-VAlignTop;
+  }
+}
+.icon-VAlignCenter {
+  &:before {
+      content: $icon-VAlignCenter;
+  }
+}
+.icon-VAlignBottom {
+  &:before {
+      content: $icon-VAlignBottom;
+  }
+}
+.icon-Forms {
+  &:before {
+      content: $icon-Forms;
+  }
+}

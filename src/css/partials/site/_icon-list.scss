@@ -1,0 +1,31 @@
+// Mopro icon list
+// ==========================================================================
+
+.mopro-icons {
+  padding: 10px 20px;
+  border-radius: $border-radius;
+  background: map-get($bg-colors, "light");
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .icon__wrap {
+    color: map-get($text-colors, "dark");
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    border-radius: $border-radius;
+    transition: $transition-speed;
+    &:hover {
+      background: darken(map-get($bg-colors, "light"), 10%);
+    }
+  }
+  [class^="icon-"] {
+    font-size: 36px;
+  }
+  .icon__text {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}

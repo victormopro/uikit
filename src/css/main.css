@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: Lato;
   src: url("./_fonts/Lato/Lato-Hairline.eot");
@@ -357,6 +358,962 @@ ul {
 
 .bg-light {
   background-color: #DDD;
+}
+
+@font-face {
+  font-family: Mopro-Icons;
+  src: url("_fonts/Mopro-Icons/Mopro-Icons.eot");
+  src: url("_fonts/Mopro-Icons/Mopro-Icons.eot?#iefix") format("embedded-opentype"), url("_fonts/Mopro-Icons/Mopro-Icons.woff") format("woff"), url("_fonts/Mopro-Icons/Mopro-Icons.ttf") format("truetype"), url("_fonts/Mopro-Icons/Mopro-Icons.svg#Mopro-Icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'Mopro-Icons';
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 36px;
+  letter-spacing: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: none;
+}
+
+.icon-SVG span {
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  color: inherit;
+}
+
+.icon-SVG span:before, .icon-SVG span:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+
+.icon-SVG span:before {
+  border-top: 1em solid currentColor;
+  border-right: 1em solid transparent;
+  opacity: 0.8;
+}
+
+.icon-SVG span:after {
+  border-bottom: 1em solid currentColor;
+  border-left: 1em solid transparent;
+}
+
+.icon-Discovery:before {
+  content: "";
+}
+
+.icon-Syndicate:before {
+  content: "";
+}
+
+.icon-Microsite:before {
+  content: "";
+}
+
+.icon-SneakPeek:before {
+  content: "";
+}
+
+.icon-HalfStar:before {
+  content: "";
+}
+
+.icon-Stop:before {
+  content: "";
+}
+
+.icon-Pause:before {
+  content: "";
+}
+
+.icon-LinkOut:before {
+  content: "";
+}
+
+.icon-StarOutline:before {
+  content: "";
+}
+
+.icon-Web-KO:before {
+  content: "";
+}
+
+.icon-www:before {
+  content: "";
+}
+
+.icon-Browser:before {
+  content: "";
+}
+
+.icon-SMS:before {
+  content: "";
+}
+
+.icon-Timeline:before {
+  content: "";
+}
+
+.icon-Icons:before {
+  content: "";
+}
+
+.icon-Preview:before {
+  content: "";
+}
+
+.icon-Video:before {
+  content: "";
+}
+
+.icon-Whitepages:before {
+  content: "";
+}
+
+.icon-YellowPages:before {
+  content: "";
+}
+
+.icon-Bing:before {
+  content: "";
+}
+
+.icon-Citysearch:before {
+  content: "";
+}
+
+.icon-Email:before {
+  content: "";
+}
+
+.icon-Mapquest:before {
+  content: "";
+}
+
+.icon-Superpages:before {
+  content: "";
+}
+
+.icon-Friend:before {
+  content: "";
+}
+
+.icon-AddNew:before {
+  content: "";
+}
+
+.icon-Alarm:before {
+  content: "";
+}
+
+.icon-Analyze:before {
+  content: "";
+}
+
+.icon-Anchor:before {
+  content: "";
+}
+
+.icon-Appointment:before {
+  content: "";
+}
+
+.icon-Arrange:before {
+  content: "";
+}
+
+.icon-ArrowDown:before {
+  content: "";
+}
+
+.icon-ArrowLeft:before {
+  content: "";
+}
+
+.icon-ArrowRight:before {
+  content: "";
+}
+
+.icon-ArrowUp:before {
+  content: "";
+}
+
+.icon-Attach:before {
+  content: "";
+}
+
+.icon-AudioFile:before {
+  content: "";
+}
+
+.icon-AudioUpload:before {
+  content: "";
+}
+
+.icon-Award:before {
+  content: "";
+}
+
+.icon-Blog:before {
+  content: "";
+}
+
+.icon-Blueprint:before {
+  content: "";
+}
+
+.icon-BrokenHeart:before {
+  content: "";
+}
+
+.icon-BrokenLink:before {
+  content: "";
+}
+
+.icon-Builder:before {
+  content: "";
+}
+
+.icon-Calendar:before {
+  content: "";
+}
+
+.icon-Camera:before {
+  content: "";
+}
+
+.icon-Cart:before {
+  content: "";
+}
+
+.icon-Caution:before {
+  content: "";
+}
+
+.icon-Chat:before {
+  content: "";
+}
+
+.icon-Check:before {
+  content: "";
+}
+
+.icon-CheckCircle:before {
+  content: "";
+}
+
+.icon-Checked:before {
+  content: "";
+}
+
+.icon-CheckError:before {
+  content: "";
+}
+
+.icon-Checklist:before {
+  content: "";
+}
+
+.icon-Click:before {
+  content: "";
+}
+
+.icon-Clock:before {
+  content: "";
+}
+
+.icon-Close:before {
+  content: "";
+}
+
+.icon-Comment:before {
+  content: "";
+}
+
+.icon-Copy:before {
+  content: "";
+}
+
+.icon-Crop:before {
+  content: "";
+}
+
+.icon-Customers:before {
+  content: "";
+}
+
+.icon-Desktop:before {
+  content: "";
+}
+
+.icon-Document:before {
+  content: "";
+}
+
+.icon-Down:before {
+  content: "";
+}
+
+.icon-Download:before {
+  content: "";
+}
+
+.icon-Edit:before {
+  content: "";
+}
+
+.icon-EditPage:before {
+  content: "";
+}
+
+.icon-Education:before {
+  content: "";
+}
+
+.icon-ExcelFile:before {
+  content: "";
+}
+
+.icon-Exclamation:before {
+  content: "";
+}
+
+.icon-Expand:before {
+  content: "";
+}
+
+.icon-Export:before {
+  content: "";
+}
+
+.icon-Facebook:before {
+  content: "";
+}
+
+.icon-Facebook-KO:before {
+  content: "";
+}
+
+.icon-FileUpload:before {
+  content: "";
+}
+
+.icon-Fill:before {
+  content: "";
+}
+
+.icon-Flickr:before {
+  content: "";
+}
+
+.icon-Flickr-KO:before {
+  content: "";
+}
+
+.icon-Foursquare:before {
+  content: "";
+}
+
+.icon-Foursquare-KO:before {
+  content: "";
+}
+
+.icon-Funnel:before {
+  content: "";
+}
+
+.icon-Google:before {
+  content: "";
+}
+
+.icon-GoogleAlerts:before {
+  content: "";
+}
+
+.icon-GoogleAlerts-KO:before {
+  content: "";
+}
+
+.icon-GooglePlus:before {
+  content: "";
+}
+
+.icon-GooglePlus-KO:before {
+  content: "";
+}
+
+.icon-Graph:before {
+  content: "";
+}
+
+.icon-Happy:before {
+  content: "";
+}
+
+.icon-Heart:before {
+  content: "";
+}
+
+.icon-Help:before {
+  content: "";
+}
+
+.icon-Hide:before {
+  content: "";
+}
+
+.icon-Idea:before {
+  content: "";
+}
+
+.icon-IDX:before {
+  content: "";
+}
+
+.icon-ImageUpload:before {
+  content: "";
+}
+
+.icon-Import:before {
+  content: "";
+}
+
+.icon-IndexFile:before {
+  content: "";
+}
+
+.icon-Info:before {
+  content: "";
+}
+
+.icon-Instagram:before {
+  content: "";
+}
+
+.icon-Instagram-KO:before {
+  content: "";
+}
+
+.icon-Library:before {
+  content: "";
+}
+
+.icon-Like:before {
+  content: "";
+}
+
+.icon-Link:before {
+  content: "";
+}
+
+.icon-LinkedIn:before {
+  content: "";
+}
+
+.icon-LinkedIn-KO:before {
+  content: "";
+}
+
+.icon-List:before {
+  content: "";
+}
+
+.icon-Location:before {
+  content: "";
+}
+
+.icon-Locked:before {
+  content: "";
+}
+
+.icon-Logout:before {
+  content: "";
+}
+
+.icon-Mail:before {
+  content: "";
+}
+
+.icon-MaritalStatus:before {
+  content: "";
+}
+
+.icon-Microphone:before {
+  content: "";
+}
+
+.icon-Microphone2:before {
+  content: "";
+}
+
+.icon-Minimize:before {
+  content: "";
+}
+
+.icon-Mobile:before {
+  content: "";
+}
+
+.icon-Money:before {
+  content: "";
+}
+
+.icon-Money-KO:before {
+  content: "";
+}
+
+.icon-Monitor:before {
+  content: "";
+}
+
+.icon-Move:before {
+  content: "";
+}
+
+.icon-MoveTool:before {
+  content: "";
+}
+
+.icon-Neutral:before {
+  content: "";
+}
+
+.icon-Paragraph:before {
+  content: "";
+}
+
+.icon-PDFFile:before {
+  content: "";
+}
+
+.icon-Phone:before {
+  content: "";
+}
+
+.icon-Picture:before {
+  content: "";
+}
+
+.icon-Pin:before {
+  content: "";
+}
+
+.icon-Pinterest:before {
+  content: "";
+}
+
+.icon-Pinterest-KO:before {
+  content: "";
+}
+
+.icon-Plane:before {
+  content: "";
+}
+
+.icon-Play:before {
+  content: "";
+}
+
+.icon-Plus:before {
+  content: "";
+}
+
+.icon-PlusOne:before {
+  content: "";
+}
+
+.icon-Print:before {
+  content: "";
+}
+
+.icon-Profile:before {
+  content: "";
+}
+
+.icon-Repeat:before {
+  content: "";
+}
+
+.icon-Responsive:before {
+  content: "";
+}
+
+.icon-RSS:before {
+  content: "";
+}
+
+.icon-RSS-KO:before {
+  content: "";
+}
+
+.icon-Sad:before {
+  content: "";
+}
+
+.icon-Schedule:before {
+  content: "";
+}
+
+.icon-Search:before {
+  content: "";
+}
+
+.icon-Sections:before {
+  content: "";
+}
+
+.icon-Send:before {
+  content: "";
+}
+
+.icon-Settings:before {
+  content: "";
+}
+
+.icon-Share:before {
+  content: "";
+}
+
+.icon-Shuffle:before {
+  content: "";
+}
+
+.icon-Sitemap:before {
+  content: "";
+}
+
+.icon-Speed:before {
+  content: "";
+}
+
+.icon-Star:before {
+  content: "";
+}
+
+.icon-Store:before {
+  content: "";
+}
+
+.icon-Support:before {
+  content: "";
+}
+
+.icon-SVG .path1:before {
+  content: "";
+  color: black;
+}
+
+.icon-SVG .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: black;
+  opacity: 0.8;
+}
+
+.icon-Swap:before {
+  content: "";
+}
+
+.icon-Tablet:before {
+  content: "";
+}
+
+.icon-TextFile:before {
+  content: "";
+}
+
+.icon-ThumbsUp:before {
+  content: "";
+}
+
+.icon-ThumbsUpFilled:before {
+  content: "";
+}
+
+.icon-Trash:before {
+  content: "";
+}
+
+.icon-Tumblr:before {
+  content: "";
+}
+
+.icon-Tumblr-KO:before {
+  content: "";
+}
+
+.icon-Twitter:before {
+  content: "";
+}
+
+.icon-Twitter-KO:before {
+  content: "";
+}
+
+.icon-Undo:before {
+  content: "";
+}
+
+.icon-Unlink:before {
+  content: "";
+}
+
+.icon-Unlocked:before {
+  content: "";
+}
+
+.icon-Up:before {
+  content: "";
+}
+
+.icon-Users:before {
+  content: "";
+}
+
+.icon-VideoFile:before {
+  content: "";
+}
+
+.icon-VideoUpload:before {
+  content: "";
+}
+
+.icon-View:before {
+  content: "";
+}
+
+.icon-Views:before {
+  content: "";
+}
+
+.icon-Web:before {
+  content: "";
+}
+
+.icon-WordFile:before {
+  content: "";
+}
+
+.icon-Yelp:before {
+  content: "";
+}
+
+.icon-Yelp-KO:before {
+  content: "";
+}
+
+.icon-Youtube:before {
+  content: "";
+}
+
+.icon-Youtube-KO:before {
+  content: "";
+}
+
+.icon-AppIcons:before {
+  content: "";
+}
+
+.icon-Transform:before {
+  content: "";
+}
+
+.icon-Text:before {
+  content: "";
+}
+
+.icon-Spacer:before {
+  content: "";
+}
+
+.icon-Seperator:before {
+  content: "";
+}
+
+.icon-CTA:before {
+  content: "";
+}
+
+.icon-Weibo-KO:before {
+  content: "";
+}
+
+.icon-Weibo:before {
+  content: "";
+}
+
+.icon-TripAdvisor-KO:before {
+  content: "";
+}
+
+.icon-TripAdvisor:before {
+  content: "";
+}
+
+.icon-Myspace-KO:before {
+  content: "";
+}
+
+.icon-Myspace:before {
+  content: "";
+}
+
+.icon-Houzz-KO:before {
+  content: "";
+}
+
+.icon-Houzz:before {
+  content: "";
+}
+
+.icon-GooglePlaces-KO:before {
+  content: "";
+}
+
+.icon-GooglePlaces:before {
+  content: "";
+}
+
+.icon-Frame:before {
+  content: "";
+}
+
+.icon-Controls:before {
+  content: "";
+}
+
+.icon-Bold:before {
+  content: "";
+}
+
+.icon-Italic:before {
+  content: "";
+}
+
+.icon-Underline:before {
+  content: "";
+}
+
+.icon-NumberList:before {
+  content: "";
+}
+
+.icon-BulletList:before {
+  content: "";
+}
+
+.icon-Centered:before {
+  content: "";
+}
+
+.icon-Justified:before {
+  content: "";
+}
+
+.icon-LeftAlign:before {
+  content: "";
+}
+
+.icon-RightAlign:before {
+  content: "";
+}
+
+.icon-None:before {
+  content: "";
+}
+
+.icon-CautionFilled:before {
+  content: "";
+}
+
+.icon-Completed:before {
+  content: "";
+}
+
+.icon-CopyPage:before {
+  content: "";
+}
+
+.icon-Testimonial:before {
+  content: "";
+}
+
+.icon-AlignLeft:before {
+  content: "";
+}
+
+.icon-AlignCenter:before {
+  content: "";
+}
+
+.icon-AlignRight:before {
+  content: "";
+}
+
+.icon-UnmappedImage:before {
+  content: "";
+}
+
+.icon-Notes:before {
+  content: "";
+}
+
+.icon-Dashboard:before {
+  content: "";
+}
+
+.icon-Square:before {
+  content: "";
+}
+
+.icon-Rectangle:before {
+  content: "";
+}
+
+.icon-Linkout:before {
+  content: "";
+}
+
+.icon-Circle:before {
+  content: "";
+}
+
+.icon-Mapping:before {
+  content: "";
+}
+
+.icon-Sort:before {
+  content: "";
+}
+
+.icon-Configurations:before {
+  content: "";
+}
+
+.icon-VAlignTop:before {
+  content: "";
+}
+
+.icon-VAlignCenter:before {
+  content: "";
+}
+
+.icon-VAlignBottom:before {
+  content: "";
+}
+
+.icon-Forms:before {
+  content: "";
 }
 
 html {
@@ -2153,6 +3110,39 @@ button, .text-btn, .btn {
 
 .v-align-bottom {
   align-items: flex-end;
+}
+
+.mopro-icons {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #F1F2F6;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mopro-icons .icon__wrap {
+  color: #2B2829;
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.25s;
+}
+
+.mopro-icons .icon__wrap:hover {
+  background: #d2d5e2;
+}
+
+.mopro-icons [class^="icon-"] {
+  font-size: 36px;
+}
+
+.mopro-icons .icon__text {
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 .main {
