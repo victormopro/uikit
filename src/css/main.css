@@ -94,12 +94,8 @@ ul {
   box-sizing: border-box;
 }
 
-.brand .brand__light {
-  padding: 20px;
-}
-
-.brand .brand__dark {
-  padding: 20px;
+.brand__light, .brand__dark {
+  padding: 20px 20px 10px;
 }
 
 .action-btn {
