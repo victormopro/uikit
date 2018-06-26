@@ -1778,6 +1778,11 @@ button, .text-btn, .btn {
   border-radius: 10px;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
   padding: 30px;
+  transition: 0.25s;
+}
+
+.card:hover {
+  box-shadow: 0 35px 50px 0 rgba(255, 119, 121, 0.15), 0 35px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
 .card__body {

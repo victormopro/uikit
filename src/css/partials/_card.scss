@@ -7,6 +7,10 @@
   border-radius: $border-radius;
   box-shadow: $shadow-card;
   padding: 30px;
+  transition: $transition-speed;
+  &:hover {
+    box-shadow: $shadow-card-hover;
+  }
   &__header {
 
   }
