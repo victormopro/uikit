@@ -1,0 +1,70 @@
+
+.card.tabs{
+    min-height: 300px;
+}
+.react-tabs{
+
+    // TabsIn style start
+    &__nav-in{
+        .react-tabs{
+            &__tab-list{
+                list-style: none;
+                display: flex;
+            }
+            &__tab{
+                color: #B7BCC3;
+                margin: 15px;
+                padding-bottom: 5px;
+                cursor: pointer;
+                outline: none;
+                border-bottom:2px solid transparent;
+                &:first-child{
+                    margin-left: 0;
+                }
+                &--selected{
+                    color: #C253DD;
+                    border-color: #C253DD;
+                }
+            }
+            &__tab-panel{
+                margin-top:30px;
+            }
+        }
+    }
+    
+    // TabsOut style start
+    &__nav-out{
+        .react-tabs{
+            &__tab-list{
+                list-style: none;
+                display: flex;
+                justify-content: flex-end;
+            }
+            &__tab{
+                color: #B7BCC3;
+                margin: 15px 30px;
+                padding-bottom: 5px;
+                cursor: pointer;
+                outline: none;
+                &:first-child{
+                    margin-left: 0;
+                }
+                &--selected{
+                    position: relative;
+                    color: #C253DD;
+                    border-color: #C253DD;
+                    &:before{
+                        content: "\E907";
+                    }
+                    &:after{
+                        content: "\E908";
+                    }
+                }
+            }
+            &__tab-panel{
+                margin-top: 0;
+            }
+        }
+    }
+}
+
