@@ -46,7 +46,7 @@ const Table = () =>{
     
         return(
             <div>
-             <table className="table table-bordered table-striped">
+             <table className="table table-bordered table-striped table-condensed">
                 <thead>
                     <tr>
                         { headings.map((head) => {
