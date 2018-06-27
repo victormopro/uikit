@@ -11,7 +11,7 @@ import Switch from '../components/Switch';
 import ProfileCard from '../components/ProfileCard';
 import Accordion from '../components/Accordion';
 import Logo from '../components/Logo';
-import Table from '../components/Table';
+import TableAll from '../components/TableAll';
 
 // Assets & icons
 import brand from '../img/mopro.png';
@@ -570,7 +570,7 @@ const Home = () => (
         </div>
       </div>
       <div className="row mt-100">
-          <Table />
+          <TableAll />
       </div>
     </div>
 

@@ -3462,3 +3462,70 @@ table th[class*="col-"] {
     border-bottom: 0;
   }
 }
+
+.card.tabs {
+  min-height: 300px;
+}
+
+.react-tabs__nav-in .react-tabs__tab-list {
+  list-style: none;
+  display: flex;
+}
+
+.react-tabs__nav-in .react-tabs__tab {
+  color: #B7BCC3;
+  margin: 15px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  outline: none;
+  border-bottom: 2px solid transparent;
+}
+
+.react-tabs__nav-in .react-tabs__tab:first-child {
+  margin-left: 0;
+}
+
+.react-tabs__nav-in .react-tabs__tab--selected {
+  color: #C253DD;
+  border-color: #C253DD;
+}
+
+.react-tabs__nav-in .react-tabs__tab-panel {
+  margin-top: 30px;
+}
+
+.react-tabs__nav-out .react-tabs__tab-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.react-tabs__nav-out .react-tabs__tab {
+  color: #B7BCC3;
+  margin: 15px 30px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.react-tabs__nav-out .react-tabs__tab:first-child {
+  margin-left: 0;
+}
+
+.react-tabs__nav-out .react-tabs__tab--selected {
+  position: relative;
+  color: #C253DD;
+  border-color: #C253DD;
+}
+
+.react-tabs__nav-out .react-tabs__tab--selected:before {
+  content: "\E907";
+}
+
+.react-tabs__nav-out .react-tabs__tab--selected:after {
+  content: "\E908";
+}
+
+.react-tabs__nav-out .react-tabs__tab-panel {
+  margin-top: 0;
+}
