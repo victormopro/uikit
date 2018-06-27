@@ -2,7 +2,6 @@ import React from 'react';
 
 import ActionButton from '../components/ActionButton';
 import Button from '../components/Button';
-import Card from '../components/Card';
 import Checkbox from '../components/Checkbox';
 import CodePreview from '../components/CodePreview';
 import Radio from '../components/Radio';
