@@ -2739,7 +2739,7 @@ button, .text-btn, .btn {
 }
 
 .card:hover {
-  box-shadow: 0 35px 50px 0 rgba(255, 119, 121, 0.15), 0 35px 50px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 35px 50px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card__body {
@@ -2830,7 +2830,7 @@ button, .text-btn, .btn {
 
 .popup {
   border-radius: 10px;
-  box-shadow: 0 35px 50px 0 rgba(255, 119, 121, 0.15), 0 35px 50px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 35px 50px 0 rgba(0, 0, 0, 0.2);
 }
 
 .popup__header, .popup__body {
@@ -3232,7 +3232,7 @@ button, .text-btn, .btn {
   padding: 25px 30px;
   background: #FFF;
   border-radius: 0 0 10px 10px;
-  box-shadow: 0 35px 50px 0 rgba(255, 119, 121, 0.15), 0 35px 50px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 35px 50px 0 rgba(0, 0, 0, 0.2);
 }
 
 .popup {
