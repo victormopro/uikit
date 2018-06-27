@@ -597,7 +597,7 @@ const Home = () => (
         <div className="col-xs-12 mopro-icons">
           { icons.map(icon => {
             return (
-              <div className="icon__wrap">
+              <div key={icon.name} className="icon__wrap">
                 <i className={icon.name} />
                 <p className="icon__text">{icon.name}</p>
               </div>

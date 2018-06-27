@@ -57,7 +57,7 @@ const Table = () =>{
                  <tbody>
                     { businessDetails.map((details) => {
                         return (
-                            <tr>
+                            <tr key={details.lead}>
                                 <td key={details.lead}>{details.lead}</td>
                                 <td key={details.business}>{details.business}</td>
                                 <td key={details.url}><a href="">{details.url}</a></td>
@@ -65,6 +65,7 @@ const Table = () =>{
                                 <td key={details.zip}>{details.zip}</td>
                                 <td key={details.pages}>{details.pages}</td>
                                 <td key={details.platform}>{details.platform}</td>
+                                <td key={details.status}>{details.status}</td>
                             </tr>
                         )
                     })}
