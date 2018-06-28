@@ -2,7 +2,7 @@ import React from 'react';
 
 const TableNav = () => {
     return(
-        <div></div>
+        <div>TableNav</div>
     )
 }
 

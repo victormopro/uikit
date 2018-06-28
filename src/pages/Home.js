@@ -569,9 +569,7 @@ const Home = () => (
           <SectionTitle id='tables' text='Tables' superscript={'07'} />
         </div>
       </div>
-      <div className="row mt-100">
-          <TableAll />
-      </div>
+      <TableAll />
     </div>
 
     { /***** Forms / Menus *****/ }

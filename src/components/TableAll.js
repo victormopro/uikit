@@ -5,24 +5,42 @@ import TableSort from './table/TableSort';
 import InnerTabs from './table/InnerTabs';
 import ContainerTabs from './table/ContainerTabs';
 
-
-
 const TableAll = () => {
-    return(
-        <div>
-            <Table />
-            <TableNav />
-            <TableSort />
-            <InnerTabs 
-                tabsNav = {['Option1', 'Option2', 'Option3']}
-                tabsBody = {['Apple', 'Orange', 'Banana']}
-            />
-            <ContainerTabs 
-                tabsNav = {['Menu1', 'Menu2', 'Menu3']}
-                tabsBody = {['Heading One', 'Heading Two', 'Heading Three']}
-            />
+  return (
+    <React.Fragment>
+      <div className="row mt-100">
+        <div className="col-xs-12">
+          <Table />
         </div>
-    )
+      </div>
+      <div className="row mt-50">
+        <div className="col-xs-12">
+          <TableNav />
+        </div>
+      </div>
+      <div className="row mt-50">
+        <div className="col-xs-12">
+          <TableSort />
+        </div>
+      </div>
+      <div className="row mt-50">
+        <div className="col-xs-12">
+          <InnerTabs
+              tabsNav = {['Option1', 'Option2', 'Option3']}
+              tabsBody = {['Apple', 'Orange', 'Banana']}
+          />
+        </div>
+      </div>
+      <div className="row mt-50">
+        <div className="col-xs-12">
+          <ContainerTabs
+              tabsNav = {['Menu1', 'Menu2', 'Menu3']}
+              tabsBody = {['Heading One', 'Heading Two', 'Heading Three']}
+          />
+        </div>
+      </div>
+    </React.Fragment>
+  );
 }
 
 export default TableAll;
