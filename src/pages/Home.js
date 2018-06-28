@@ -12,6 +12,7 @@ import ProfileCard from '../components/ProfileCard';
 import Accordion from '../components/Accordion';
 import Logo from '../components/Logo';
 import TableAll from '../components/TableAll';
+import InputField from '../components/InputField';
 
 // Assets & icons
 import brand from '../img/mopro.png';
@@ -578,6 +579,22 @@ const Home = () => (
       <div className="row">
         <div className="col-xs-12">
           <SectionTitle id='forms' text='Forms / Menus' superscript={'08'} />
+        </div>
+      </div>
+      <div className="row mt-100">
+        <div className="col-md-6">
+          <InputField icon="search" />
+        </div>
+        <div className="col-md-6">
+          <InputField icon="search" />
+        </div>
+      </div>
+      <div className="row mt-50">
+        <div className="col-md-6">
+          <InputField icon="search" size="large" />
+        </div>
+        <div className="col-md-6">
+          <InputField icon="search" size="large" />
         </div>
       </div>
     </div>

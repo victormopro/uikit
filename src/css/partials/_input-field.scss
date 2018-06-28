@@ -1,0 +1,38 @@
+// Input field styles
+// ==========================================================================
+
+.input-field {
+  input {
+    display: block;
+    height: 40px;
+    padding: 9px 20px;
+    width: 100%;
+    box-shadow: $shadow-input;
+    border: none;
+    outline: none;
+    color: map-get($text-colors, "dark");
+    caret-color: map-get($mopro-colors, "primary");
+    &::placeholder {
+      color: map-get($text-colors, "medium");
+    }
+  }
+  &.input-lg {
+    input {
+      height: 60px;
+      padding: 19px 20px;
+      font-size: $p-fontsize;
+    }
+    .input__icon {
+      font-size: 30px;
+    }
+  }
+  &.has-icon {
+    position: relative;
+    .input__icon {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+  }
+}

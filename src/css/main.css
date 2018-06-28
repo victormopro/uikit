@@ -1316,6 +1316,43 @@ ul {
   content: "";
 }
 
+.input-field input {
+  display: block;
+  height: 40px;
+  padding: 9px 20px;
+  width: 100%;
+  box-shadow: 0 35px 50px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: none;
+  color: #2B2829;
+  caret-color: #C253DD;
+}
+
+.input-field input::placeholder {
+  color: #A7A8A8;
+}
+
+.input-field.input-lg input {
+  height: 60px;
+  padding: 19px 20px;
+  font-size: 21px;
+}
+
+.input-field.input-lg .input__icon {
+  font-size: 30px;
+}
+
+.input-field.has-icon {
+  position: relative;
+}
+
+.input-field.has-icon .input__icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
 html {
   line-height: 1.15;
   font-size: 100%;
