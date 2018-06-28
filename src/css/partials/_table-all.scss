@@ -2,11 +2,11 @@
 .card.tabs{
     min-height: 300px;
 }
-.react-tabs{
+.tabs{
 
     // Inner "Tabs" style start
     &__nav-in{
-        .react-tabs{
+        .tabs{
             &__tab-list{
                 list-style: none;
                 display: flex;
@@ -34,7 +34,7 @@
     
     // Container "Tabs" style start
     &__nav-out{
-        .react-tabs{
+        .tabs{
             &__tab-list{
                 list-style: none;
                 display: flex;

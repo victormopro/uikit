@@ -6,7 +6,7 @@ import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 const ContainerTabs = ({tabsNav,tabsBody}) => {
     return(
         
-        <Tabs className="react-tabs__nav-out mt-30">
+        <Tabs className="tabs__nav-out mt-30">
             <TabList>
                 {tabsNav.map((nav) => {
                     return <Tab key={nav}>{nav}</Tab>

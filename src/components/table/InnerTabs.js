@@ -6,8 +6,8 @@ import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 const InnerTabs = ({tabsNav, tabsBody}) => {
     return(
         <div className="card tabs mt-30">
-            <Tabs className="react-tabs__nav-in">
-                <TabList>
+            <Tabs className="tabs__nav-in">
+                <TabList >
                     {tabsNav.map((nav) => {
                         return <Tab key={nav}>{nav}</Tab>
                     })}

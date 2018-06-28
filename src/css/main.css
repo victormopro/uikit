@@ -3467,12 +3467,12 @@ table th[class*="col-"] {
   min-height: 300px;
 }
 
-.react-tabs__nav-in .react-tabs__tab-list {
+.tabs__nav-in .tabs__tab-list {
   list-style: none;
   display: flex;
 }
 
-.react-tabs__nav-in .react-tabs__tab {
+.tabs__nav-in .tabs__tab {
   color: #B7BCC3;
   margin: 15px;
   padding-bottom: 5px;
@@ -3481,26 +3481,26 @@ table th[class*="col-"] {
   border-bottom: 2px solid transparent;
 }
 
-.react-tabs__nav-in .react-tabs__tab:first-child {
+.tabs__nav-in .tabs__tab:first-child {
   margin-left: 0;
 }
 
-.react-tabs__nav-in .react-tabs__tab--selected {
+.tabs__nav-in .tabs__tab--selected {
   color: #C253DD;
   border-color: #C253DD;
 }
 
-.react-tabs__nav-in .react-tabs__tab-panel {
+.tabs__nav-in .tabs__tab-panel {
   margin-top: 30px;
 }
 
-.react-tabs__nav-out .react-tabs__tab-list {
+.tabs__nav-out .tabs__tab-list {
   list-style: none;
   display: flex;
   justify-content: flex-end;
 }
 
-.react-tabs__nav-out .react-tabs__tab {
+.tabs__nav-out .tabs__tab {
   color: #B7BCC3;
   margin: 15px 30px;
   padding-bottom: 5px;
@@ -3508,17 +3508,17 @@ table th[class*="col-"] {
   outline: none;
 }
 
-.react-tabs__nav-out .react-tabs__tab:first-child {
+.tabs__nav-out .tabs__tab:first-child {
   margin-left: 0;
 }
 
-.react-tabs__nav-out .react-tabs__tab--selected {
+.tabs__nav-out .tabs__tab--selected {
   position: relative;
   color: #C253DD;
   border-color: #C253DD;
 }
 
-.react-tabs__nav-out .react-tabs__tab--selected:before, .react-tabs__nav-out .react-tabs__tab--selected:after {
+.tabs__nav-out .tabs__tab--selected:before, .tabs__nav-out .tabs__tab--selected:after {
   position: absolute;
   font-family: 'Mopro-Icons';
   color: #B7BCC3;
@@ -3526,16 +3526,16 @@ table th[class*="col-"] {
   top: -4px;
 }
 
-.react-tabs__nav-out .react-tabs__tab--selected:before {
+.tabs__nav-out .tabs__tab--selected:before {
   content: "\E907";
   left: -30px;
 }
 
-.react-tabs__nav-out .react-tabs__tab--selected:after {
+.tabs__nav-out .tabs__tab--selected:after {
   content: "\E908";
   right: -30px;
 }
 
-.react-tabs__nav-out .react-tabs__tab-panel {
+.tabs__nav-out .tabs__tab-panel {
   margin-top: 0;
 }
