@@ -3518,12 +3518,22 @@ table th[class*="col-"] {
   border-color: #C253DD;
 }
 
+.react-tabs__nav-out .react-tabs__tab--selected:before, .react-tabs__nav-out .react-tabs__tab--selected:after {
+  position: absolute;
+  font-family: 'Mopro-Icons';
+  color: #B7BCC3;
+  font-size: 24px;
+  top: -4px;
+}
+
 .react-tabs__nav-out .react-tabs__tab--selected:before {
   content: "\E907";
+  left: -30px;
 }
 
 .react-tabs__nav-out .react-tabs__tab--selected:after {
   content: "\E908";
+  right: -30px;
 }
 
 .react-tabs__nav-out .react-tabs__tab-panel {

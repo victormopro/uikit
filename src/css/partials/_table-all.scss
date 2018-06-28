@@ -4,7 +4,7 @@
 }
 .react-tabs{
 
-    // TabsIn style start
+    // Inner "Tabs" style start
     &__nav-in{
         .react-tabs{
             &__tab-list{
@@ -32,7 +32,7 @@
         }
     }
     
-    // TabsOut style start
+    // Container "Tabs" style start
     &__nav-out{
         .react-tabs{
             &__tab-list{
@@ -53,11 +53,20 @@
                     position: relative;
                     color: #C253DD;
                     border-color: #C253DD;
+                    &:before,&:after{
+                        position: absolute;
+                        font-family: 'Mopro-Icons';
+                        color: #B7BCC3;
+                        font-size: 24px;
+                        top: -4px;
+                    }
                     &:before{
                         content: "\E907";
+                        left: -30px;
                     }
                     &:after{
                         content: "\E908";
+                        right: -30px;
                     }
                 }
             }

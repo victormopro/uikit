@@ -3,10 +3,7 @@ import React from 'react';
 // React Tabs plugin added (details: https://github.com/reactjs/react-tabs)
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 
-const tabsNav = ['Option1', 'Option2', 'Option3'];
-const tabsBody = ['Apple', 'Orange', 'Banana'];
-
-const TabsIn = () => {
+const InnerTabs = ({tabsNav, tabsBody}) => {
     return(
         <div className="card tabs mt-30">
             <Tabs className="react-tabs__nav-in">
@@ -23,4 +20,4 @@ const TabsIn = () => {
     )
 }
 
-export default TabsIn ;
+export default InnerTabs ;

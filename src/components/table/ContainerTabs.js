@@ -3,10 +3,7 @@ import React from 'react';
 // React Tabs plugin added (details: https://github.com/reactjs/react-tabs)
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 
-const tabsNav = ['Option1', 'Option2', 'Option3'];
-const tabsBody = ['Apple', 'Orange', 'Banana'];
-
-const TabsOut = () => {
+const ContainerTabs = ({tabsNav,tabsBody}) => {
     return(
         
         <Tabs className="react-tabs__nav-out mt-30">
@@ -26,4 +23,4 @@ const TabsOut = () => {
     )
 }
 
-export default TabsOut ;
+export default ContainerTabs ;
