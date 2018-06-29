@@ -3526,10 +3526,6 @@ table th[class*="col-"] {
   border-color: #C253DD;
 }
 
-.tabs__nav-in .tabs__tab-panel {
-  margin-top: 30px;
-}
-
 .tabs__nav-out .tabs__tab-list {
   list-style: none;
   display: flex;

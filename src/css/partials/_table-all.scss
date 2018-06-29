@@ -2,6 +2,7 @@
 .card.tabs{
     min-height: 300px;
 }
+
 .tabs{
 
     // Inner "Tabs" style start
@@ -22,12 +23,12 @@
                     margin-left: 0;
                 }
                 &--selected{
-                    color: #C253DD;
-                    border-color: #C253DD;
+                    color: map-get($mopro-colors, "primary");
+                    border-color: map-get($mopro-colors, "primary");
                 }
             }
             &__tab-panel{
-                margin-top:30px;
+                // margin-top:30px;
             }
         }
     }
@@ -51,8 +52,8 @@
                 }
                 &--selected{
                     position: relative;
-                    color: #C253DD;
-                    border-color: #C253DD;
+                    color: map-get($mopro-colors, "primary");
+                    border-color: map-get($mopro-colors, "primary");
                     &:before,&:after{
                         position: absolute;
                         font-family: 'Mopro-Icons';
