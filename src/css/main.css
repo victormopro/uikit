@@ -3154,13 +3154,12 @@ button, .text-btn, .btn {
   border-radius: 10px;
   background: #F1F2F6;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .mopro-icons .icon__wrap {
   color: #2B2829;
-  flex-basis: 20%;
+  flex-basis: calc(25% - 10px);
   display: flex;
   align-items: center;
   margin: 5px;

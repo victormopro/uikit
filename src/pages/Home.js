@@ -13,6 +13,7 @@ import Accordion from '../components/Accordion';
 import Logo from '../components/Logo';
 import TableAll from '../components/TableAll';
 import InputField from '../components/InputField';
+import IconList from '../components/IconList';
 
 // Assets & icons
 import brand from '../img/mopro.png';
@@ -608,15 +609,8 @@ const Home = () => (
         </div>
       </div>
       <div className="row mt-100">
-        <div className="col-xs-12 mopro-icons">
-          { icons.map(icon => {
-            return (
-              <div key={icon.name} className="icon__wrap">
-                <i className={icon.name} />
-                <p className="icon__text">{icon.name}</p>
-              </div>
-            );
-          }) }
+        <div className="col-xs-12">
+          <IconList icons={icons} />
         </div>
       </div>
     </div>
