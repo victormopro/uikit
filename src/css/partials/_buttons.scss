@@ -36,6 +36,9 @@
     color: map-get($mopro-colors, "primary");
     border: 1px solid map-get($mopro-colors, "primary");
   }
+  &--transparent{
+    background: rgba(map-get( $static-colors, "white"), 0.1);
+  }
   &--disabled {
     background: map-get($text-colors, "light");
     cursor: auto;

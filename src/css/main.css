@@ -171,6 +171,10 @@ ul {
   border: 1px solid #C253DD;
 }
 
+.btn--transparent {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .btn--disabled {
   background: #DDD;
   cursor: auto;

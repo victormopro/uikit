@@ -291,6 +291,14 @@ const Home = () => (
           </div>
         </div>
       </div>
+      <div className="row mt-65">
+        <div className="col-xs-12">
+          <h4>Buttons sm, md, lg.</h4>
+          <div className="mt-15">
+            
+          </div>
+        </div>
+      </div>
       <div className="row mt-25">
         <div className="col-xs-12">
           <CodePreview>
@@ -508,6 +516,22 @@ const Home = () => (
 `}
             </CodePreview>
         </div>
+        <div className="col-xs-4 mt-30">
+          <div className="card mt-30 bg-grad-primary">
+          <div className="card__footer footer-btn">
+              <Button size="large" type="transparent" block children="Large Bottom Button" />
+            </div>
+          </div>            
+        </div>
+        <div className="col-xs-4 mt-30">
+          <div className="card mt-30 bg-grad-secondary">
+          <div className="card__footer footer-btn">
+              <Button size="large" type="transparent" block children="Secondary Gradient" />
+          </div>
+          </div>            
+        </div>
+
+
         <div className="col-xs-4">
           <p className="text-center fw-bold">Popup</p>
           <div className="popup mt-30"></div>
@@ -554,7 +578,7 @@ const Home = () => (
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
               <div className="modal__footer">
-
+              <Button size='small' type='outline'>Button</Button>  <Button size='small' type='primary'>Button</Button>
               </div>
             </div>
           </div>
