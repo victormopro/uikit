@@ -1,6 +1,12 @@
 .brand {
-    &__light,
-    &__dark {
-        padding: 20px 20px 10px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  &--dark {
+    justify-content: flex-start;
+  }
+  img {
+    max-width: 60%;
+  }
 }

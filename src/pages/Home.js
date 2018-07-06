@@ -16,7 +16,8 @@ import InputField from '../components/InputField';
 import IconList from '../components/IconList';
 
 // Assets & icons
-import brand from '../img/mopro.png';
+import logoLight from '../img/mopro-white.png';
+import logoDark from '../img/mopro-black.png';
 import icons from '../config/icons.json';
 
 const Home = () => (
@@ -30,23 +31,19 @@ const Home = () => (
             <SectionTitle id='brand' text='Logo' superscript={'00'} />
             <div className="row mt-50">
               <div className="col-xs-3">
-                <div className="brand">
-                  <div className="brand__light bg-light text-center">
-                    <Logo
-                      img={brand}
-                      name="Mopro Logo"
-                    />
-                  </div>
+                <div className="brand brand--dark">
+                  <Logo
+                    img={logoDark}
+                    name="Mopro Logo"
+                  />
                 </div>
               </div>
               <div className="col-xs-3">
-                <div className="brand">
-                  <div className="brand__dark bg-grad-primary text-center">
-                    <Logo
-                      img={brand}
-                      name="Mopro Logo"
-                    />
-                  </div>
+                <div className="brand bg-grad-primary">
+                  <Logo
+                    img={logoLight}
+                    name="Mopro Logo"
+                  />
                 </div>
               </div>
             </div>
@@ -295,7 +292,7 @@ const Home = () => (
         <div className="col-xs-12">
           <h4>Buttons sm, md, lg.</h4>
           <div className="mt-15">
-            
+
           </div>
         </div>
       </div>
@@ -521,14 +518,14 @@ const Home = () => (
           <div className="card__footer footer-btn">
               <Button size="large" type="transparent" block children="Large Bottom Button" />
             </div>
-          </div>            
+          </div>
         </div>
         <div className="col-xs-4 mt-30">
           <div className="card mt-30 bg-grad-secondary">
           <div className="card__footer footer-btn">
               <Button size="large" type="transparent" block children="Secondary Gradient" />
           </div>
-          </div>            
+          </div>
         </div>
 
 

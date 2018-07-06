@@ -95,8 +95,19 @@ ul {
   box-sizing: border-box;
 }
 
-.brand__light, .brand__dark {
-  padding: 20px 20px 10px;
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.brand--dark {
+  justify-content: flex-start;
+}
+
+.brand img {
+  max-width: 60%;
 }
 
 .action-btn {
@@ -1318,6 +1329,10 @@ ul {
 
 .icon-Forms:before {
   content: "";
+}
+
+img {
+  max-width: 100%;
 }
 
 .input-field input {
