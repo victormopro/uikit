@@ -28,7 +28,7 @@ const Home = () => (
       <div className="section section--modals">
         <div className="row">
           <div className="col-xs-12">
-            <SectionTitle id='brand' text='Logo' superscript={'00'} />
+            <SectionTitle id='brand' text='Logo' superscript={'01'} />
             <div className="row mt-50">
               <div className="col-xs-3">
                 <div className="brand brand--dark">
@@ -56,7 +56,7 @@ const Home = () => (
     <div className="section section--colors mt-100">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle id='colors' text='Colors' superscript={'01'} />
+          <SectionTitle id='colors' text='Colors' superscript={'02'} />
         </div>
       </div>
       <div className="row mt-100">
@@ -167,7 +167,7 @@ const Home = () => (
     <div className="section section--text mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle id='text' text='Text' superscript={'02'} />
+          <SectionTitle id='text' text='Text' superscript={'03'} />
         </div>
       </div>
       <div className="row mt-100">
@@ -260,7 +260,7 @@ const Home = () => (
     <div className="section section--modals mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle id='buttons' text='Buttons / Switches' superscript={'03'} />
+          <SectionTitle id='buttons' text='Buttons / Switches' superscript={'04'} />
         </div>
       </div>
       <div className="row mt-65">
@@ -423,7 +423,7 @@ const Home = () => (
     <div className="section section--styling mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle id='popups' text='Popups, Tooltips, Loaders & Cards' superscript={'04'} />
+          <SectionTitle id='popups' text='Popups, Tooltips, Loaders & Cards' superscript={'05'} />
         </div>
       </div>
       <div className="row mt-100">
@@ -537,8 +537,7 @@ const Home = () => (
         </div>
 
 
-        <div className="col-xs-4">
-          <p className="text-center fw-bold">Popup</p>
+        <div className="col-xs-4 mt-30">
           <div className="popup mt-30"></div>
             <CodePreview>
 {`
@@ -558,7 +557,7 @@ const Home = () => (
     <div className="section section--charts mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle id='charts' text='Charts' superscript={'05'} />
+          <SectionTitle id='charts' text='Charts' superscript={'06'} />
         </div>
       </div>
     </div>
@@ -568,7 +567,7 @@ const Home = () => (
     <div className="section section--modals mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle id='modals' text='Modals' superscript={'06'} />
+          <SectionTitle id='modals' text='Modals' superscript={'07'} />
         </div>
       </div>
       <div className="row mt-100">
@@ -597,7 +596,7 @@ const Home = () => (
     <div className="section section--modals mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle id='tables' text='Tables' superscript={'07'} />
+          <SectionTitle id='tables' text='Tables' superscript={'08'} />
         </div>
       </div>
       <TableAll />
@@ -608,7 +607,7 @@ const Home = () => (
     <div className="section section--modals mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle id='forms' text='Forms / Menus' superscript={'08'} />
+          <SectionTitle id='forms' text='Forms / Menus' superscript={'09'} />
         </div>
       </div>
       <div className="row mt-100">
@@ -634,7 +633,7 @@ const Home = () => (
     <div className="section section--modals mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle id='icons' text='Product Icons' superscript={'09'} />
+          <SectionTitle id='icons' text='Product Icons' superscript={'10'} />
         </div>
       </div>
       <div className="row mt-100">
@@ -649,7 +648,7 @@ const Home = () => (
     <div className="section section--modals mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle id='uploader' text='File Uploader' superscript={'10'} />
+          <SectionTitle id='uploader' text='File Uploader' superscript={'11'} />
         </div>
       </div>
     </div>
@@ -659,7 +658,7 @@ const Home = () => (
     <div className="section section--modals mt-150">
       <div className="row">
         <div className="col-xs-12">
-          <SectionTitle id='accordions' text='Accordions' superscript={'11'} />
+          <SectionTitle id='accordions' text='Accordions' superscript={'12'} />
           <Accordion
               title = "Accordion behavior"
               description ="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum."
