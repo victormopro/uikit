@@ -304,6 +304,28 @@ const Home = () => (
           </div>
         </div>
       </div>
+      <div className="row mt-25">
+        <div className="col-xs-12">
+          <CodePreview>
+{`
+<button class="btn btn-sm btn--primary">Primary Button</button>
+<button class="btn btn-sm btn--secondary">Secondary Button</button>
+<button class="btn btn-sm btn--outline">Outline Button</button>
+<button class="btn btn-sm btn--disabled">Disabled Button</button>
+
+<button class="btn btn--primary">Primary Button</button>
+<button class="btn btn--secondary">Secondary Button</button>
+<button class="btn btn--outline">Outline Button</button>
+<button class="btn btn--disabled">Disabled Button</button>
+
+<button class="btn btn-lg btn--primary">Primary Button</button>
+<button class="btn btn-lg btn--secondary">Secondary Button</button>
+<button class="btn btn-lg btn--outline">Outline Button</button>
+<button class="btn btn-lg btn--disabled">Disabled Button</button>
+`}
+          </CodePreview>
+        </div>
+      </div>
       <div className="row mt-65">
         <div className="col-xs-12">
           <h4>Block Level Buttons</h4>
@@ -313,6 +335,18 @@ const Home = () => (
             <Button size='small' type='outline' block>Outline Button</Button>{' '}
             <Button size='small' type='disabled' block>Disabled Button</Button>{' '}
           </div>
+        </div>
+      </div>
+      <div className="row mt-25">
+        <div className="col-xs-12">
+          <CodePreview>
+{`
+<button class="btn btn-sm btn-block btn--primary">Small Block Level Button</button>
+<button class="btn btn-block btn--secondary">Medium Block Level Button</button>
+<button class="btn btn-lg btn-block btn--outline">Large Block Level Button</button>
+<button class="btn btn-block btn--disabled">Disabled Block Level Button</button>
+`}
+          </CodePreview>
         </div>
       </div>
       <div className="row mt-65">
@@ -334,6 +368,52 @@ const Home = () => (
             <Switch />
             <Switch type="text" />
           </div>
+        </div>
+      </div>
+      <div className="row mt-25">
+        <div className="col-xs-12">
+          <CodePreview>
+{`
+<!-- Radio button -->
+<div class="radio">
+  <input type="radio" name="name">
+  <span></span>
+  <label>Radio label</label>
+</div>
+
+<!-- Checkbox -->
+<div class="checkbox">
+  <input type="checkbox">
+  <span></span>
+  <label>Checkbox label</label>
+</div>
+
+<!-- Action buttons -->
+...
+
+<!-- Switches -->
+<div class="switch switch--success">
+  <label>
+    <input type="checkbox">
+    <span class="lever"></span>
+  </label>
+</div>
+<div class="switch">
+  <label>
+    <input type="checkbox">
+    <span class="lever"></span>
+  </label>
+</div>
+<div class="switch switch--text">
+  <label>
+    <input type="checkbox">
+    <span class="lever">
+      <span class="switch__text"></span>
+    </span>
+  </label>
+</div>
+`}
+          </CodePreview>
         </div>
       </div>
     </div>
@@ -392,6 +472,15 @@ const Home = () => (
         <div className="col-xs-4 mt-30">
           <p className="text-center fw-bold">Standard Card</p>
           <div className="card mt-30"></div>
+            <CodePreview>
+            {`
+<div class="card">
+  <div class="card__header"></div>
+  <div class="card__content"></div>
+  <div class="card__footer"></div>
+</div>
+`}
+            </CodePreview>
         </div>
         <div className="col-xs-4 mt-30">
           <p className="text-center fw-bold">Button on bottom</p>
@@ -400,6 +489,17 @@ const Home = () => (
               <Button size="large" type="primary" block children="Button on bottom" />
             </div>
           </div>
+            <CodePreview>
+            {`
+<div class="card">
+  <div class="card__header"></div>
+  <div class="card__content"></div>
+  <div class="card__footer">
+    <button class="btn btn-lg btn--primary btn-block">Button on bottom</button>
+  </div>
+</div>
+`}
+            </CodePreview>
         </div>
         <div className="col-xs-4 mt-30">
           <p className="text-center fw-bold">Button with text under</p>
@@ -409,6 +509,17 @@ const Home = () => (
               <p className="card__text">Meta Description: Select up to 5 personas that best represent your customer base.</p>
             </div>
           </div>
+            <CodePreview>
+            {`
+<div class="card">
+  <div class="card__header"></div>
+  <div class="card__content"></div>
+  <div class="card__footer">
+    <button class="btn btn-lg btn--primary btn-block">Button with text under</button>
+  </div>
+</div>
+`}
+            </CodePreview>
         </div>
         <div className="col-xs-4 mt-30">
           <div className="card mt-30 bg-grad-primary">
@@ -428,6 +539,14 @@ const Home = () => (
 
         <div className="col-xs-4 mt-30">
           <div className="popup mt-30"></div>
+            <CodePreview>
+{`
+<div class="popup">
+  <div class="popup__header"></div>
+  <div class="popup__content"></div>
+</div>
+`}
+            </CodePreview>
         </div>
 
       </div>
