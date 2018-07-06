@@ -124,28 +124,36 @@ const Home = () => (
               <div className="col-xs-12">
                 <h4>Text Colors</h4>
               </div>
-              <div className="col-xs-4">
+              <div className="col-xs-3">
                 <Swatch
                   marginTop={20}
                   colorClass='bg-dark'
-                  headerText='Paving Black'
-                  colors={['#2B2829']}
+                  headerText='Primary Color'
+                  colors={['#000000']}
                 />
               </div>
-              <div className="col-xs-4">
+              <div className="col-xs-3">
                 <Swatch
                   marginTop={20}
                   colorClass='bg-medium'
-                  headerText='Cyanish Grey'
-                  colors={['#A7A8A8']}
+                  headerText='Secondary Color'
+                  colors={['#4A4A4A']}
                 />
               </div>
-              <div className="col-xs-4">
+              <div className="col-xs-3">
                 <Swatch
                   marginTop={20}
                   colorClass='bg-light'
-                  headerText='Gainsboro Grey'
-                  colors={['#DDD']}
+                  headerText='Tertiary Color'
+                  colors={['#959DA7']}
+                />
+              </div>
+              <div className="col-xs-3">
+                <Swatch
+                  marginTop={20}
+                  colorClass='bg-extra-light'
+                  headerText='Extra Light Grey'
+                  colors={['#A7A8A8']}
                 />
               </div>
             </div>

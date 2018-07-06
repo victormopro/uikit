@@ -13,7 +13,7 @@
     color: map-get($text-colors, "dark");
     caret-color: map-get($mopro-colors, "primary");
     &::placeholder {
-      color: map-get($text-colors, "medium");
+      color: map-get($text-colors, "secondary");
     }
   }
   &.input-lg {

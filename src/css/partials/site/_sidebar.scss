@@ -14,15 +14,15 @@
   }
   &__link {
     text-decoration: none;
-    color: map-get($text-colors, "medium");
+    color: map-get($text-colors, "secondary");
     font-size: 12px;
     font-weight: 300;
     display: block;
     padding: 10px;
     border-radius: 3px;
     &:hover,.active{
-      background: map-get($text-colors, "light");
-      color: map-get($text-colors, "dark");
+      background: rgba(map-get($text-colors, "light"), 0.25);
+      color: map-get($text-colors, "primary");
     }
   }
 }

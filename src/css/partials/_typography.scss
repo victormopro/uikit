@@ -65,7 +65,7 @@ figcaption, .caption {
 }
 .text-sub {
   @include font-style($sub-fontsize, $sub-fontweight, $sub-lineheight, $sub-letterspacing);
-  color: map-get($text-colors, "medium");
+  color: map-get($text-colors, "secondary");
   text-transform: uppercase;
 }
 .text-meta {

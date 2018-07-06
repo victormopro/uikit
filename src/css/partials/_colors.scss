@@ -16,12 +16,15 @@
   @include transparent-text;
 }
 .color-dark {
-  color: map-get($text-colors, "dark");
+  color: map-get($text-colors, "primary");
 }
 .color-medium {
-  color: map-get($text-colors, "medium");
+  color: map-get($text-colors, "secondary");
 }
 .color-light {
+  color: map-get($text-colors, "tertiary");
+}
+.color-extra-light {
   color: map-get($text-colors, "light");
 }
 .color-success {
@@ -49,11 +52,14 @@
   background-color: map-get($static-colors, "error");
 }
 .bg-dark {
-  background-color: map-get($text-colors, "dark");
+  background-color: map-get($text-colors, "primary");
 }
 .bg-medium {
-  background-color: map-get($text-colors, "medium");
+  background-color: map-get($text-colors, "secondary");
 }
 .bg-light {
+  background-color: map-get($text-colors, "tertiary");
+}
+.bg-extra-light {
   background-color: map-get($text-colors, "light");
 }
