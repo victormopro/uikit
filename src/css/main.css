@@ -3595,3 +3595,68 @@ table th[class*="col-"] {
 .tabs__nav-out .tabs__tab-panel {
   margin-top: 0;
 }
+
+.table__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.table__nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.table__nav p {
+  line-height: 35px;
+  height: 35px;
+  margin: 10px;
+}
+
+.table__nav__total-page {
+  margin: 10px;
+}
+
+.table__nav__total-page li {
+  width: 35px;
+  height: 35px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #e2e2e2;
+  cursor: pointer;
+}
+
+.table__nav__select-items {
+  margin: 10px;
+}
+
+.table__nav__select-items select {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #e2e2e2;
+}
+
+.table__nav__select-items li:first-child {
+  line-height: 35px;
+  margin: 0 10px;
+}
+
+.table__nav__prev-next {
+  margin: 10px;
+}
+
+.table__nav__prev-next li {
+  line-height: 35px;
+  margin: 0 10px;
+}
+
+.table__nav__prev-next li button {
+  cursor: pointer;
+}
+
+.table__nav__prev-next li button[disabled] {
+  color: #bbbbbb;
+  cursor: not-allowed;
+}

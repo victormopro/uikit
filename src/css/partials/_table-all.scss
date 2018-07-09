@@ -27,9 +27,6 @@
                     border-color: map-get($mopro-colors, "primary");
                 }
             }
-            &__tab-panel{
-                // margin-top:30px;
-            }
         }
     }
     
@@ -76,5 +73,63 @@
             }
         }
     }
+}
+
+
+// Table with nav
+.table__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    p{
+        line-height: 35px;
+        height: 35px;
+        margin: 10px;
+    }
+    &__total-page{
+        margin: 10px;
+        li{
+            width: 35px;
+            height: 35px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #e2e2e2;
+            cursor: pointer;
+        }
+    }
+    &__select-items{
+        margin: 10px;
+        select{
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            border: 1px solid #e2e2e2;
+        }
+        li:first-child{
+            line-height: 35px;
+            margin: 0 10px;
+        }
+    }
+    &__prev-next{
+        margin: 10px;
+        li{
+            line-height: 35px;
+            margin: 0 10px;
+
+            button{
+                cursor: pointer;
+                &[disabled]{
+                    color: #bbbbbb;
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+
 }
 

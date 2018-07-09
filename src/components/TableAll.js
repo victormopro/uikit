@@ -1,5 +1,5 @@
 import React from 'react';
-import Table from './table/Table';
+import TableSimple from './table/TableSimple';
 import TableNav from './table/TableNav';
 import TableSort from './table/TableSort';
 import InnerTabs from './table/InnerTabs';
@@ -10,7 +10,7 @@ const TableAll = () => {
     <React.Fragment>
       <div className="row mt-100">
         <div className="col-xs-12">
-          <Table />
+          <TableSimple />
         </div>
       </div>
       <div className="row mt-50">

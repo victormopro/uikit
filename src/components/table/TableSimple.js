@@ -42,7 +42,7 @@ const businessDetails = [
         status: 'Queued'
     }
 ];
-const Table = () =>{
+const TableSimple = () =>{
     
         return(
             <div>
@@ -76,4 +76,4 @@ const Table = () =>{
     
     }
 
-export default Table;
+export default TableSimple;
