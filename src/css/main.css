@@ -3612,6 +3612,9 @@ table th[class*="col-"] {
   line-height: 35px;
   height: 35px;
   margin: 10px;
+  font-size: 14px;
+  color: #757575;
+  font-weight: 300;
 }
 
 .table__nav__total-page {
@@ -3635,12 +3638,16 @@ table th[class*="col-"] {
   width: 35px;
   height: 35px;
   line-height: 35px;
+  outline: none;
   border: 1px solid #e2e2e2;
 }
 
 .table__nav__select-items li:first-child {
   line-height: 35px;
   margin: 0 10px;
+  font-size: 14px;
+  color: #757575;
+  font-weight: 300;
 }
 
 .table__nav__prev-next {
@@ -3649,14 +3656,22 @@ table th[class*="col-"] {
 
 .table__nav__prev-next li {
   line-height: 35px;
-  margin: 0 10px;
+  margin: 0 2px;
 }
 
 .table__nav__prev-next li button {
   cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
 }
 
 .table__nav__prev-next li button[disabled] {
   color: #bbbbbb;
   cursor: not-allowed;
+}
+
+.table__nav__prev-next li button i {
+  font-size: 24px;
+  font-weight: 800;
 }

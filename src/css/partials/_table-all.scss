@@ -90,6 +90,9 @@
         line-height: 35px;
         height: 35px;
         margin: 10px;
+        font-size: 14px;
+        color: #757575;
+        font-weight: 300;
     }
     &__total-page{
         margin: 10px;
@@ -108,24 +111,35 @@
             width: 35px;
             height: 35px;
             line-height: 35px;
+            outline: none;
             border: 1px solid #e2e2e2;
         }
         li:first-child{
             line-height: 35px;
             margin: 0 10px;
+            font-size: 14px;
+            color: #757575;
+            font-weight: 300
         }
     }
     &__prev-next{
         margin: 10px;
         li{
             line-height: 35px;
-            margin: 0 10px;
+            margin: 0 2px;
 
             button{
                 cursor: pointer;
+                border:none;
+                background: none;
+                outline: none;
                 &[disabled]{
                     color: #bbbbbb;
                     cursor: not-allowed;
+                }
+                i{
+                    font-size: 24px;
+                    font-weight: 800;
                 }
             }
         }

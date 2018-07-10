@@ -116,12 +116,15 @@ class TableNav extends Component {
         this.nextPage = this.nextPage.bind(this);
     }
 
+    // change page view
     changePage(e) {
         this.setState({
             currentPage: e.target.id
         })
         console.log(this.state.currentPage);
     }
+
+    // change row count
     changeRowCount(e) {
         this.setState({
             detailsPerPage: e.target.value
@@ -129,8 +132,8 @@ class TableNav extends Component {
         console.log(this.state.detailsPerPage);
     }
 
+    // previous page
     prevPage() {
-        
         this.setState((prevState) => {
             return{
                 currentPage: prevState.currentPage - 1,
@@ -138,6 +141,8 @@ class TableNav extends Component {
         })
         console.log(this.state.currentPage);
     }
+
+    // next page
     nextPage() {
         this.setState((prevState) => {
             return{
@@ -221,11 +226,19 @@ class TableNav extends Component {
                             </li>
                         </ul>
                     </div>
-                    <p>{currentPage}-{detailsPerPage} of {details.length}</p>
+                    <p><span className='color-primary'>{currentPage}</span>-{detailsPerPage} of {details.length}</p>
                     <div className='table__nav__prev-next'>
                         <ul>
-                            <li><button disabled={currentPage === 1} onClick={this.prevPage}>Prev</button></li>
-                            <li><button disabled={currentPage === pageNumbers.length} onClick={this.nextPage}>Next</button></li>
+                            <li>
+                                <button disabled={currentPage === 1} onClick={this.prevPage}>
+                                    <i className='icon-ArrowLeft'></i>
+                                </button>
+                            </li>
+                            <li>
+                                <button disabled={currentPage === pageNumbers.length} onClick={this.nextPage}>
+                                    <i className='icon-ArrowRight'></i>
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div>
