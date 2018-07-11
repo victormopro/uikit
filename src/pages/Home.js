@@ -298,15 +298,7 @@ const Home = () => (
       </div>
       <div className="row mt-65">
         <div className="col-xs-12">
-          <h4>Buttons sm, md, lg.</h4>
-          <div className="mt-15">
-
-          </div>
-        </div>
-      </div>
-      <div className="row mt-65">
-        <div className="col-xs-12">
-          <h4>Block Level Buttons</h4>
+          <h4>Fluid Buttons</h4>
           <div className="mt-15">
             <Button size='small' type='primary' block>Primary Button</Button>{' '}
             <Button size='small' type='secondary' block>Secondary Button</Button>{' '}
