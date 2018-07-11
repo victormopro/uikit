@@ -159,7 +159,7 @@ ul {
 
 .btn--primary {
   background: #c253dd;
-  background: linear-gradient(to top right, #c253dd, #3023ae);
+  background: linear-gradient(to right, #c253dd, #3023ae);
   background-repeat: no-repeat;
 }
 

@@ -21,7 +21,7 @@
     color: map-get($text-colors, "medium");
   }
   &--primary {
-    @include main-gradient;
+    @include main-gradient(to right);
     background-repeat: no-repeat;
   }
   &--secondary {
