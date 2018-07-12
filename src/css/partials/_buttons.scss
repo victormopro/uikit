@@ -18,10 +18,10 @@
     box-shadow: $shadow-btn;
   }
   &--default{
-    color:#CCC;
+    color: map-get($text-colors, "medium");
   }
   &--primary {
-    @include main-gradient;
+    @include main-gradient(to right);
     background-repeat: no-repeat;
   }
   &--secondary {
@@ -35,6 +35,16 @@
     background: none;
     color: map-get($mopro-colors, "primary");
     border: 1px solid map-get($mopro-colors, "primary");
+    padding-top: 14px;
+    padding-bottom: 14px;
+    &.btn-sm {
+      padding-top: 11px;
+      padding-bottom: 11px;
+    }
+    &.btn-lg {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
   }
   &--transparent{
     background: rgba(map-get( $static-colors, "white"), 0.1);
