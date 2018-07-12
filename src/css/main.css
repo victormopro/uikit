@@ -3369,157 +3369,118 @@ pre {
   color: #4A4A4A;
 }
 
+table, th, td {
+  border: none;
+}
+
 table {
-  background-color: transparent;
-}
-
-caption {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  color: #777777;
-  text-align: left;
-}
-
-th {
-  text-align: left;
-}
-
-.table {
   width: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.1), 0 5px 30px 4px rgba(0, 0, 0, 0.04), 0 8px 10px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.1), 0 5px 30px 4px rgba(0, 0, 0, 0.04), 0 8px 10px -5px rgba(0, 0, 0, 0.1);
 }
 
-.table > thead > tr > th,
-.table > thead > tr > td,
-.table > tbody > tr > th,
-.table > tbody > tr > td,
-.table > tfoot > tr > th,
-.table > tfoot > tr > td {
-  padding: 8px;
-  line-height: 1.42857;
-  vertical-align: top;
-  border-top: 1px solid #ddd;
+table thead {
+  background-color: #f2f5f9;
 }
 
-.table > thead > tr > th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #ddd;
+table tbody tr {
+  color: #626262;
 }
 
-.table > caption + thead > tr:first-child > th,
-.table > caption + thead > tr:first-child > td,
-.table > colgroup + thead > tr:first-child > th,
-.table > colgroup + thead > tr:first-child > td,
-.table > thead:first-child > tr:first-child > th,
-.table > thead:first-child > tr:first-child > td {
-  border-top: 0;
+table tbody tr a {
+  color: #C253DD;
 }
 
-.table > tbody + tbody {
-  border-top: 2px solid #ddd;
+table.striped tr {
+  border-bottom: none;
 }
 
-.table .table {
-  background-color: #fff;
+table.striped > tbody > tr:nth-child(odd) {
+  background-color: rgba(242, 242, 242, 0.5);
 }
 
-.table-condensed > thead > tr > th,
-.table-condensed > thead > tr > td,
-.table-condensed > tbody > tr > th,
-.table-condensed > tbody > tr > td,
-.table-condensed > tfoot > tr > th,
-.table-condensed > tfoot > tr > td {
-  padding: 5px;
+table.striped > tbody > tr > td {
+  border-radius: 0;
 }
 
-.table-bordered {
-  border: 1px solid #ddd;
+table.highlight > tbody > tr {
+  -webkit-transition: background-color .25s ease;
+  transition: background-color .25s ease;
 }
 
-.table-bordered > thead > tr > th,
-.table-bordered > thead > tr > td,
-.table-bordered > tbody > tr > th,
-.table-bordered > tbody > tr > td,
-.table-bordered > tfoot > tr > th,
-.table-bordered > tfoot > tr > td {
-  border: 1px solid #ddd;
+table.highlight > tbody > tr:hover {
+  background-color: rgba(242, 242, 242, 0.5);
 }
 
-.table-bordered > thead > tr > th,
-.table-bordered > thead > tr > td {
-  border-bottom-width: 2px;
+table.centered thead tr th, table.centered tbody tr td {
+  text-align: center;
 }
 
-.table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #f9f9f9;
+table tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.table-hover > tbody > tr:hover {
-  background-color: #f5f5f5;
-}
-
-table col[class*="col-"] {
-  position: static;
-  float: none;
-  display: table-column;
-}
-
-table td[class*="col-"],
-table th[class*="col-"] {
-  position: static;
-  float: none;
+table td, table th {
+  padding: 15px;
   display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
 }
 
-.table-responsive {
-  overflow-x: auto;
-  min-height: 0.01%;
-}
-
-@media screen and (max-width: 767px) {
-  .table-responsive {
+@media only screen and (max-width: 992px) {
+  table.responsive-table {
     width: 100%;
-    margin-bottom: 15px;
-    overflow-y: hidden;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    position: relative;
   }
-  .table-responsive > .table {
-    margin-bottom: 0;
+  table.responsive-table th, table.responsive-table td {
+    margin: 0;
+    vertical-align: top;
   }
-  .table-responsive > .table > thead > tr > th,
-  .table-responsive > .table > thead > tr > td,
-  .table-responsive > .table > tbody > tr > th,
-  .table-responsive > .table > tbody > tr > td,
-  .table-responsive > .table > tfoot > tr > th,
-  .table-responsive > .table > tfoot > tr > td {
+  table.responsive-table th {
+    text-align: left;
+  }
+  table.responsive-table thead {
+    display: block;
+    float: left;
+  }
+  table.responsive-table thead tr {
+    display: block;
+    padding: 0 10px 0 0;
+  }
+  table.responsive-table tbody {
+    display: block;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
     white-space: nowrap;
   }
-  .table-responsive > .table-bordered {
+  table.responsive-table tbody tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  table.responsive-table th {
+    display: block;
+    text-align: right;
+  }
+  table.responsive-table td {
+    display: block;
+    min-height: 1.25em;
+    text-align: left;
+  }
+  table.responsive-table tr {
+    border-bottom: none;
+    padding: 0 10px;
+  }
+  table.responsive-table thead {
     border: 0;
-  }
-  .table-responsive > .table-bordered > thead > tr > th:first-child,
-  .table-responsive > .table-bordered > thead > tr > td:first-child,
-  .table-responsive > .table-bordered > tbody > tr > th:first-child,
-  .table-responsive > .table-bordered > tbody > tr > td:first-child,
-  .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-  .table-responsive > .table-bordered > tfoot > tr > td:first-child {
-    border-left: 0;
-  }
-  .table-responsive > .table-bordered > thead > tr > th:last-child,
-  .table-responsive > .table-bordered > thead > tr > td:last-child,
-  .table-responsive > .table-bordered > tbody > tr > th:last-child,
-  .table-responsive > .table-bordered > tbody > tr > td:last-child,
-  .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-  .table-responsive > .table-bordered > tfoot > tr > td:last-child {
-    border-right: 0;
-  }
-  .table-responsive > .table-bordered > tbody > tr:last-child > th,
-  .table-responsive > .table-bordered > tbody > tr:last-child > td,
-  .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-  .table-responsive > .table-bordered > tfoot > tr:last-child > td {
-    border-bottom: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
   }
 }
 
@@ -3611,14 +3572,14 @@ table th[class*="col-"] {
 .table__nav p {
   line-height: 35px;
   height: 35px;
-  margin: 10px;
+  margin: 0 10px;
   font-size: 14px;
   color: #757575;
   font-weight: 300;
 }
 
 .table__nav__total-page {
-  margin: 10px;
+  margin: 0 10px;
 }
 
 .table__nav__total-page li {
@@ -3631,7 +3592,7 @@ table th[class*="col-"] {
 }
 
 .table__nav__select-items {
-  margin: 10px;
+  margin: 0 10px;
 }
 
 .table__nav__select-items select {
@@ -3642,7 +3603,7 @@ table th[class*="col-"] {
   border: 1px solid #e2e2e2;
 }
 
-.table__nav__select-items li:first-child {
+.table__nav__select-items > ul > li:first-child {
   line-height: 35px;
   margin: 0 10px;
   font-size: 14px;
@@ -3651,7 +3612,7 @@ table th[class*="col-"] {
 }
 
 .table__nav__prev-next {
-  margin: 10px;
+  margin: 0 10px;
 }
 
 .table__nav__prev-next li {
@@ -3674,4 +3635,94 @@ table th[class*="col-"] {
 .table__nav__prev-next li button i {
   font-size: 24px;
   font-weight: 800;
+}
+
+.dd-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.dd-wrapper__header-title {
+  display: inline-flex;
+  padding: 0 15px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 3px;
+  background: #FFF;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dd-wrapper__header-title:hover {
+  box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.dd-wrapper__header-title i {
+  height: 45px;
+  line-height: 50px;
+  font-size: 16px;
+  padding-left: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dd-wrapper__list {
+  list-style: none;
+  padding: 0;
+  height: auto;
+  display: inline-block;
+  border: 1px solid #d6d6d6;
+  border-radius: 0 0 3px 3px;
+  position: absolute;
+  background: #FFF;
+  z-index: 2;
+  width: 100%;
+  top: 30px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dd-wrapper__list-item {
+  width: 100%;
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dd-wrapper__list-item:hover, .dd-wrapper__list-item.selected {
+  background: #C253DD;
+  color: #FFF;
+}
+
+.dd-wrapper.open .dd-wrapper__header-title {
+  box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.dd-wrapper.open .dd-wrapper__header-title i {
+  transform: rotate(180deg);
+  padding-right: 10px;
+  padding-left: 0;
+  line-height: 40px;
+}
+
+.dd-wrapper.open .dd-wrapper__list {
+  visibility: visible;
+  top: 0;
+  opacity: 1;
+  box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
 }

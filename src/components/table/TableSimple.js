@@ -46,7 +46,7 @@ const TableSimple = () =>{
     
         return(
             <div>
-             <table className="table table-striped table-condensed">
+             <table className="highlight responsive-table">
                 <thead>
                     <tr>
                         { headings.map((head) => {

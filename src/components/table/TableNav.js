@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Dropdown from '../forms/Dropdown';
 
 const tabHeadings = [
     'Lead.No', 
@@ -199,7 +200,7 @@ class TableNav extends Component {
         return(
             <div>
                 <h2>Table with Navigation</h2> <br />
-                <table className="table table-striped table-condensed">
+                <table className="highlight responsive-table">
                     <thead>
                         <tr>
                             { heading.map((head) => {
@@ -210,38 +211,47 @@ class TableNav extends Component {
                     <tbody>
                         {renderDetails}
                     </tbody>
+                    <tfoot>
+                            <tr>
+                                <td colSpan='8'>
+                                    <div className='table__nav'>
+                                        <div className='table__nav__total-page'>
+                                            <ul>
+                                                {renderPageNumber}
+                                            </ul>
+                                        </div>
+                                        <div className='table__nav__select-items'>
+                                            <ul>
+                                                <li>Rows per page</li>
+                                                <li>
+                                                    <select onChange={this.changeRowCount} value={detailsPerPage}>{rowsPerPage}</select>
+                                                    <Dropdown title={detailsPerPage} listItem= {totalItems}/>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p><span className='color-primary'>{currentPage}</span>-{detailsPerPage} of {details.length}</p>
+                                        <div className='table__nav__prev-next'>
+                                            <ul>
+                                                <li>
+                                                    <button disabled={currentPage === 1} onClick={this.prevPage}>
+                                                        <i className='icon-ArrowLeft'></i>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button disabled={currentPage === pageNumbers.length} onClick={this.nextPage}>
+                                                        <i className='icon-ArrowRight'></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
                 </table>
                 
-                <div className='table__nav'>
-                    <div className='table__nav__total-page'>
-                        <ul>
-                            {renderPageNumber}
-                        </ul>
-                    </div>
-                    <div className='table__nav__select-items'>
-                        <ul>
-                            <li>Rows per page</li>
-                            <li>
-                                <select onChange={this.changeRowCount} value={detailsPerPage}>{rowsPerPage}</select>
-                            </li>
-                        </ul>
-                    </div>
-                    <p><span className='color-primary'>{currentPage}</span>-{detailsPerPage} of {details.length}</p>
-                    <div className='table__nav__prev-next'>
-                        <ul>
-                            <li>
-                                <button disabled={currentPage === 1} onClick={this.prevPage}>
-                                    <i className='icon-ArrowLeft'></i>
-                                </button>
-                            </li>
-                            <li>
-                                <button disabled={currentPage === pageNumbers.length} onClick={this.nextPage}>
-                                    <i className='icon-ArrowRight'></i>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                
+                <Dropdown title={detailsPerPage} listItem= {totalItems}/>
             </div>
         )
     }

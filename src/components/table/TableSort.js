@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const TableSort= () => {
-    return(
-        <div>TableSort</div>
-    )
+
+class TableSort extends Component {
+    render() {
+        return(
+            <div>Table Sort</div>
+        )
+    }
 }
 
 export default TableSort;

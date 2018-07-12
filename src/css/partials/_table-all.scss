@@ -89,13 +89,13 @@
     p{
         line-height: 35px;
         height: 35px;
-        margin: 10px;
+        margin: 0 10px;
         font-size: 14px;
         color: #757575;
         font-weight: 300;
     }
     &__total-page{
-        margin: 10px;
+        margin: 0 10px;
         li{
             width: 35px;
             height: 35px;
@@ -106,7 +106,7 @@
         }
     }
     &__select-items{
-        margin: 10px;
+        margin: 0 10px;
         select{
             width: 35px;
             height: 35px;
@@ -114,7 +114,7 @@
             outline: none;
             border: 1px solid #e2e2e2;
         }
-        li:first-child{
+        &>ul>li:first-child{
             line-height: 35px;
             margin: 0 10px;
             font-size: 14px;
@@ -123,7 +123,7 @@
         }
     }
     &__prev-next{
-        margin: 10px;
+        margin: 0 10px;
         li{
             line-height: 35px;
             margin: 0 2px;
@@ -145,5 +145,88 @@
         }
     }
 
+}
+
+
+
+// Dropdown working
+.dd-wrapper{
+    position: relative;
+    display: inline-flex;
+    &__header{
+        &-title{
+            display: inline-flex;
+            padding: 0 15px;
+            height: 45px;
+            line-height: 45px;
+            border-radius: 3px;
+            background: #FFF;
+            cursor: pointer;
+            @include prefix (transition, all .3s ease-in-out, webkit moz ms);
+            &:hover{
+                box-shadow: $shadow-z-3;
+            }
+            i{
+                height: 45px;
+                line-height: 50px;
+                font-size: 16px;
+                padding-left: 10px;
+                @include prefix (transition, all .3s ease-in-out, webkit moz ms);
+            }
+        }
+    }
+    &__list{
+        list-style: none;
+        padding: 0;
+        height: auto;
+        display: inline-block;
+        border: 1px solid #d6d6d6;
+        border-radius: 0 0 3px 3px;
+        position: absolute;
+        background: #FFF;
+        z-index: 2;
+        width: 100%;
+        top: 30px;
+        opacity: 0;
+        visibility: hidden;
+        @include prefix (transition, all .3s ease-in-out, webkit moz ms);
+        &-item{
+            width: 100%;
+            padding: 0 15px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            @include prefix (transition, all .3s ease-in-out, webkit moz ms);
+            &:hover,&.selected{
+                background: map-get($mopro-colors, "primary");
+                color:#FFF;
+            }
+            
+        }
+    }
+
+    // dropdown visible animation
+    &.open{
+        .dd-wrapper__header{
+            &-title{
+                box-shadow: $shadow-z-3;
+                i{
+                    transform: rotate(180deg);
+                    padding-right: 10px;
+                    padding-left: 0;
+                    line-height: 40px;
+                }
+            }
+        }
+        .dd-wrapper{
+            &__list{
+                visibility: visible;
+                top: 0;
+                opacity: 1;
+                box-shadow: $shadow-z-3;
+            }
+        }
+    }
 }
 
