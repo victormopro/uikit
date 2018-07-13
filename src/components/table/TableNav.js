@@ -109,12 +109,17 @@ class TableNav extends Component {
             heading: tabHeadings,
             details: businessDetails,
             currentPage: 1,
-            detailsPerPage: 3
+            detailsPerPage: 3,
+            // Dropdown
+            ddListOpen: false
         }
         this.changePage = this.changePage.bind(this);
         this.changeRowCount = this.changeRowCount.bind(this);
         this.prevPage = this.prevPage.bind(this);
         this.nextPage = this.nextPage.bind(this);
+        // dropdown
+        this.toggleView = this.toggleView.bind(this);
+        this.itemChange = this.itemChange.bind(this);
     }
 
     // change page view
@@ -153,8 +158,25 @@ class TableNav extends Component {
         console.log(this.state.currentPage);
     }
 
+    // Dropdown events
+    toggleView() {
+        this.setState((prevState) => {
+            return{
+                ddListOpen: !prevState.ddListOpen
+            }
+        })
+    }
+
+    itemChange(e) {
+        this.setState({
+            detailsPerPage: e.target.id,
+            ddListOpen: false
+        })
+        console.log(this.state.ddTitle);
+    }
+
     render() {
-        const {heading, details, currentPage, detailsPerPage} = this.state
+        const {heading, details, currentPage, detailsPerPage, ddListOpen } = this.state
 
         // Displaying current details
         const indexOfLastDetails = currentPage * detailsPerPage;
@@ -181,21 +203,14 @@ class TableNav extends Component {
         for (let i=1; i <= Math.ceil(details.length/detailsPerPage); i++) {
             pageNumbers.push(i);
         }
-
-        const renderPageNumber = pageNumbers.map((number) => {
-            return(
-                <li key={number} id={number} onClick={this.changePage} >{number}</li>
-            )
-        });
-
+        
         // Rows per page
         const totalItems = [];
         for (let i=1; i <= details.length; i++) {
             totalItems.push(i);
         }
-        const rowsPerPage = totalItems.map((items) => {
-            return <option key={items} value={items}>{items}</option>
-        })
+
+        
 
         return(
             <div>
@@ -215,17 +230,37 @@ class TableNav extends Component {
                             <tr>
                                 <td colSpan='8'>
                                     <div className='table__nav'>
-                                        <div className='table__nav__total-page'>
+                                        {/* <div className='table__nav__total-page'>
                                             <ul>
                                                 {renderPageNumber}
                                             </ul>
-                                        </div>
+                                        </div> */}
                                         <div className='table__nav__select-items'>
                                             <ul>
                                                 <li>Rows per page</li>
                                                 <li>
-                                                    <select onChange={this.changeRowCount} value={detailsPerPage}>{rowsPerPage}</select>
-                                                    <Dropdown title={detailsPerPage} listItem= {totalItems}/>
+                                                    <div className={'dd-wrapper ' + (ddListOpen? 'open' : '')}>
+                                                        <div className='dd-wrapper__header' onClick={this.toggleView}>
+                                                            <div className='dd-wrapper__header-title' value={detailsPerPage}>
+                                                                {detailsPerPage} 
+                                                                <i className='icon-ArrowDown'></i>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        
+                                                            <ul className='dd-wrapper__list'>
+                                                                {totalItems.map((item) => {
+                                                                return(
+                                                                    <li className={'dd-wrapper__list-item ' + ( detailsPerPage === item ? 'selected' : '') } 
+                                                                        key={item}
+                                                                        id={item}
+                                                                        onClick={this.itemChange}
+                                                                    >{item}</li>
+                                                                ) 
+                                                                })}
+                                                            </ul>
+                                                        
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </div>
@@ -249,9 +284,6 @@ class TableNav extends Component {
                             </tr>
                         </tfoot>
                 </table>
-                
-                
-                <Dropdown title={detailsPerPage} listItem= {totalItems}/>
             </div>
         )
     }

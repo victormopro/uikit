@@ -3402,6 +3402,10 @@ table tbody tr a {
   color: #C253DD;
 }
 
+table tfoot td {
+  padding: 5px;
+}
+
 table.striped tr {
   border-bottom: none;
 }
@@ -3613,7 +3617,7 @@ table td, table th {
 
 .table__nav__select-items > ul > li:first-child {
   line-height: 35px;
-  margin: 0 10px;
+  margin: 0;
   font-size: 14px;
   color: #757575;
   font-weight: 300;
@@ -3633,31 +3637,48 @@ table td, table th {
   border: none;
   background: none;
   outline: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.table__nav__prev-next li button:hover {
+  background: #F1F1F1;
 }
 
 .table__nav__prev-next li button[disabled] {
   color: #bbbbbb;
-  cursor: not-allowed;
+}
+
+.table__nav__prev-next li button[disabled]:hover {
+  background: inherit;
 }
 
 .table__nav__prev-next li button i {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 800;
 }
 
 .dd-wrapper {
   position: relative;
   display: inline-flex;
+  width: 52px;
 }
 
 .dd-wrapper__header-title {
   display: inline-flex;
-  padding: 0 15px;
-  height: 45px;
-  line-height: 45px;
+  padding: 0 10px;
+  height: 35px;
+  line-height: 35px;
   border-radius: 3px;
   background: #FFF;
   cursor: pointer;
+  font-size: 14px;
+  color: #888888;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -3669,10 +3690,11 @@ table td, table th {
 }
 
 .dd-wrapper__header-title i {
-  height: 45px;
-  line-height: 50px;
-  font-size: 16px;
-  padding-left: 10px;
+  height: 35px;
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 8px;
+  font-weight: 600;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
