@@ -14,6 +14,7 @@ import Logo from '../components/Logo';
 import TableAll from '../components/TableAll';
 import InputField from '../components/InputField';
 import IconList from '../components/IconList';
+import Social from '../components/Social';
 
 // Assets & icons
 import logoLight from '../img/mopro-white.png';
@@ -514,7 +515,14 @@ const Home = () => (
           <IconList icons={icons} />
         </div>
       </div>
+      <div className="row mt-100">
+        <div className="col-xs-12">
+          <Social />
+        </div>
+      </div>
     </div>
+
+    
 
     { /***** File Uploader *****/ }
 

@@ -3756,3 +3756,86 @@ table td, table th {
   opacity: 1;
   box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
 }
+
+.social-icon__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-icon__list__item {
+  list-style-type: none;
+  margin: 20px 10px;
+}
+
+.social-icon__list__item i {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 48px;
+  line-height: 50px;
+}
+
+.social-icon .icon-Facebook-KO,
+.social-icon .icon-Facebook {
+  color: #3b5999;
+}
+
+.social-icon .icon-Foursquare-KO,
+.social-icon .icon-Foursquare {
+  color: #f94877;
+}
+
+.social-icon .icon-GoogleAlerts-KO,
+.social-icon .icon-GoogleAlerts {
+  color: #dd4b39;
+}
+
+.social-icon .icon-GooglePlus-KO,
+.social-icon .icon-GooglePlus {
+  color: #dd4b39;
+}
+
+.social-icon .icon-Instagram-KO,
+.social-icon .icon-Instagram {
+  color: #c13584;
+}
+
+.social-icon .icon-LinkedIn-KO,
+.social-icon .icon-LinkedIn {
+  color: #0077b5;
+}
+
+.social-icon .icon-Money-KO,
+.social-icon .icon-Money {
+  color: #007f4e;
+}
+
+.social-icon .icon-Pinterest-KO,
+.social-icon .icon-Pinterest {
+  color: #bd081c;
+}
+
+.social-icon .icon-RSS-KO,
+.social-icon .icon-RSS {
+  color: #f26522;
+}
+
+.social-icon .icon-Tumblr-KO,
+.social-icon .icon-Tumblr {
+  color: #35465c;
+}
+
+.social-icon .icon-Twitter-KO,
+.social-icon .icon-Twitter {
+  color: #1da1f2;
+}
+
+.social-icon .icon-Yelp-KO,
+.social-icon .icon-Yelp {
+  color: #af0606;
+}
+
+.social-icon .icon-Youtube-KO,
+.social-icon .icon-Youtube {
+  color: #ff0000;
+}

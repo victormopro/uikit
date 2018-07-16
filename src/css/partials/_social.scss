@@ -1,0 +1,73 @@
+.social-icon{
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        &__item{
+            list-style-type: none;
+            margin: 20px 10px;
+            i{
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                font-size: 48px;
+                line-height: 50px;
+            }
+            
+        }
+    }
+
+    // Social icon colors
+    .icon-Facebook-KO,
+    .icon-Facebook{
+        color: map-get($social-icons, 'facebook');
+    }
+    .icon-Foursquare-KO,
+    .icon-Foursquare{
+        color: map-get($social-icons, 'foursquare');
+    }
+    .icon-GoogleAlerts-KO,
+    .icon-GoogleAlerts{
+        color: map-get($social-icons, 'google_plus');
+    }
+    .icon-GooglePlus-KO,
+    .icon-GooglePlus{
+        color: map-get($social-icons, 'google_plus');
+    }
+    .icon-Instagram-KO,
+    .icon-Instagram{
+        color: map-get($social-icons, 'instagram');
+    }
+    .icon-LinkedIn-KO,
+    .icon-LinkedIn{
+        color: map-get($social-icons, 'linkedin');
+    }
+    .icon-Money-KO,
+    .icon-Money{
+        color: map-get($social-icons, 'money');
+    }
+    .icon-Pinterest-KO,
+    .icon-Pinterest{
+        color: map-get($social-icons, 'pinterest');
+    }
+    .icon-RSS-KO,
+    .icon-RSS{
+        color: map-get($social-icons, 'rss');
+    }
+    .icon-Tumblr-KO,
+    .icon-Tumblr{
+        color: map-get($social-icons, 'tumblr');
+    }
+    .icon-Twitter-KO,
+    .icon-Twitter{
+        color: map-get($social-icons, 'twitter');
+    }
+    .icon-Yelp-KO,
+    .icon-Yelp{
+        color: map-get($social-icons, 'yelp');
+    }
+    .icon-Youtube-KO,
+    .icon-Youtube{
+        color: map-get($social-icons, 'youtube');
+    }
+}
+
