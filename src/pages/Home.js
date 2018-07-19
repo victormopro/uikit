@@ -16,7 +16,9 @@ import InputField from '../components/InputField';
 import IconList from '../components/IconList';
 import Social from '../components/Social';
 import Popup from '../components/Popup';
-import Tooltip from '../components/Tooltip';
+
+//Extra features
+// import Tooltip from '../components/Tooltip';
 
 // Assets & icons
 import logoLight from '../img/mopro-white.png';
@@ -437,7 +439,7 @@ const Home = () => (
 
     { /***** Tooltip *****/ }
 
-    <div className="section section--charts mt-150">
+    {/* <div className="section section--charts mt-150">
       <div className="row">
         <div className="col-xs-12">
           <SectionTitle id='tooltip' text='Tooltip' superscript={'05.1'} />
@@ -474,7 +476,7 @@ const Home = () => (
             </ Tooltip>
         </div>
       </div>
-    </div>
+    </div> */}
 
     { /***** Charts *****/ }
 
@@ -590,14 +592,12 @@ const Home = () => (
       <div className="row">
         <div className="col-xs-12">
           <SectionTitle id='accordions' text='Accordions' superscript={'12'} />
-          <Accordion
-              title = "Accordion behavior"
-              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum."
-          />
-          <Accordion
-              title ="Accordion behavior"
-              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum."
-          />
+          <Accordion title = "Accordion behavior">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum.</p>
+          </ Accordion>
+          <Accordion title ="Accordion behavior">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cupiditate, laboriosam fuga quasi vel maxime a ut quam quis eum perferendis nostrum porro. Reprehenderit accusamus consectetur aperiam. Sequi incidunt voluptatem soluta, hic, delectus, rem at molestiae iure esse nobis fugit veniam ex ut corporis fugiat quibusdam officia magni quos quisquam deleniti ipsam dolor accusantium aliquid. Tempora, omnis. Blanditiis, delectus, rerum.</p>
+          </ Accordion>
         </div>
       </div>
     </div>

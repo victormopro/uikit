@@ -1,0 +1,98 @@
+
+// Tooltip
+
+
+
+.tooltip{
+    position: absolute;
+    z-index: 1070;
+    display: block;
+    font-size: 12px;
+    border-radius: 10px;
+    @include prefix (transition, .3s all ease-in-out, moz webkit);
+    // @include prefix (box-shadow,  0 35px 50px 0 rgba(0, 0, 0, 0.2), moz webkit);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: scale(0);
+    &-view{
+        position: relative;
+        .tooltip{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    &-hide{
+        position: relative;
+    }
+
+    .tooltip__arrow {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+    }
+
+    .tooltip__content {
+        max-width: 200px;
+        padding: 5px 10px;
+        color: #fff;
+        text-align: center;
+        background-color: map-get($mopro-colors, "primary");
+        border-radius: 4px;
+    }
+
+    // top arrow
+    &.top {
+        padding: 5px 0;
+        margin-top: -3px;
+        .tooltip__arrow {
+            bottom: 0;
+            left: 10%;
+            margin-left: -5px;
+            border-width: 5px 5px 0;
+            border-top-color:map-get($mopro-colors, "primary");
+        }
+    }
+
+    // right arrow
+    &.right {
+        padding: 0 5px;
+        margin-left: 3px;
+        .tooltip__arrow {
+            top: 50%;
+            left: 0;
+            margin-top: -5px;
+            border-width: 5px 5px 5px 0;
+            border-right-color:map-get($mopro-colors, "primary");
+        }
+    }
+
+    // bottom arrow
+    &.bottom {
+        padding: 5px 0;
+        margin-top: 3px;
+        .tooltip__arrow {
+            top: 0;
+            left: 10%;
+            margin-left: -5px;
+            border-width: 0 5px 5px;
+            border-bottom-color:map-get($mopro-colors, "primary");
+        }
+    }
+
+    // left arrow
+    &.tooltip.left {
+        padding: 0 5px;
+        margin-left: -3px;
+        .tooltip__arrow {
+            top: 50%;
+            right: 0;
+            margin-top: -5px;
+            border-width: 5px 0 5px 5px;
+            border-left-color:map-get($mopro-colors, "primary");
+        }
+    }
+    
+
+}

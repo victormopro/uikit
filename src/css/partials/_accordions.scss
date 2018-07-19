@@ -1,7 +1,8 @@
 .accordion {
     margin: 30px 0;
-    &__title {
+    &__heading {
         position: relative;
+        cursor: pointer;
         h4 {
             font-size: 18px;
             line-height: 22px;
@@ -26,7 +27,9 @@
         outline: none;
         cursor: pointer;
     }
-    &__description {
+    &__collapse {
+        overflow:hidden;
+        @include prefix (transition, .3s height ease-in-out, webkit moz);
         p {
             font-size: 14px;
             line-height: 22px;
