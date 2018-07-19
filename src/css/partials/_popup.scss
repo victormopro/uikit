@@ -2,10 +2,52 @@
 // ==========================================================================
 
 .popup {
+  position: relative;
+  background: #F1F1F1;
+  padding: 30px;
+  display: inline-block;
   border-radius: $border-radius;
   box-shadow: $shadow-popup;
-  &__header,
-  &__body {
-    padding: 25px 30px;
+  &__content{
+    color: #4A4A4A;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 22px;
+    display: inline-block;
   }
+  &:before{
+    position: absolute;
+    content: '';
+    border: 15px solid transparent;
+  }
+  &.top{
+    &:before{
+      left: 20px;
+      top: -30px;
+      border-bottom-color: #F1F1F1;
+    }
+  }
+  &.bottom{
+    &:before{
+      left: 20px;
+      bottom: -30px;
+      border-top-color: #F1F1F1;
+    }
+  }
+  &.right{
+    &:before{
+      right: -30px;
+      top: 20px;
+      border-left-color: #F1F1F1;
+    }
+  }
+  &.left{
+    &:before{
+      left: -30px;
+      top: 20px;
+      border-right-color: #F1F1F1;
+    }
+  }
+  
 }
+

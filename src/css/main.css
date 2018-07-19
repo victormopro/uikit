@@ -2899,12 +2899,50 @@ button, .text-btn, .btn {
 }
 
 .popup {
+  position: relative;
+  background: #F1F1F1;
+  padding: 30px;
+  display: inline-block;
   border-radius: 10px;
   box-shadow: 0 35px 50px 0 rgba(0, 0, 0, 0.2);
 }
 
-.popup__header, .popup__body {
-  padding: 25px 30px;
+.popup__content {
+  color: #4A4A4A;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 22px;
+  display: inline-block;
+}
+
+.popup:before {
+  position: absolute;
+  content: '';
+  border: 15px solid transparent;
+}
+
+.popup.top:before {
+  left: 20px;
+  top: -30px;
+  border-bottom-color: #F1F1F1;
+}
+
+.popup.bottom:before {
+  left: 20px;
+  bottom: -30px;
+  border-top-color: #F1F1F1;
+}
+
+.popup.right:before {
+  right: -30px;
+  top: 20px;
+  border-left-color: #F1F1F1;
+}
+
+.popup.left:before {
+  left: -30px;
+  top: 20px;
+  border-right-color: #F1F1F1;
 }
 
 .modal__content-wrap {
@@ -3301,10 +3339,6 @@ button, .text-btn, .btn {
   background: #FFF;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 35px 50px 0 rgba(0, 0, 0, 0.2);
-}
-
-.popup {
-  min-height: 360px;
 }
 
 .code-preview {
@@ -3838,4 +3872,100 @@ table td, table th {
 .social-icon .icon-Youtube-KO,
 .social-icon .icon-Youtube {
   color: #ff0000;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  font-size: 12px;
+  border-radius: 10px;
+  -moz-transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: scale(0);
+}
+
+.tooltip-view {
+  position: relative;
+}
+
+.tooltip-view .tooltip {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.tooltip-hide {
+  position: relative;
+}
+
+.tooltip .tooltip__arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.tooltip .tooltip__content {
+  max-width: 200px;
+  padding: 5px 10px;
+  color: #fff;
+  text-align: center;
+  background-color: #C253DD;
+  border-radius: 4px;
+}
+
+.tooltip.top {
+  padding: 5px 0;
+  margin-top: -3px;
+}
+
+.tooltip.top .tooltip__arrow {
+  bottom: 0;
+  left: 10%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #C253DD;
+}
+
+.tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px;
+}
+
+.tooltip.right .tooltip__arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #C253DD;
+}
+
+.tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 3px;
+}
+
+.tooltip.bottom .tooltip__arrow {
+  top: 0;
+  left: 10%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #C253DD;
+}
+
+.tooltip.tooltip.left {
+  padding: 0 5px;
+  margin-left: -3px;
+}
+
+.tooltip.tooltip.left .tooltip__arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #C253DD;
 }

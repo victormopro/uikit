@@ -15,6 +15,8 @@ import TableAll from '../components/TableAll';
 import InputField from '../components/InputField';
 import IconList from '../components/IconList';
 import Social from '../components/Social';
+import Popup from '../components/Popup';
+import Tooltip from '../components/Tooltip';
 
 // Assets & icons
 import logoLight from '../img/mopro-white.png';
@@ -420,9 +422,57 @@ const Home = () => (
 
 
         <div className="col-xs-4 mt-30">
-          <div className="popup mt-30"></div>
+          <Popup 
+            placement="top"
+            content="It's for our eyes only. By providing your email address, you'll be able to quickly access your account, save your progress, and view your website." 
+          />
+          <Popup
+            placement="top"
+            content="Email address"
+          />
         </div>
 
+      </div>
+    </div>
+
+    { /***** Tooltip *****/ }
+
+    <div className="section section--charts mt-150">
+      <div className="row">
+        <div className="col-xs-12">
+          <SectionTitle id='tooltip' text='Tooltip' superscript={'05.1'} />
+        </div>
+      </div>
+      <div className="row mt-50">
+        <div className="col-xs-12">
+            <Tooltip 
+                placement='top' 
+                content= 'Top tooltip content'
+                top={-30}
+                visible = {true}
+                width={150}
+            >          
+            <span>Top</span> 
+            </ Tooltip>
+            <Tooltip 
+                placement='right' 
+                content= 'Right tooltip content'
+                left={120}
+                visible = {true}
+                width={150}
+            >          
+            <span>Right</span>  
+            </ Tooltip>
+            <Tooltip 
+                placement='bottom' 
+                content= 'Bottom tooltip content'
+                top={15}
+                visible = {true}
+                width={150}
+            >   
+            <span>Bottom</span>        
+            </ Tooltip>
+        </div>
       </div>
     </div>
 
