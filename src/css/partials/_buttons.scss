@@ -31,6 +31,10 @@
     color: map-get($static-colors, "grey");
     text-transform: capitalize;
   }
+  &--default {
+    color: map-get($static-colors, "grey");
+    text-transform: uppercase;
+  }
   &--outline {
     background: none;
     color: map-get($mopro-colors, "primary");

@@ -3,6 +3,7 @@
 
 .modal {
   &__content-wrap {
+    border-radius: 15px;
     box-shadow: $shadow-card;
   }
   &__header {
@@ -21,4 +22,53 @@
     padding: 0 50px 45px;
     text-align: right;
   }
+
+  &.loading,
+  &.success,
+  &.add,
+  &.oops{
+    width: 100%;
+    max-width: 400px;
+    margin:  0 auto;
+    .modal__content-wrap{
+      padding:15px;
+      margin: 10px;
+      small{
+        color: #adadad;
+      }
+    }
+    .modal__icon{
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      margin: 0 auto;
+      border-radius: 50%;
+      border: 1px solid #F1F1F1;
+      i{
+        font-weight: bold;
+      }
+    }
+  }
+
+  &.success{
+    i{
+      color: green;
+    }
+  }
+
+  &.add{
+    .modal__icon{
+      background-color: map-get($mopro-colors, primary );
+      i{
+        color:#FFF;
+      }
+    }
+  }
+
+  &.oops{
+    i{
+      color: red;
+    }
+  }
+
 }

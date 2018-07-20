@@ -16,6 +16,7 @@ import InputField from '../components/InputField';
 import IconList from '../components/IconList';
 import Social from '../components/Social';
 import Popup from '../components/Popup';
+import Modals from '../components/Modals';
 
 //Extra features
 // import Tooltip from '../components/Tooltip';
@@ -497,21 +498,18 @@ const Home = () => (
         </div>
       </div>
       <div className="row mt-100">
-        <div className="col-xs-5">
-          <div className="modal">
-            <div className="modal__content-wrap">
-              <div className="modal__header">
-                <h3>Modal Title</h3>
-              </div>
-              <div className="modal__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-              <div className="modal__footer">
-              <Button size='small' type='outline'>Button</Button>  <Button size='small' type='primary'>Button</Button>
-              </div>
-            </div>
-          </div>
+        <div className="col-xs-6">
+          <Modals modal
+              title='Card Title'
+              defaultButton= 'button'
+              primaryButton= 'button'
+          >
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </Modals>
+        </div>
+        <div className="col-xs-6">
+            <Modals loading success add oops />
         </div>
         <div className="col-xs-7"></div>
       </div>

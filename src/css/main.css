@@ -172,6 +172,11 @@ ul {
   text-transform: capitalize;
 }
 
+.btn--default {
+  color: #A7A8A8;
+  text-transform: uppercase;
+}
+
 .btn--outline {
   background: none;
   color: #C253DD;
@@ -2946,6 +2951,7 @@ button, .text-btn, .btn {
 }
 
 .modal__content-wrap {
+  border-radius: 15px;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
@@ -2971,6 +2977,50 @@ button, .text-btn, .btn {
 .modal__footer {
   padding: 0 50px 45px;
   text-align: right;
+}
+
+.modal.loading, .modal.success, .modal.add, .modal.oops {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.modal.loading .modal__content-wrap, .modal.success .modal__content-wrap, .modal.add .modal__content-wrap, .modal.oops .modal__content-wrap {
+  padding: 15px;
+  margin: 10px;
+}
+
+.modal.loading .modal__content-wrap small, .modal.success .modal__content-wrap small, .modal.add .modal__content-wrap small, .modal.oops .modal__content-wrap small {
+  color: #adadad;
+}
+
+.modal.loading .modal__icon, .modal.success .modal__icon, .modal.add .modal__icon, .modal.oops .modal__icon {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid #F1F1F1;
+}
+
+.modal.loading .modal__icon i, .modal.success .modal__icon i, .modal.add .modal__icon i, .modal.oops .modal__icon i {
+  font-weight: bold;
+}
+
+.modal.success i {
+  color: green;
+}
+
+.modal.add .modal__icon {
+  background-color: #C253DD;
+}
+
+.modal.add .modal__icon i {
+  color: #FFF;
+}
+
+.modal.oops i {
+  color: red;
 }
 
 .radio {
