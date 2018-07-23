@@ -29,18 +29,22 @@
   &.oops{
     width: 100%;
     max-width: 400px;
+    max-height: 180px;
     margin:  0 auto;
     .modal__content-wrap{
       padding:15px;
       margin: 10px;
+      h3{
+        margin: 10px 0;
+      }
       small{
         color: #adadad;
       }
     }
     .modal__icon{
-      width: 60px;
-      height: 60px;
-      line-height: 60px;
+      width: 50px;
+      height: 50px;
+      line-height: 55px;
       margin: 0 auto;
       border-radius: 50%;
       border: 1px solid #F1F1F1;
@@ -72,3 +76,48 @@
   }
 
 }
+
+// loader
+.mopro-loading {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #f1f1f1;
+  &:before, &:after, &>span:before {
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top:-2px;
+    left:-2px;
+    border: 2px solid map-get($mopro-colors, "primary");
+    border-radius: 50%;
+    animation: mopro-loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: map-get($mopro-colors, "primary") transparent transparent transparent;
+    &:before {
+      animation-delay: -0.45s;
+    }
+    &:after {
+      animation-delay: -0.15s;
+    }
+  }
+  &>span:before{
+    animation-delay: -0.30;
+  }
+}
+
+@keyframes mopro-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+

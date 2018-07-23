@@ -2982,6 +2982,7 @@ button, .text-btn, .btn {
 .modal.loading, .modal.success, .modal.add, .modal.oops {
   width: 100%;
   max-width: 400px;
+  max-height: 180px;
   margin: 0 auto;
 }
 
@@ -2990,14 +2991,18 @@ button, .text-btn, .btn {
   margin: 10px;
 }
 
+.modal.loading .modal__content-wrap h3, .modal.success .modal__content-wrap h3, .modal.add .modal__content-wrap h3, .modal.oops .modal__content-wrap h3 {
+  margin: 10px 0;
+}
+
 .modal.loading .modal__content-wrap small, .modal.success .modal__content-wrap small, .modal.add .modal__content-wrap small, .modal.oops .modal__content-wrap small {
   color: #adadad;
 }
 
 .modal.loading .modal__icon, .modal.success .modal__icon, .modal.add .modal__icon, .modal.oops .modal__icon {
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  width: 50px;
+  height: 50px;
+  line-height: 55px;
   margin: 0 auto;
   border-radius: 50%;
   border: 1px solid #F1F1F1;
@@ -3021,6 +3026,52 @@ button, .text-btn, .btn {
 
 .modal.oops i {
   color: red;
+}
+
+.mopro-loading {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #f1f1f1;
+}
+
+.mopro-loading:before, .mopro-loading:after, .mopro-loading > span:before {
+  position: absolute;
+  content: '';
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -2px;
+  left: -2px;
+  border: 2px solid #C253DD;
+  border-radius: 50%;
+  animation: mopro-loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #C253DD transparent transparent transparent;
+}
+
+.mopro-loading:before:before, .mopro-loading:after:before, .mopro-loading > span:before:before {
+  animation-delay: -0.45s;
+}
+
+.mopro-loading:before:after, .mopro-loading:after:after, .mopro-loading > span:before:after {
+  animation-delay: -0.15s;
+}
+
+.mopro-loading > span:before {
+  animation-delay: -0.30;
+}
+
+@keyframes mopro-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .radio {

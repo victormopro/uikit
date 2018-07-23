@@ -498,7 +498,7 @@ const Home = () => (
         </div>
       </div>
       <div className="row mt-100">
-        <div className="col-xs-6">
+        <div className="col-xs-6 col-xs-offset-3">
           <Modals modal
               title='Card Title'
               defaultButton= 'button'
@@ -508,8 +508,29 @@ const Home = () => (
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </Modals>
         </div>
-        <div className="col-xs-6">
-            <Modals loading success add oops />
+        <div className="col-xs-6 mt-50">
+            <Modals loading  
+                title='Loading'
+                message='Hold on while we upload your file'
+            />
+        </div>
+        <div className="col-xs-6 mt-50">
+            <Modals success 
+                title='Success'
+                message='Your file uploaded successfully'
+            />
+        </div>
+        <div className="col-xs-6 mt-50">
+            <Modals add 
+                title='Add'
+                message='Please add your file'
+            />
+        </div>
+        <div className="col-xs-6 mt-50">
+            <Modals oops 
+                title='Oops'
+                message='Please try again'
+            />
         </div>
         <div className="col-xs-7"></div>
       </div>

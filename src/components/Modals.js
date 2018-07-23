@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button';
+import TableSimple from './table/TableSimple';
 
 const Modals = ({ 
     title, 
@@ -10,7 +11,8 @@ const Modals = ({
     loading,
     success,
     add,
-    oops 
+    oops,
+    message
 }) => {
 
     return(
@@ -36,8 +38,11 @@ const Modals = ({
                 <div className="modal loading">
                     <div className="modal__content-wrap">
                         <div className="modal__content text-center">
-                            <h3>Loading</h3>
-                            <small>Hold on while we upload your file</small>
+                            <div className="mopro-loading">
+                                <span></span>
+                            </div>
+                            <h3>{title}</h3>
+                            <small>{message}</small>
                         </div>
                     </div>
                 </div>
@@ -50,8 +55,8 @@ const Modals = ({
                             <div className="modal__icon">
                                 <i className="icon-Checked" />
                             </div>
-                            <h3>Sucess</h3>
-                            <small>Your file uploaded successfully</small>
+                            <h3>{title}</h3>
+                            <small>{message}</small>
                         </div>
                     </div>
                 </div>
@@ -64,8 +69,8 @@ const Modals = ({
                             <div className="modal__icon">
                                 <i className="icon-Plus" />
                             </div>
-                            <h3>Add</h3>
-                            <small>Please add your file</small>
+                            <h3>{title}</h3>
+                            <small>{message}</small>
                         </div>
                     </div>
                 </div>
@@ -78,8 +83,8 @@ const Modals = ({
                             <div className="modal__icon">
                                 <i className="icon-Close" />
                             </div>
-                            <h3>Oops</h3>
-                            <small>Please try again</small>
+                            <h3>{title}</h3>
+                            <small>{message}</small>
                         </div>
                     </div>
                 </div>
