@@ -1352,6 +1352,90 @@ ul {
   content: "";
 }
 
+.icon-SocialRadar:before {
+  content: "";
+}
+
+.icon-Analytics:before {
+  content: "";
+}
+
+.icon-Style:before {
+  content: "";
+}
+
+.icon-Publish:before {
+  content: "";
+}
+
+.icon-ManagePages:before {
+  content: "";
+}
+
+.icon-ManageBlocks:before {
+  content: "";
+}
+
+.icon-Home:before {
+  content: "";
+}
+
+.icon-SettingsOverscan_material:before {
+  content: "";
+}
+
+.icon-Settings_material:before {
+  content: "";
+}
+
+.icon-InvertColors_material:before {
+  content: "";
+}
+
+.icon-Image_material:before {
+  content: "";
+}
+
+.icon-Delete_material:before {
+  content: "";
+}
+
+.icon-GoogleReview:before {
+  content: "";
+}
+
+.icon-NoData:before {
+  content: "";
+}
+
+.icon-WebsiteRevision:before {
+  content: "";
+}
+
+.icon-TechIssues:before {
+  content: "";
+}
+
+.icon-Laptop:before {
+  content: "";
+}
+
+.icon-Knowledge:before {
+  content: "";
+}
+
+.icon-CashMoney:before {
+  content: "";
+}
+
+.icon-AccWallet:before {
+  content: "";
+}
+
+.icon-Accessibility:before {
+  content: "";
+}
+
 img {
   max-width: 100%;
 }
@@ -3349,7 +3433,7 @@ button, .text-btn, .btn {
 
 .mopro-icons .icon__text {
   font-size: 14px;
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 .main {
