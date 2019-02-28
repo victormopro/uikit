@@ -1436,6 +1436,42 @@ ul {
   content: "";
 }
 
+.icon-TestimonialCollector:before {
+  content: "";
+}
+
+.icon-SocialCalendar:before {
+  content: "";
+}
+
+.icon-ShoppingCart_Material:before {
+  content: "";
+}
+
+.icon-SEOScore:before {
+  content: "";
+}
+
+.icon-RepManager:before {
+  content: "";
+}
+
+.icon-DesignChanges:before {
+  content: "";
+}
+
+.icon-CompetitionTracker:before {
+  content: "";
+}
+
+.icon-Search_Material:before {
+  content: "";
+}
+
+.icon-AlignCenter_Material:before {
+  content: "";
+}
+
 img {
   max-width: 100%;
 }

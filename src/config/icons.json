@@ -240,5 +240,14 @@
   { "name": "icon-Knowledge" },
   { "name": "icon-CashMoney" },
   { "name": "icon-AccWallet" },
-  { "name": "icon-Accessibility" }
+  { "name": "icon-Accessibility" },
+  { "name": "icon-TestimonialCollector" },
+  { "name": "icon-SocialCalendar" },
+  { "name": "icon-ShoppingCart_Material" },
+  { "name": "icon-SEOScore" },
+  { "name": "icon-RepManager" },
+  { "name": "icon-DesignChanges" },
+  { "name": "icon-CompetitionTracker" },
+  { "name": "icon-Search_Material" },
+  { "name": "icon-AlignCenter_Material" }
 ]
