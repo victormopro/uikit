@@ -249,5 +249,6 @@
   { "name": "icon-DesignChanges" },
   { "name": "icon-CompetitionTracker" },
   { "name": "icon-Search_Material" },
-  { "name": "icon-AlignCenter_Material" }
+  { "name": "icon-AlignCenter_Material" },
+  { "name": "icon-Group" }
 ]

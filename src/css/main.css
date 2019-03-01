@@ -1472,6 +1472,10 @@ ul {
   content: "";
 }
 
+.icon-Group:before {
+  content: "";
+}
+
 img {
   max-width: 100%;
 }
